@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tools - Intro To Robotics</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction-to-robotics.html"><strong aria-hidden="true">1.</strong> Introduction to Robotics</a></li><li class="chapter-item expanded "><a href="../recommended-reading-order.html"><strong aria-hidden="true">2.</strong> Recommended Reading Order</a></li><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">3.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../the-basics/the-basics.html"><strong aria-hidden="true">4.</strong> The Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../the-basics/tools.html" class="active"><strong aria-hidden="true">4.1.</strong> Tools</a></li><li class="chapter-item expanded "><a href="../the-basics/parts.html"><strong aria-hidden="true">4.2.</strong> Parts</a></li></ol></li><li class="chapter-item expanded "><a href="../subsystems/subsystems.html"><strong aria-hidden="true">5.</strong> Subsystems</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../subsystems/drivetrains.html"><strong aria-hidden="true">5.1.</strong> Drivetrains</a></li><li class="chapter-item expanded "><a href="../subsystems/lifts.html"><strong aria-hidden="true">5.2.</strong> Lifts</a></li><li class="chapter-item expanded "><a href="../subsystems/intakes.html"><strong aria-hidden="true">5.3.</strong> Intakes</a></li><li class="chapter-item expanded "><a href="../subsystems/shooting.html"><strong aria-hidden="true">5.4.</strong> Shooting</a></li></ol></li><li class="chapter-item expanded "><a href="../building-techniques/building-techniques.html"><strong aria-hidden="true">6.</strong> Building Techniques</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../building-techniques/stationary.html"><strong aria-hidden="true">6.1.</strong> Stationary</a></li><li class="chapter-item expanded "><a href="../building-techniques/moving.html"><strong aria-hidden="true">6.2.</strong> Moving</a></li><li class="chapter-item expanded "><a href="../building-techniques/drivetrain.html"><strong aria-hidden="true">6.3.</strong> Drivetrain</a></li></ol></li><li class="chapter-item expanded "><a href="../coding-techniques/coding-techniques.html"><strong aria-hidden="true">7.</strong> Coding Techniques</a></li><li class="chapter-item expanded "><a href="../driving-techniques.html"><strong aria-hidden="true">8.</strong> Driving Techniques</a></li><li class="chapter-item expanded "><a href="../notebooking-techniques.html"><strong aria-hidden="true">9.</strong> Notebooking Techniques</a></li><li class="chapter-item expanded "><a href="../leading-techniques.html"><strong aria-hidden="true">10.</strong> Leading Techniques</a></li><li class="chapter-item expanded "><a href="../the-season.html"><strong aria-hidden="true">11.</strong> The Season</a></li><li class="chapter-item expanded "><a href="../the-tournament.html"><strong aria-hidden="true">12.</strong> The Tournament</a></li><li class="chapter-item expanded "><a href="../resources.html"><strong aria-hidden="true">13.</strong> Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Intro To Robotics</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tools"><a class="header" href="#tools">Tools</a></h1>
+<p>Here is a list of all the tools we have in robotics. They will be a picture, common names, and uses.</p>
+<h2 id="screwdrivers-and-wrenches"><a class="header" href="#screwdrivers-and-wrenches">Screwdrivers and wrenches</a></h2>
+<h3 id="allen-wrench"><a class="header" href="#allen-wrench">Allen Wrench</a></h3>
+<p><img src="../assets/alan.png" alt="Body frame" /></p>
+<ul>
+<li>Also called an “L” or “L wrench”.</li>
+<li>Fits 8-32 hex screws, the common screw we use.</li>
+<li>This is the hardest hex driver to use, although it works best in small places and when supplies are short.</li>
+</ul>
+<h3 id="motor-allen"><a class="header" href="#motor-allen">Motor Allen</a></h3>
+<p>Same as the allen wrench, but fits 6-32 hex screws.</p>
+<p>6-32 hex screws are mainly used in collars.</p>
+<h3 id="t-hex-driver"><a class="header" href="#t-hex-driver">T Hex Driver</a></h3>
+<p><img src="../assets/t-hex-driver.png" alt="Body frame" /></p>
+<p>Also called a “T” or “T wrench”.</p>
+<p>Fits 8-32 hex screws, the common screw we use.</p>
+<p>This is another hard hex driver to use because of the long length of the driver as it can twist. But, works well for additional reach or torque.</p>
+<h3 id="german"><a class="header" href="#german">German</a></h3>
+<p><img src="../assets/german.png" alt="Body frame" /></p>
+<p>Fits 8-32 hex screws, the common screw we use.
+This is the best hex driver to use if you have it. It’s very strong and it’s amazing for anything in general.</p>
+<h3 id="wrench"><a class="header" href="#wrench">Wrench</a></h3>
+<p>The large head is used to hold nuts to tighten screws, the small head is used to tighten standoffs.</p>
+<p>Used with any hex driver or another wrench.</p>
+<h3 id="ratchet"><a class="header" href="#ratchet">Ratchet</a></h3>
+<p>Used to tighten screws, but can only turn one direction.</p>
+<p>Useful in tight spaces where you can’t turn 360 degrees.</p>
+<h2 id="saws-and-files"><a class="header" href="#saws-and-files">Saws and Files</a></h2>
+<p>Wear eye protection when using any type of saw, especially a fast moving saw. Also please learn to use these from someone with experience before trying. I won’t give any warnings here, so follow your instructor’s instructions or the product’s warnings.</p>
+<h3 id="dremel"><a class="header" href="#dremel">Dremel</a></h3>
+<p><img src="../assets/dremel.png" alt="Body frame" /></p>
+<p>Used to cut metal and various plastic parts.</p>
+<p>It’s better to use a dremel to cut through steel and a hacksaw to cut through aluminum.</p>
+<h3 id="hacksaw"><a class="header" href="#hacksaw">Hacksaw</a></h3>
+<p><img src="../assets/hacksaw.png" alt="Body frame" /></p>
+<p>Used to cut metal and various plastic parts.</p>
+<p>It’s better to use a hacksaw to cut through aluminum and a dremel to cut through steel.</p>
+<h3 id="snips"><a class="header" href="#snips">Snips</a></h3>
+<p><img src="../assets/snips.png" alt="Body frame" /></p>
+<p>Large scissors used to cut aluminum quickly.</p>
+<p>Often leaves the surface with rough edges.</p>
+<h3 id="file"><a class="header" href="#file">File</a></h3>
+<p><img src="../assets/file.png" alt="Body frame" /></p>
+<p>Used to remove sharp edges from metal.</p>
+<p>You can also use files to strip teeth off of a gear, although I would not recommend it (I’ve done it before).</p>
+<h3 id="grinder"><a class="header" href="#grinder">Grinder</a></h3>
+<p><img src="../assets/grinder.png" alt="Body frame" /></p>
+<p>Also called a “bench grinder”</p>
+<p>Used to remove sharp edges from metal.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../the-basics/the-basics.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../the-basics/parts.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../the-basics/the-basics.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../the-basics/parts.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

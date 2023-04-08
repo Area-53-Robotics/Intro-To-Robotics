@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Moving - Intro To Robotics</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction-to-robotics.html"><strong aria-hidden="true">1.</strong> Introduction to Robotics</a></li><li class="chapter-item expanded "><a href="../recommended-reading-order.html"><strong aria-hidden="true">2.</strong> Recommended Reading Order</a></li><li class="chapter-item expanded "><a href="../introduction.html"><strong aria-hidden="true">3.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../the-basics/the-basics.html"><strong aria-hidden="true">4.</strong> The Basics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../the-basics/tools.html"><strong aria-hidden="true">4.1.</strong> Tools</a></li><li class="chapter-item expanded "><a href="../the-basics/parts.html"><strong aria-hidden="true">4.2.</strong> Parts</a></li></ol></li><li class="chapter-item expanded "><a href="../subsystems/subsystems.html"><strong aria-hidden="true">5.</strong> Subsystems</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../subsystems/drivetrains.html"><strong aria-hidden="true">5.1.</strong> Drivetrains</a></li><li class="chapter-item expanded "><a href="../subsystems/lifts.html"><strong aria-hidden="true">5.2.</strong> Lifts</a></li><li class="chapter-item expanded "><a href="../subsystems/intakes.html"><strong aria-hidden="true">5.3.</strong> Intakes</a></li><li class="chapter-item expanded "><a href="../subsystems/shooting.html"><strong aria-hidden="true">5.4.</strong> Shooting</a></li></ol></li><li class="chapter-item expanded "><a href="../building-techniques/building-techniques.html"><strong aria-hidden="true">6.</strong> Building Techniques</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../building-techniques/stationary.html"><strong aria-hidden="true">6.1.</strong> Stationary</a></li><li class="chapter-item expanded "><a href="../building-techniques/moving.html" class="active"><strong aria-hidden="true">6.2.</strong> Moving</a></li><li class="chapter-item expanded "><a href="../building-techniques/drivetrain.html"><strong aria-hidden="true">6.3.</strong> Drivetrain</a></li></ol></li><li class="chapter-item expanded "><a href="../coding-techniques/coding-techniques.html"><strong aria-hidden="true">7.</strong> Coding Techniques</a></li><li class="chapter-item expanded "><a href="../driving-techniques.html"><strong aria-hidden="true">8.</strong> Driving Techniques</a></li><li class="chapter-item expanded "><a href="../notebooking-techniques.html"><strong aria-hidden="true">9.</strong> Notebooking Techniques</a></li><li class="chapter-item expanded "><a href="../leading-techniques.html"><strong aria-hidden="true">10.</strong> Leading Techniques</a></li><li class="chapter-item expanded "><a href="../the-season.html"><strong aria-hidden="true">11.</strong> The Season</a></li><li class="chapter-item expanded "><a href="../the-tournament.html"><strong aria-hidden="true">12.</strong> The Tournament</a></li><li class="chapter-item expanded "><a href="../resources.html"><strong aria-hidden="true">13.</strong> Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Intro To Robotics</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="moving"><a class="header" href="#moving">Moving</a></h1>
+<p>The next topic is moving relations. This isn’t when you and your girlfriend move to different schools. You’re in robotics, you wouldn’t have a girlfriend. If something uses a motor, it’s probably in this section.</p>
+<h2 id="bearings-spacers-collars"><a class="header" href="#bearings-spacers-collars">Bearings, Spacers, Collars</a></h2>
+<p>Knowing when to use bearing blocks, spacers, and collars is important. Any axle needs all 3 for clean building. There are tons of combinations, and only a few of them don’t work.
+Bearings, Spacers, &amp; Collars Video (Stop at 7:08, that’s when Rubber Bands starts)</p>
+<h2 id="screws-vs-axles"><a class="header" href="#screws-vs-axles">Screws vs Axles</a></h2>
+<p>In robotics, we can’t use screws that are larger than 2.5 inches. Since your nylock is under 0.25 in, that gives you about 2.25 in of screw to work with. Also remember that axles go up to 12 in long. When deciding what to use for a joint you need to consider the size of the joint. If it’s less than 2.5 in, use a screw joint; if it’s more, use an axle. Pretty simple. The basic rule is to use screws until you can’t.
+But why? In Stationary, I talked about slop. More moving parts are going to create a larger chance of slop, while less moving parts are going to reduce it. With screws, there are 2 “moving” parts, the screw and the nylock. With axles, there are 3: the axle and 2 collars. Collars are also dangerous because we have really bad collars and they can come undone easily.</p>
+<h2 id="rubber-bands"><a class="header" href="#rubber-bands">Rubber Bands</a></h2>
+<p>An important non-VEX part that you can use are rubber bands. They have a lot of different uses but their main ones include:</p>
+<ul>
+<li>Tension for shooting mechanisms</li>
+<li>Tension for lifting mechanisms</li>
+<li>Releasing release mechanisms</li>
+<li>Rollers</li>
+</ul>
+<p>Shooting mechanisms like the puncher and catapult require rubber bands to pull them forwards. The slip gear pulls it back, tightening the rubber band and when no teeth are exposed, the rubber bands release, bringing the mechanism forwards.
+Lifting mechanisms are often heavy so we use rubber bands to hold some of the weight. Use them on any type of bar. Try to create a triangle that expands as the mechanism goes down, but shrinks as it goes up.
+Release mechanisms are pretty simple because you have something that holds the mechanism in while the rubber bands are bending. When that object leaves, the rubber bands act and pull the mechanism into place.
+Rollers are similar to intakes in function, but not in design. They’re 2 sprockets spaced apart on the same axle. In the grooves of the sprocket you string rubber bands to the other side. You can still use chain on these.
+Rubber Bands Video (Stop at 10:18, that’s when Gears, Sprockets, &amp; Ratios starts)</p>
+<p>Rubber bands are very useful and there are many types of rubber bands. We commonly use size 64. We also buy from the company Advantage as they have a lot of different types of rubber bands. Some are more stretchy and work better at longer distances, some are sturdier and work better at shorter distances. Buy the ones you want to try and test them. It’s probably a good idea to have multiple styles on hand. Generic Staples rubber bands also do the job.
+Since you’re using rubber bands frequently and they usually pull large forces, it’s good to replace them often. You might need 2-4 sets of rubber bands for a tournament. Keep track of how many rubber bands you need and where you need them so you can be prepared. Also try to use old rubber bands that have lost their elasticity for simple mechanisms like anti-tips. Rubber bands may also tear or cut, so make sure you get rid of them. I like to tear them apart so we know we can’t use it.</p>
+<h2 id="gears-sprockets-and-ratios"><a class="header" href="#gears-sprockets-and-ratios">Gears, Sprockets, and Ratios</a></h2>
+<p>I’m not going to talk about when to use gears and sprockets because they’re very similar and pretty obvious when you need to move power around. Although a good rule of thumb is to use gears for short ranges and sprockets for large ranges.
+This section is about gear ratios and how to use them. I’m only going to be using gears as my example, but know that sprockets work the same.
+Also, because I might have not said this, we have 3 speeds of motors: 100rpm, 200rpm, and 600rpm. The higher the rpm, the lower the torque. Torque is the inverse of speed. If you need to go fast, you want a high speed, while your side effect is a lower moving capability. If you need to move something heavy, you want a high torque, while your side effect is a lower speed.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y8EGzFVsPJA" title="Robotics Introduction - Building Techniques - Motion Pt. 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Gear A to Gear B results in B/A times torque and A/B times speed
+The ratio is then called A/B simplified.
+If Gear A is smaller, you’ll get higher torque, lower speed.
+If Gear A is larger, you’ll get lower torque, higher speed.</p>
+<p>If there are 3 or more gears, Gear A is powered by the motor and Gear B is the farthest most gear.</p>
+<p>I’ll go through a written example too.
+If we have a motor driving a 12 tooth (A), which then turns a 36 tooth (B), we get 3x higher torque and 3x slower speed. So let’s say our motor is driving at 600 rpms. Our 36 tooth is driving at 200 rpms and our 12 tooth is driving at 600 rpms.
+Lower rpms deliver higher torque, while higher rpms deliver higher speeds.</p>
+<p>That’s simple gears. Let’s say you have a motor powering Gear A. Gear A then powers Gear B. Gear B is on the same axle as Gear C. Gear C then powers Gear D.
+We’ll use the same example. The motor is 600 rpms, Gear A and C are 12 tooths, Gear B and D are 36 tooths. Gear A experiences 600 rpms. Gear B experiences 200rpms. Gear C also experiences 200 rpms. Gear D then experiences 200/3 rpms. We get 9x higher torque and 9x slower speed from Gear D.
+By placing gears on the same axle to transfer power, we multiply each ending gear together. One way to think about it is the motor powers Gear A which transfers it to B. Then Gear B acts as the motor that powers Gear C which transfers it to D.</p>
+<h2 id="custom-parts"><a class="header" href="#custom-parts">Custom Parts</a></h2>
+<p>Here we’re talking about slip gears and ratchets.
+Slip gears allow for punchers and catapults to work, they don’t have too many other uses. If your mechanism can translate into a puncher or a catapult then use a slip gear. If it doesn’t, then see if you can use something else.
+Ratchets allow you to move a mechanism one way and one way only. If your mechanism needs to move one way, consider using these.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GQ1Rsz-0t64" title="Robotics Introduction - Building Techniques - Motion Pt.2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../building-techniques/stationary.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../building-techniques/drivetrain.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../building-techniques/stationary.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../building-techniques/drivetrain.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
