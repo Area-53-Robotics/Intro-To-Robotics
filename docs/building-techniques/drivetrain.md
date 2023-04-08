@@ -28,11 +28,11 @@ Usually you want 200-300 rpms for your robot. Too slow and you can’t do anythi
 The most common types of drivetrains are H and X-Drives. They’re named because of the shape that the entire drivetrain makes. Your normal drivetrain, with wheels all in a line, forms an H after you add a brace. An X drive forms an octagon, with wheels along the diagonals. The braces do not normally cross to make the X, rather they’re similar to the H-Drive bracing.
 The differences about an X-Drive include:
 
-- All Omni wheels
-- Ability to strafe
-- Easiest as direct drive
-- There must be 4 motors
-- √2 x faster than an H-Drive
+-   All Omni wheels
+-   Ability to strafe
+-   Easiest as direct drive
+-   There must be 4 motors
+-   √2 x faster than an H-Drive
 
 So if you think about how the X-Drive moves and how the wheels turn, you’ll see that it can move in any direction without turning. This is amazing for it because it allows you to move faster. You also have to code and drive it differently, but that doesn’t affect building too much. You can also see how you would need 4 direct drive motors because you can’t turn your gears around a corner.
 What you might not understand is why it’s √2 x faster. Its tradeoff is that it has √2 x less torque. Here’s a much better explanation: Why is X-Drive Faster? - AURA
@@ -55,10 +55,8 @@ Skirts are pieces of lexan mounted on the side of a drivetrain at an angle to pr
 
 ![Body frame](../assets/skirts.png)
 
-
 ## Wedges
 
 Wedges are similar to skirts in that they are a slanted piece designed to cause other robots to ride up them, but wedges are mounted on the back of the drivetrain and typically used in a defensive manner to disrupt opposing robots. Below is a picture of 1721G’s Change Up robot, which was a defense bot that utilized aggressive driving and wedges very well.
-
 
 ![Body frame](../assets/wedges.png)

@@ -8,9 +8,9 @@ Here is a list of all the tools we have in robotics. They will be a picture, com
 
 ![Body frame](../assets/alan.png)
 
-- Also called an “L” or “L wrench”.
-- Fits 8-32 hex screws, the common screw we use.
-- This is the hardest hex driver to use, although it works best in small places and when supplies are short.
+-   Also called an “L” or “L wrench”.
+-   Fits 8-32 hex screws, the common screw we use.
+-   This is the hardest hex driver to use, although it works best in small places and when supplies are short.
 
 ### Motor Allen
 

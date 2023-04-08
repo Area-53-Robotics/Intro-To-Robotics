@@ -18,8 +18,9 @@
 
           '';
           buildInputs = with pkgs; [
-            mdbook
-            book-summary
+            mkdocs
+            python310Packages.mkdocs-material
+
             nodePackages.markdownlint-cli
             nodePackages.prettier
           ];

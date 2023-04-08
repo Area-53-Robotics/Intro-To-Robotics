@@ -16,10 +16,10 @@ But why? In Stationary, I talked about slop. More moving parts are going to crea
 
 An important non-VEX part that you can use are rubber bands. They have a lot of different uses but their main ones include:
 
-- Tension for shooting mechanisms
-- Tension for lifting mechanisms
-- Releasing release mechanisms
-- Rollers
+-   Tension for shooting mechanisms
+-   Tension for lifting mechanisms
+-   Releasing release mechanisms
+-   Rollers
 
 Shooting mechanisms like the puncher and catapult require rubber bands to pull them forwards. The slip gear pulls it back, tightening the rubber band and when no teeth are exposed, the rubber bands release, bringing the mechanism forwards.
 Lifting mechanisms are often heavy so we use rubber bands to hold some of the weight. Use them on any type of bar. Try to create a triangle that expands as the mechanism goes down, but shrinks as it goes up.

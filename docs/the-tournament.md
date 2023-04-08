@@ -130,14 +130,14 @@ When talking to another high ranking team, you’ll want to talk through the pos
 
 As a wrap-up, because alliance selection is confusion:
 
-- If you’re high on the scoreboard:
-  - Pick a team who is good and wants to be picked by you
-  - If you’re picked, ask yourself if you want to play with that team or take a chance on another
-- If you’re middle on the scoreboard:
-  - Pick a team you can have fun with
-  - If you’re picked, make sure it’s a team you have a decent chance with
-- If you’re low on the scoreboard:
-  - If you’re picked, say yes because you might not be able to pick
+-   If you’re high on the scoreboard:
+    -   Pick a team who is good and wants to be picked by you
+    -   If you’re picked, ask yourself if you want to play with that team or take a chance on another
+-   If you’re middle on the scoreboard:
+    -   Pick a team you can have fun with
+    -   If you’re picked, make sure it’s a team you have a decent chance with
+-   If you’re low on the scoreboard:
+    -   If you’re picked, say yes because you might not be able to pick
 
 ### Elimination Matches (Elims)
 

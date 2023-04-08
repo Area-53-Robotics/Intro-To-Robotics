@@ -12,18 +12,18 @@ This is a very boring but very important part of the brainstorming season. For n
 Last season we did this but didn’t do that. We saw other teams do this when we did that. We did this and other teams did this too.
 The first thing you want to do when approaching a season is reflect on your past season. Here’s a list of pros and cons of things you’ll want to consider:
 
-- Building
-- Coding
-- Driving
-- Tournaments
+-   Building
+-   Coding
+-   Driving
+-   Tournaments
 
 Make sure to think of good and bad things that happened regarding each of these and think of what you as a team can do to improve. Your leader should take your team through this exercise and ensure that your team is able to grow. Your notebooker should take notes on what you discussed, and then organize it into a write-up that shows progression. Everyone should talk about what they saw, even if they aren’t the lead person of that role (i.e. a coder can talk about building, even if they aren’t the lead builder). Lead persons should take special consideration into what they saw in how people worked together in the respective role and how they will lead their role better.
 
 In this section you may also want to consider non-robotics issues such as:
 
-- Inter-team interactions
-- Intra-team interactions
-- Coach and parent interactions
+-   Inter-team interactions
+-   Intra-team interactions
+-   Coach and parent interactions
 
 Also think about how you worked as a team. These things could be interesting to talk about if you want to tear each other's throats out. Think about things that you and others did well or didn’t do well. This will either lead to a better team or different teammates, both are improvements. Anything that you think needs to be said should probably be said. This is the time to get everything off your chest.
 
@@ -31,9 +31,9 @@ Also think about how you worked as a team. These things could be interesting to 
 
 Since this is the beginning of the season, it’s also a good time to plan out meetings. See what day you all will be able to make a meeting. I like having 2 meetings a week although many times we can only get 1. At this time you should also plan your next few meetings which include:
 
-- Watch parties for the reveal
-- Reveal discussion
-- Post-reveal discussion
+-   Watch parties for the reveal
+-   Reveal discussion
+-   Post-reveal discussion
 
 We’ll go more in-depth later, but make sure to have meetings set up since these next few meetings determine a lot of what you do for the rest of the season.
 
@@ -54,8 +54,8 @@ Have someone organize the watch party. VEX says when they will do the live strea
 Get together in person or on social media, and gather a bunch of materials (below). Watch the VEX live stream. Bring some snacks too, pretzels are always nice because there’s no dust left on any papers you bring.
 Materials:
 
-- Phone and laptop
-- Printer and graph paper (about 5 of each per person)
+-   Phone and laptop
+-   Printer and graph paper (about 5 of each per person)
 
 Your notebooker should also take notes about what happened during the watch party. If your team has taken notes about the game, they’ll be grateful.
 
@@ -64,13 +64,13 @@ Your notebooker should also take notes about what happened during the watch part
 After you watch the game, you’ll want to dive right into designing your robot. But, it’s important that everyone understands the game first.
 Things to do to understand the game:
 
-- Watch the video multiple times
-  - Think about the important parts, there’s a lot of fluff in the videos
-- Read the game manual
-  -It’ll be on the VEX website
-  - It’s a very long document, but you should learn the rules in it
-- Explain the game to others
-  - Teaching others will help you understand the game better too
+-   Watch the video multiple times
+    -   Think about the important parts, there’s a lot of fluff in the videos
+-   Read the game manual
+    -It’ll be on the VEX website
+    -   It’s a very long document, but you should learn the rules in it
+-   Explain the game to others
+    -   Teaching others will help you understand the game better too
 
 You should understand the game to see what your robot can and can’t do. Your notebooker should also understand the game as writing up the game is an important part of the notebook.
 
@@ -82,10 +82,10 @@ This is where robotics really starts. Your team should still be together, and th
 
 You’ve watched the reveal and you understand the game semi-perfectly. First you need to break the game down. Identify these or more:
 
-- Offensive strategies
-- Defensive strategies
-- Scoring strategies
-- Descoring strategies
+-   Offensive strategies
+-   Defensive strategies
+-   Scoring strategies
+-   Descoring strategies
 
 Make sure each person understands each strategy. Everyone should also be thinking about how these strategies play into building, coding, and driving the robot.
 
@@ -97,10 +97,10 @@ This is a very long section. This is your brainstorming section for notebookers.
 
 You may want to add other categories depending on what the game calls for.
 
-- Scoring mechanism
-- Descoring mechanism
-- Drivetrain type (H, X, U)
-- Wheel types
+-   Scoring mechanism
+-   Descoring mechanism
+-   Drivetrain type (H, X, U)
+-   Wheel types
 
 ### Ideas
 
@@ -130,10 +130,10 @@ Once your team has formulated all their ideas, regroup and share them. Talk abou
 
 Decide on one method to score solutions, some popular ones are below:
 
-- Democracy - Each person votes for the best design
-- Rank the Designs - Each person ranks all the designs and assigns points to them. When totaled, whichever has the most is chosen
-- Lead - Either the leader or lead builder chooses what they think is best
-- Scoring - The entire team assigns a point value to each design, the highest is chosen
+-   Democracy - Each person votes for the best design
+-   Rank the Designs - Each person ranks all the designs and assigns points to them. When totaled, whichever has the most is chosen
+-   Lead - Either the leader or lead builder chooses what they think is best
+-   Scoring - The entire team assigns a point value to each design, the highest is chosen
 
 You’ll want to decide on your top 1 or 2 ideas from each category. You may need to rebuild portions of your robot, so having a semi-developed idea to fall back on is useful. Remember to think about how each design influences the game. Use your pros/cons to guide you. Some designs may affect designs in a different category, so you’ll want to think about that.
 Once you’ve narrowed your selection, choose the ones you’ll start building with. You may want to look to the lead builder for this. If you think the chosen design is a mistake, talk it out a bit more. You’re early enough in the season that you can flesh out plans and not have it hurt.

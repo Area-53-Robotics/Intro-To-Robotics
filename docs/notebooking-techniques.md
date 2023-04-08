@@ -5,13 +5,13 @@ What is notebooking and documentation? Quoted from Wikipedia (it's a good source
 
 Notebooking in VEX is especially important since it is key to several important awards:
 
-- The Design Award
-- The Excellence Award
-- To reach these, your notebook needs to:
-- Highlight what your robot is
-- Prove that you built it
-- Dive into the details of how you built it.
-- Detail how you improved over time
+-   The Design Award
+-   The Excellence Award
+-   To reach these, your notebook needs to:
+-   Highlight what your robot is
+-   Prove that you built it
+-   Dive into the details of how you built it.
+-   Detail how you improved over time
 
 Teresa has compiled a [slideshow](https://docs.google.com/presentation/d/1Uk4swRHdrwL2-z1mSL9msUDOOHVweSWmGtXWr6ovS38/edit?usp=sharing) for use alongside this section.
 
@@ -20,20 +20,20 @@ Teresa has compiled a [slideshow](https://docs.google.com/presentation/d/1Uk4swR
 (Slides 2-5)
 You’ll need to follow some basics.
 
-- Must be written in blue or black ink
-- No typing!
-- If you have the time, as often as possible type an entry, edit it, and then transcribe it.
-- No white-out
-- Accept your mistakes, don’t edit your entries to look better.
-- If you write the wrong word, draw a single line through it and continue
-- If it’s more than 5 words, sign the error
-- Plan out your sentences so this doesn’t happen
-- Plan out large titles on other papers
-- Don’t cover words with photos, you’ll lose points
-- Each page is signed and initialed by writer and a witness
-- Notes are in chronological order and dated
-- You can’t glue/tape in entries
-- You can glue/tape in photos or drawings
+-   Must be written in blue or black ink
+-   No typing!
+-   If you have the time, as often as possible type an entry, edit it, and then transcribe it.
+-   No white-out
+-   Accept your mistakes, don’t edit your entries to look better.
+-   If you write the wrong word, draw a single line through it and continue
+-   If it’s more than 5 words, sign the error
+-   Plan out your sentences so this doesn’t happen
+-   Plan out large titles on other papers
+-   Don’t cover words with photos, you’ll lose points
+-   Each page is signed and initialed by writer and a witness
+-   Notes are in chronological order and dated
+-   You can’t glue/tape in entries
+-   You can glue/tape in photos or drawings
 
 You’ll also need to spread the work around. Writing is a lot of work. Each person should be contributing to entries, whether it’s through an online document, writing rough drafts, or coming up with ideas or topics to write about. Contributing to notes is also key here.
 
@@ -75,11 +75,11 @@ Any type of project needs to be brainstormed. Break down each main section of yo
 
 You’ll need to select your top 1 or 2 designs so that you have something to fall back on. There are multiple ways to decide.
 
-- Democracy - Each person votes for the best design
-- Rank the Designs - Each person ranks all the designs and assigns points to them. When totaled, whichever has the most is chosen
-- Lead - Either the leader or lead builder chooses what they think is best
-- Scoring - The entire team assigns a point value to each design, the highest is chosen
-- Assigning points can be a great way to see the strengths and weaknesses of a design from several different viewpoints (Example: Mobility, Speed, Power, etc)
+-   Democracy - Each person votes for the best design
+-   Rank the Designs - Each person ranks all the designs and assigns points to them. When totaled, whichever has the most is chosen
+-   Lead - Either the leader or lead builder chooses what they think is best
+-   Scoring - The entire team assigns a point value to each design, the highest is chosen
+-   Assigning points can be a great way to see the strengths and weaknesses of a design from several different viewpoints (Example: Mobility, Speed, Power, etc)
 
 ## Building and Coding
 
