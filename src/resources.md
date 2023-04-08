@@ -45,20 +45,20 @@ Before installing the new version of SOLIDWORKS, please uninstall all previous S
 
 Please follow the instructions below to download the product:
 
-Got to: [www.solidworks.com/SEK]() and complete the form (first name, last name email address, select “student team” on dropdown)
+1. Got to: [www.solidworks.com/SEK]() and complete the form (first name, last name email address, select “student team” on dropdown)
 
-Under product information:
+2. Under product information:
 
+- Ask someone in the club for a serial number
 - Select Yes ( I already have a serial number)
 - Choose 2022-2023 version
-- SOLIDWORKS CAD serial number: 9020005390788586YYFNQB34
-- Here are the number of activations on each serial number: 30
+- Input your serial number
 
 If you do not activate the license after installing, you will only receive a 30-day license. Please give this serial number out to team members only. This serial number will expire July 31, 2024.
 
-Installation and activation instructions are here: www.solidworks.com/installation_instructions
+Installation and activation instructions are here: [www.solidworks.com/installation_instructions]()
 
-If for any reason you have a problem with the software installation, please go here www.solidworks.com/studentsupport
+If for any reason you have a problem with the software installation, please go here [www.solidworks.com/studentsupport]()
 
 To learn the latest about SOLIDWORKS Education and all of our products, please visit:
 [WWW.SOLIDWORKS.COM/EDULAUNCH]()
