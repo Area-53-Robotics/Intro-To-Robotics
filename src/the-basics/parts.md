@@ -4,21 +4,21 @@ There are a lot of parts. Some are obscure, some are necessary. Everyone should 
 
 ## Structure
 
-[Structure Video](https://www.youtube.com/watch?v=9wj5aibcKAE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wj5aibcKAE" title="Robotics Introduction - Basics - Structure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 > Note: I forgot about a “rail”, it’s basically a worse C-Channel. I would only use them for bracing
 
 ## Motion
 
-[Motion Video](https://youtu.be/opz3PNI6mY0)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/opz3PNI6mY0" title="Robotics Introduction - Basics - Motion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Hardware
 
-[Hardware Video](https://youtu.be/opz3PNI6mY0)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DAcHH1pAQ_c" title="Robotics Introduction - Basics - Hardware" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Electronics
 
-[Electronics Video](https://youtu.be/OqzroBgR2dk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OqzroBgR2dk" title="Robotics Introduction - Basics - Electronics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Here is a link to learn more about sensors: [VEX Sensors](https://wiki.purduesigbots.com/vex-electronics/vex-sensors/3-pin-adi-sensors)
 

@@ -15,10 +15,10 @@
   - [Stationary](./building-techniques/stationary.md)
   - [Moving](./building-techniques/moving.md)
   - [Drivetrain](./building-techniques/drivetrain.md)
+- [Coding Techniques](./coding-techniques/coding-techniques.md)
 - [Driving Techniques](./driving-techniques.md)
 - [Notebooking Techniques](./notebooking-techniques.md)
 - [Leading Techniques](./leading-techniques.md)
 - [The Season](./the-season.md)
 - [The Tournament](./the-tournament.md)
 - [Resources](./resources.md)
-
