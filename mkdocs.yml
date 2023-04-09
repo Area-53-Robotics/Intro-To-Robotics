@@ -14,10 +14,11 @@ theme:
         scheme: slate
 
 markdown_extensions:
+    - attr_list
+    - md_in_html
     - admonition
     - pymdownx.details
     - pymdownx.superfences
-    - def_list
     - tables
     - pymdownx.superfences
     - pymdownx.tabbed:
@@ -69,10 +70,11 @@ nav:
                 - 'Branches': './coding-techniques/git/branches.md'
                 - 'Pushing and Pulling': './coding-techniques/git/pushing-and-pulling.md'
                 - 'Remote Branches': './coding-techniques/git/remote-branches.md'
-          - 'Control Theory':
-                - 'Introduction': './coding-techniques/control-theory/introduction.md'
-                - 'Bang Bang Controller': './coding-techniques/control-theory/bang-bang.md'
-                - 'PID Controller': './coding-techniques/control-theory/pid.md'
+          - 'Advanced Concepts':
+                - 'Introduction': './coding-techniques/advanced-concepts/introduction.md'
+                - 'Bang Bang Controller': './coding-techniques/advanced-concepts/bang-bang.md'
+                - 'PID Controller': './coding-techniques/advanced-concepts/pid.md'
+                - 'Odometry': './coding-techniques/advanced-concepts/odometry.md'
     - 'Driving Techniques': './driving-techniques.md'
     - 'Notebooking Techniques': './notebooking-techniques.md'
     - 'Leading Techniques': './leading-techniques.md'
