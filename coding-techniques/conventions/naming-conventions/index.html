@@ -1242,10 +1242,10 @@
 <h1 id="naming-conventions">Naming Conventions</h1>
 <p>The capitalization of names communicates information as well. Whether something starts with a capital letter or a lowercase letter, or whether it uses snake_case, or camelCase, informs the reader of it's purpose.</p>
 <h2 id="variable-names">Variable Names</h2>
-<p>Variables use lower case snake_case.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">MotorPower</span><span class="w"> </span><span class="c1">// Incorrect</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">motorPower</span><span class="w"> </span><span class="c1">// Incorrect</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">motor_power</span><span class="w"> </span><span class="c1">// Correct</span>
+<p>Variables use lower case camelCase. Many people use camelCase and snake_case interchangeably here. We recommend camelCase, but if you choose one, stick with it.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">MotorPower</span><span class="w">  </span><span class="c1">// Incorrect</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">motorPower</span><span class="w">  </span><span class="c1">// Correct</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">motor_power</span><span class="w"> </span><span class="c1">// Incorrect</span>
 </code></pre></div>
 <h3 id="constants">Constants</h3>
 <p>Constants use SCREAMING_SNAKE_CASE.
@@ -1267,10 +1267,10 @@ The reason constants are different from normal variables is because these a guar
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="struct-and-class-members">Struct and Class Members</h3>
-<p>These use snake_case.</p>
+<p>These use camelCase.</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MotorEncoder</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">public</span><span class="o">:</span>
-<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">current_position</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">camelCase</span><span class="p">;</span>
 <span class="p">};</span>
 </code></pre></div>
 
