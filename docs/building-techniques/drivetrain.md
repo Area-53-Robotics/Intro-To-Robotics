@@ -35,7 +35,8 @@ The differences about an X-Drive include:
 -   √2 x faster than an H-Drive
 
 So if you think about how the X-Drive moves and how the wheels turn, you’ll see that it can move in any direction without turning. This is amazing for it because it allows you to move faster. You also have to code and drive it differently, but that doesn’t affect building too much. You can also see how you would need 4 direct drive motors because you can’t turn your gears around a corner.
-What you might not understand is why it’s √2 x faster. Its tradeoff is that it has √2 x less torque. Here’s a much better explanation: Why is X-Drive Faster? - AURA
+What you might not understand is why it’s √2 x faster. Its tradeoff is that it has √2 x less torque. Here’s a much better explanation: [Why is X-Drive Faster? - AURA](https://web.archive.org/web/20230118013035/https://aura.org.nz/why-is-x-drive-faster/ 
+)
 
 ## Preventing Defense
 
