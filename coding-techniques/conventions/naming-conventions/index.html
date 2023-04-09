@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../branches/">
+        <link rel="prev" href="../introduction/">
       
       
-        <link rel="next" href="../remote-branches/">
+        <link rel="next" href="../comments/">
       
       <link rel="icon" href="../../../assets/area_53.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Pushing and Pulling - Introduction to Robotics</title>
+        <title>Naming Conventions - Introduction to Robotics</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pushing-and-pulling" class="md-skip">
+        <a href="#naming-conventions" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pushing and Pulling
+              Naming Conventions
             
           </span>
         </div>
@@ -663,14 +663,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" checked>
       
       
       
@@ -679,7 +681,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_7_3">
           <span class="md-nav__icon md-icon"></span>
           Conventions
@@ -692,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conventions/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -706,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conventions/descriptive-names.md" class="md-nav__link">
+      <a href="../descriptive-names.md" class="md-nav__link">
         Descriptive Variables
       </a>
     </li>
@@ -718,11 +720,92 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../conventions/naming-conventions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Naming Conventions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Naming Conventions
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variable-names" class="md-nav__link">
+    Variable Names
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enums-structs-and-classes" class="md-nav__link">
+    Enums, Structs and Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Enums, Structs and Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enum-members" class="md-nav__link">
+    Enum Members
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#struct-and-class-members" class="md-nav__link">
+    Struct and Class Members
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -734,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conventions/comments/" class="md-nav__link">
+      <a href="../comments/" class="md-nav__link">
         Comments
       </a>
     </li>
@@ -843,16 +926,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
       
       
       
@@ -861,7 +942,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_5">
           <span class="md-nav__icon md-icon"></span>
           Git
@@ -874,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../git/introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -888,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../git/getting-started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -902,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commits-and-staging/" class="md-nav__link">
+      <a href="../../git/commits-and-staging/" class="md-nav__link">
         Commits and Staging
       </a>
     </li>
@@ -916,7 +997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../branches/" class="md-nav__link">
+      <a href="../../git/branches/" class="md-nav__link">
         Branches
       </a>
     </li>
@@ -928,79 +1009,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Pushing and Pulling
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../git/pushing-and-pulling/" class="md-nav__link">
         Pushing and Pulling
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#diverging-branches" class="md-nav__link">
-    Diverging Branches
-  </a>
-  
-    <nav class="md-nav" aria-label="Diverging Branches">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rebasing" class="md-nav__link">
-    Rebasing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#merging" class="md-nav__link">
-    Merging
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#merge-conflicts" class="md-nav__link">
-    Merge conflicts
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1012,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote-branches/" class="md-nav__link">
+      <a href="../../git/remote-branches/" class="md-nav__link">
         Remote Branches
       </a>
     </li>
@@ -1165,23 +1178,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#diverging-branches" class="md-nav__link">
-    Diverging Branches
+  <a href="#variable-names" class="md-nav__link">
+    Variable Names
   </a>
   
-    <nav class="md-nav" aria-label="Diverging Branches">
+    <nav class="md-nav" aria-label="Variable Names">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rebasing" class="md-nav__link">
-    Rebasing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#merging" class="md-nav__link">
-    Merging
+  <a href="#constants" class="md-nav__link">
+    Constants
   </a>
   
 </li>
@@ -1192,9 +1198,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#merge-conflicts" class="md-nav__link">
-    Merge conflicts
+  <a href="#enums-structs-and-classes" class="md-nav__link">
+    Enums, Structs and Classes
   </a>
+  
+    <nav class="md-nav" aria-label="Enums, Structs and Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enum-members" class="md-nav__link">
+    Enum Members
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#struct-and-class-members" class="md-nav__link">
+    Struct and Class Members
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1213,83 +1239,40 @@
                   
 
 
-<h1 id="pushing-and-pulling">Pushing and Pulling</h1>
-<p>This is the main way you interact with other branches.</p>
-<p>This includes remote branches (but we'll talk about those later)</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span><span class="c1"># We are now on the master branch</span>
-git<span class="w"> </span>pull<span class="w"> </span>my_branch<span class="w"> </span><span class="c1"># Get all of the changes from my_branch, and add them to master</span>
-
-git<span class="w"> </span>checkout<span class="w"> </span>my_branch
-git<span class="w"> </span>push<span class="w"> </span>master<span class="w"> </span><span class="c1"># Adds all of the commits that master doesn&#39;t have to master</span>
+<h1 id="naming-conventions">Naming Conventions</h1>
+<p>The capitalization of names communicates information as well. Whether something starts with a capital letter or a lowercase letter, or whether it uses snake_case, or camelCase, informs the reader of it's purpose.</p>
+<h2 id="variable-names">Variable Names</h2>
+<p>Variables use lower case snake_case.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">MotorPower</span><span class="w"> </span><span class="c1">// Incorrect</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">motorPower</span><span class="w"> </span><span class="c1">// Incorrect</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">motor_power</span><span class="w"> </span><span class="c1">// Correct</span>
 </code></pre></div>
-<blockquote>
-<p>Note: You cannot pull with uncommited changes, and push will ignore changes you have uncommited.</p>
-</blockquote>
-<h2 id="diverging-branches">Diverging Branches</h2>
-<p>When running these commands, it is highly likely that you will eventually see a message that looks like this:</p>
-<div class="highlight"><pre><span></span><code>hint: Pulling without specifying how to reconcile divergent branches is
-hint: discouraged. You can squelch this message by running one of the following
-hint: commands sometime before your next pull:
-hint:
-hint:   git config pull.rebase false  # merge (the default strategy)
-hint:   git config pull.rebase true   # rebase
-hint:   git config pull.ff only       # fast-forward only
-hint:
-hint: You can replace &quot;git config&quot; with &quot;git config --global&quot; to set a default
-hint: preference for all repositories. You can also pass --rebase, --no-rebase,
-hint: or --ff-only on the command line to override the configured default per
-hint: invocation.
+<h3 id="constants">Constants</h3>
+<p>Constants use SCREAMING_SNAKE_CASE.
+The reason constants are different from normal variables is because these a guaranteed to never change.</p>
+<div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.75</span><span class="p">;</span>
 </code></pre></div>
-<p>It is likely that your branches don't perfectly line up, usually because master recieved a commit since the branch was made. Or, even more likely, someone else pushed to master while you were working. In this scenario you have two options, merging or rebasing.</p>
-<div class="highlight"><pre><span></span><code>o---o---o---A---B---C master
-         \
-          X---Y---Z  my_branch
+<h2 id="enums-structs-and-classes">Enums, Structs and Classes</h2>
+<p>Enum, Struct and Class names all use UpperCamelCase.</p>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">Colors</span><span class="p">{};</span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">Coordinates</span><span class="p">{};</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MotorEncoder</span><span class="p">{};</span>
 </code></pre></div>
-<h3 id="rebasing">Rebasing</h3>
-<p>In this option, commits are added back in time. This is perfect if the difference between the branches is very small. If there are conflicts, you will have to fix them for every single differing commit. It means that history will be preserved, and no commits will be lost.</p>
-<p>You can initiate a rebase by using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--rebase
-git<span class="w"> </span>push<span class="w"> </span>--rebase
+<h3 id="enum-members">Enum Members</h3>
+<p>Enum members also use UpperCamelCase;</p>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">Colors</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Red</span><span class="p">,</span>
+<span class="w">    </span><span class="n">Green</span><span class="p">,</span>
+<span class="w">    </span><span class="n">Blue</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>Rebasing will result in:</p>
-<div class="highlight"><pre><span></span><code>o---o---o---X---Y---Z---A---B---C master
-         \          /
-          X---Y---Z  my_branch
+<h3 id="struct-and-class-members">Struct and Class Members</h3>
+<p>These use snake_case.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MotorEncoder</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">current_position</span><span class="p">;</span>
+<span class="p">};</span>
 </code></pre></div>
-<h3 id="merging">Merging</h3>
-<p>In this option, differing commits are squashed (this is the actual term for this) into a single commit. None of your changes will be lost, but the history won't be as clear. This is a good option if the amount of commits that you are pushing or pulling is very large, because you will only have to fix conflicts once.</p>
-<p>You can merge using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--merge
-git<span class="w"> </span>push<span class="w"> </span>--merge
-</code></pre></div>
-<p>Merging will result in:</p>
-<div class="highlight"><pre><span></span><code>o---o---o---A---B---C---D master
-         \             /
-          X---Y---Z -- my_branch
-</code></pre></div>
-<h2 id="merge-conflicts">Merge conflicts</h2>
-<p>These are the bane of any developer's existence. Usually merges/rebases are resolved automatically. However, sometimes you will recieve a merge conflict. This occurs when two commits that are being merged/rebased make changes to the same location on a file. This will require you to manually fix the conflicts. Running git status will show you which files need to be changed. You can accept the changes from the file on your branch using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>--ours<span class="w"> </span>&lt;file<span class="w"> </span>name&gt;
-<span class="c1"># Or accept the remote changes</span>
-git<span class="w"> </span>checkout<span class="w"> </span>--theirs<span class="w"> </span>&lt;file<span class="w"> </span>name&gt;
-</code></pre></div>
-<p>You can also accept every changes from the local branch using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--strategy-option<span class="w"> </span>ours
-<span class="c1"># Or accept the remote changes</span>
-git<span class="w"> </span>merge<span class="w"> </span>--strategy-option<span class="w"> </span>theirs
-</code></pre></div>
-<p>In case you want to fix the conflicts manually (you might want a combination of both changes), git status will tell you which files you need to change. When you edit those files you will find something like this:</p>
-<div class="highlight"><pre><span></span><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Changes on the current branch
-=======
-conflicting changes
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; conflicting_branch
-</code></pre></div>
-<p>Make the changes you want and delete the symbols, then add the changes.
-If you are rebasing, run:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--continue
-</code></pre></div>
-<p>Or if you are merging, simply commit.</p>
 
 
 
@@ -1311,7 +1294,7 @@ If you are rebasing, run:</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../branches/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Branches" rel="prev">
+          <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1320,20 +1303,20 @@ If you are rebasing, run:</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Branches
+                Introduction
               </div>
             </div>
           </a>
         
         
           
-          <a href="../remote-branches/" class="md-footer__link md-footer__link--next" aria-label="Next: Remote Branches" rel="next">
+          <a href="../comments/" class="md-footer__link md-footer__link--next" aria-label="Next: Comments" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Remote Branches
+                Comments
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../branches/">
+        <link rel="prev" href="../naming-conventions/">
       
       
-        <link rel="next" href="../remote-branches/">
+        <link rel="next" href="../../programming-the-bot/introduction/">
       
       <link rel="icon" href="../../../assets/area_53.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Pushing and Pulling - Introduction to Robotics</title>
+        <title>Comments - Introduction to Robotics</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pushing-and-pulling" class="md-skip">
+        <a href="#comments" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pushing and Pulling
+              Comments
             
           </span>
         </div>
@@ -663,14 +663,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" checked>
       
       
       
@@ -679,7 +681,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_7_3">
           <span class="md-nav__icon md-icon"></span>
           Conventions
@@ -692,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conventions/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -706,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conventions/descriptive-names.md" class="md-nav__link">
+      <a href="../descriptive-names.md" class="md-nav__link">
         Descriptive Variables
       </a>
     </li>
@@ -720,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conventions/naming-conventions/" class="md-nav__link">
+      <a href="../naming-conventions/" class="md-nav__link">
         Naming Conventions
       </a>
     </li>
@@ -732,11 +734,87 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../conventions/comments/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Comments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Comments
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dont-write-redundant-comments" class="md-nav__link">
+    Don't Write Redundant Comments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments-do-not-excuse-unclear-code" class="md-nav__link">
+    Comments do not Excuse Unclear Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-you-cant-write-a-clear-comment-there-may-be-a-problem-with-the-code" class="md-nav__link">
+    If You Can't Write a Clear Comment, There May be a Problem with the Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-how" class="md-nav__link">
+    Why, not How
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-to-self" class="md-nav__link">
+    Notes to Self
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -843,16 +921,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
       
       
       
@@ -861,7 +937,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_5">
           <span class="md-nav__icon md-icon"></span>
           Git
@@ -874,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../git/introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -888,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../git/getting-started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -902,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commits-and-staging/" class="md-nav__link">
+      <a href="../../git/commits-and-staging/" class="md-nav__link">
         Commits and Staging
       </a>
     </li>
@@ -916,7 +992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../branches/" class="md-nav__link">
+      <a href="../../git/branches/" class="md-nav__link">
         Branches
       </a>
     </li>
@@ -928,79 +1004,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Pushing and Pulling
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../git/pushing-and-pulling/" class="md-nav__link">
         Pushing and Pulling
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#diverging-branches" class="md-nav__link">
-    Diverging Branches
-  </a>
-  
-    <nav class="md-nav" aria-label="Diverging Branches">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rebasing" class="md-nav__link">
-    Rebasing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#merging" class="md-nav__link">
-    Merging
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#merge-conflicts" class="md-nav__link">
-    Merge conflicts
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1012,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote-branches/" class="md-nav__link">
+      <a href="../../git/remote-branches/" class="md-nav__link">
         Remote Branches
       </a>
     </li>
@@ -1165,35 +1173,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#diverging-branches" class="md-nav__link">
-    Diverging Branches
+  <a href="#dont-write-redundant-comments" class="md-nav__link">
+    Don't Write Redundant Comments
   </a>
-  
-    <nav class="md-nav" aria-label="Diverging Branches">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rebasing" class="md-nav__link">
-    Rebasing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#merging" class="md-nav__link">
-    Merging
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#merge-conflicts" class="md-nav__link">
-    Merge conflicts
+  <a href="#comments-do-not-excuse-unclear-code" class="md-nav__link">
+    Comments do not Excuse Unclear Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-you-cant-write-a-clear-comment-there-may-be-a-problem-with-the-code" class="md-nav__link">
+    If You Can't Write a Clear Comment, There May be a Problem with the Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-how" class="md-nav__link">
+    Why, not How
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-to-self" class="md-nav__link">
+    Notes to Self
   </a>
   
 </li>
@@ -1213,83 +1229,80 @@
                   
 
 
-<h1 id="pushing-and-pulling">Pushing and Pulling</h1>
-<p>This is the main way you interact with other branches.</p>
-<p>This includes remote branches (but we'll talk about those later)</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span><span class="c1"># We are now on the master branch</span>
-git<span class="w"> </span>pull<span class="w"> </span>my_branch<span class="w"> </span><span class="c1"># Get all of the changes from my_branch, and add them to master</span>
+<h1 id="comments">Comments</h1>
+<p>This section is based off of <a href="https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/">this</a>stackoverflow blog post.</p>
+<p>Comments are a very useful and overused tool. Remember that no comment is better than a bad comment. You are garaunteed that the computer is doing exactly what you are telling it to, but there is no such garauntee for the comments. The comments can lie, but your code cannot.</p>
+<h2 id="dont-write-redundant-comments">Don't Write Redundant Comments</h2>
+<p>If what your code does is obvious, it doesn't need a comment.</p>
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// Adds i to x</span>
+</code></pre></div>
+<p>or even better</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// create a for loop // &lt;-- comment</span>
+<span class="k">for</span><span class="w"> </span><span class="c1">// start for loop</span>
+<span class="p">(</span><span class="w">   </span><span class="c1">// round bracket</span>
+<span class="w">    </span><span class="c1">// newline</span>
+<span class="kt">int</span><span class="w"> </span><span class="c1">// type for declaration</span>
+<span class="n">i</span><span class="w">    </span><span class="c1">// name for declaration</span>
+<span class="o">=</span><span class="w">   </span><span class="c1">// assignment operator for declaration</span>
+<span class="mi">0</span><span class="w">   </span><span class="c1">// start value for i</span>
+</code></pre></div>
+<h2 id="comments-do-not-excuse-unclear-code">Comments do not Excuse Unclear Code</h2>
+<p>The most common culprit of unclear code are <a href="descriptive_variables.md">bad variable names</a></p>
+<div class="highlight"><pre><span></span><code><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="nf">getBestChildNode</span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="n">node</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Node</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="c1">// best child node candidate</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="n">node</span><span class="p">:</span><span class="w"> </span><span class="n">node</span><span class="p">.</span><span class="na">getChildren</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// update n if the current state is better</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">utility</span><span class="p">(</span><span class="n">node</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">utility</span><span class="p">(</span><span class="n">n</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="p">}</span>
 
-git<span class="w"> </span>checkout<span class="w"> </span>my_branch
-git<span class="w"> </span>push<span class="w"> </span>master<span class="w"> </span><span class="c1"># Adds all of the commits that master doesn&#39;t have to master</span>
+<span class="c1">// This doesn&#39;t need comments, because it explains itself</span>
+<span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="nf">getBestChildNode</span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="n">node</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Node</span><span class="w"> </span><span class="n">bestNode</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="n">currentNode</span><span class="p">:</span><span class="w"> </span><span class="n">node</span><span class="p">.</span><span class="na">getChildren</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bestNode</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">utility</span><span class="p">(</span><span class="n">currentNode</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">utility</span><span class="p">(</span><span class="n">bestNode</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">bestNode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">currentNode</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">bestNode</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
+<p>Before resorting to writing comments, see if you can reword your code to make it more readable.</p>
+<h2 id="if-you-cant-write-a-clear-comment-there-may-be-a-problem-with-the-code">If You Can't Write a Clear Comment, There May be a Problem with the Code</h2>
 <blockquote>
-<p>Note: You cannot pull with uncommited changes, and push will ignore changes you have uncommited.</p>
+<p><strong>Kerninghan's Law:</strong>
+Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.</p>
 </blockquote>
-<h2 id="diverging-branches">Diverging Branches</h2>
-<p>When running these commands, it is highly likely that you will eventually see a message that looks like this:</p>
-<div class="highlight"><pre><span></span><code>hint: Pulling without specifying how to reconcile divergent branches is
-hint: discouraged. You can squelch this message by running one of the following
-hint: commands sometime before your next pull:
-hint:
-hint:   git config pull.rebase false  # merge (the default strategy)
-hint:   git config pull.rebase true   # rebase
-hint:   git config pull.ff only       # fast-forward only
-hint:
-hint: You can replace &quot;git config&quot; with &quot;git config --global&quot; to set a default
-hint: preference for all repositories. You can also pass --rebase, --no-rebase,
-hint: or --ff-only on the command line to override the configured default per
-hint: invocation.
+<p>If your code cannot be described by a comment, you probably need to rewrite your code. If you are using obscure language features, or unclear, unintuitive syntax to make your program as short as possuble, consider rewriting your program.</p>
+<h2 id="why-not-how">Why, not How</h2>
+<p>While it might be obvious to you the reason you do things, other people might not. A good time to write comments is when it explains why you wrote something the way you did.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">final</span><span class="w"> </span><span class="n">Object</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">JSONTokener</span><span class="p">(</span><span class="n">jsonString</span><span class="p">)).</span><span class="na">nextValue</span><span class="p">();</span>
+<span class="c1">// Note that JSONTokener.nextValue() may return</span>
+<span class="c1">// a value equals() to null.</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">value</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="kc">null</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>It is likely that your branches don't perfectly line up, usually because master recieved a commit since the branch was made. Or, even more likely, someone else pushed to master while you were working. In this scenario you have two options, merging or rebasing.</p>
-<div class="highlight"><pre><span></span><code>o---o---o---A---B---C master
-         \
-          X---Y---Z  my_branch
+<p>In this case it may not be obvious why the code handles a null case.</p>
+<h2 id="links">Links</h2>
+<p>If you used an outside source to figure out a peice of code, make sure to cite that source.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Algorithm taken from:</span>
+<span class="c1">// http://thepilons.ca/wp-content/uploads/2018/10/Tracking.pdf</span>
+<span class="n">delta_x_global</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">delta_y_local</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">avg_theta_for_arc</span><span class="p">))</span><span class="w"> </span><span class="o">-</span>
+<span class="w">                 </span><span class="p">(</span><span class="n">delta_x_local</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">avg_theta_for_arc</span><span class="p">));</span>
+
+<span class="n">delta_y_global</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">delta_y_local</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">avg_theta_for_arc</span><span class="p">))</span><span class="w"> </span><span class="o">-</span>
+<span class="w">                 </span><span class="p">(</span><span class="n">delta_x_local</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">avg_theta_for_arc</span><span class="p">));</span>
 </code></pre></div>
-<h3 id="rebasing">Rebasing</h3>
-<p>In this option, commits are added back in time. This is perfect if the difference between the branches is very small. If there are conflicts, you will have to fix them for every single differing commit. It means that history will be preserved, and no commits will be lost.</p>
-<p>You can initiate a rebase by using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--rebase
-git<span class="w"> </span>push<span class="w"> </span>--rebase
+<h2 id="notes-to-self">Notes to Self</h2>
+<p>If something is unimplemented, or not working, mark that with a comment. Anotations like FIXME and TODO are the standard way to do this. Most syntax highlighters will highlight these to make them pop out to people reading.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Coordinates</span><span class="w"> </span><span class="nf">get_position</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// TODO: return the position of the robot in cartesian coordinates</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>Rebasing will result in:</p>
-<div class="highlight"><pre><span></span><code>o---o---o---X---Y---Z---A---B---C master
-         \          /
-          X---Y---Z  my_branch
-</code></pre></div>
-<h3 id="merging">Merging</h3>
-<p>In this option, differing commits are squashed (this is the actual term for this) into a single commit. None of your changes will be lost, but the history won't be as clear. This is a good option if the amount of commits that you are pushing or pulling is very large, because you will only have to fix conflicts once.</p>
-<p>You can merge using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>--merge
-git<span class="w"> </span>push<span class="w"> </span>--merge
-</code></pre></div>
-<p>Merging will result in:</p>
-<div class="highlight"><pre><span></span><code>o---o---o---A---B---C---D master
-         \             /
-          X---Y---Z -- my_branch
-</code></pre></div>
-<h2 id="merge-conflicts">Merge conflicts</h2>
-<p>These are the bane of any developer's existence. Usually merges/rebases are resolved automatically. However, sometimes you will recieve a merge conflict. This occurs when two commits that are being merged/rebased make changes to the same location on a file. This will require you to manually fix the conflicts. Running git status will show you which files need to be changed. You can accept the changes from the file on your branch using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>--ours<span class="w"> </span>&lt;file<span class="w"> </span>name&gt;
-<span class="c1"># Or accept the remote changes</span>
-git<span class="w"> </span>checkout<span class="w"> </span>--theirs<span class="w"> </span>&lt;file<span class="w"> </span>name&gt;
-</code></pre></div>
-<p>You can also accept every changes from the local branch using:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>--strategy-option<span class="w"> </span>ours
-<span class="c1"># Or accept the remote changes</span>
-git<span class="w"> </span>merge<span class="w"> </span>--strategy-option<span class="w"> </span>theirs
-</code></pre></div>
-<p>In case you want to fix the conflicts manually (you might want a combination of both changes), git status will tell you which files you need to change. When you edit those files you will find something like this:</p>
-<div class="highlight"><pre><span></span><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Changes on the current branch
-=======
-conflicting changes
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; conflicting_branch
-</code></pre></div>
-<p>Make the changes you want and delete the symbols, then add the changes.
-If you are rebasing, run:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>--continue
-</code></pre></div>
-<p>Or if you are merging, simply commit.</p>
 
 
 
@@ -1311,7 +1324,7 @@ If you are rebasing, run:</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../branches/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Branches" rel="prev">
+          <a href="../naming-conventions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Naming Conventions" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1320,20 +1333,20 @@ If you are rebasing, run:</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Branches
+                Naming Conventions
               </div>
             </div>
           </a>
         
         
           
-          <a href="../remote-branches/" class="md-footer__link md-footer__link--next" aria-label="Next: Remote Branches" rel="next">
+          <a href="../../programming-the-bot/introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Remote Branches
+                Introduction
               </div>
             </div>
             <div class="md-footer__button md-icon">
