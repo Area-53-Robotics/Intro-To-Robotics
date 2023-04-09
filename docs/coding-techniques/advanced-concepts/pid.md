@@ -74,14 +74,14 @@ while (true) {
 
 ### Derivative
 
-Derivative serves to dampen the output of the loop. It gets larger the faster the robot is moving. It represents the rate of change of the system. It's calculated like this:
+Derivative serves to reduce the output of the loop. It increases the faster the system is moving. It doesn't limit the maximum speed of the loop, but it does slow down how fast the loop can accelerate. Derivative is calculated like so:
 
 ```cpp
 derivative = error - prevError;
 prevError = error;
 ```
 
-Note that the derivative will always be negative if the system is traveling toward the target. The size of derivative will be larger the faster the system is traveling. We can integrate this into our code like so:
+Note that the derivative will always be negative if the system is traveling toward the target. We can integrate this into our code like so:
 
 ```cpp
 float distTraveled = 0;

@@ -2,6 +2,7 @@
 
 Prerequisite Mathematical Knowledge:
 
+-   algebra
 -   trigonometry
 
 Odometry lets you track the position of the robot in 2D space, using Cartesian coordinates. This method of tracking was popularised by team 5225, the Pilons. If you want to read more about how to derive the math behind odometry, you should read their [guide](http://thepilons.ca/wp-content/uploads/2018/10/Tracking.pdf).
@@ -103,7 +104,7 @@ deltaXGlobal = (deltaYLocal * cos(avgTheta)) -
 deltaYGlobal = (deltaYLocal * sin(avgTheta)) -
                (deltaXLocal * cos(avgTheta));
 ```
-9. Update the global coordinates. The global coordinates are the actual Cartesian coordinates of your your robot.
+9. Update the global coordinates. The global coordinates are the actual Cartesian coordinates of your robot.
 ```cpp
 currentXPosition += delta_x_global;
 currentYPosition += delta_y_global;
