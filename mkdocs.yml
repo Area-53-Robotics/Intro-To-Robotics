@@ -1,49 +1,62 @@
 site_name: Introduction to Robotics
 
 theme:
-  name: material
-  logo: assets/area_53.png
-  favicon: assets/area_53.png
-  features:
-    - navigation.footer
-    - header.autohide
+    name: material
+    logo: assets/area_53.png
+    favicon: assets/area_53.png
+    features:
+        - navigation.footer
+        - header.autohide
 
-  palette:
-    primary: green
-    accent: lime
-    scheme: slate
+    palette:
+        primary: green
+        accent: lime
+        scheme: slate
 
 markdown_extensions:
-  - def_list
-  - tables
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+    - def_list
+    - tables
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
 
 nav:
-  - Home: "index.md"
-  - "Recommended Reading Order": "./recommended-reading-order.md"
-  - "Introduction": "./introduction.md"
-  - "The Basics":
-      - "Tools": "./the-basics/tools.md"
-      - "Parts": "./the-basics/parts.md"
-  - "Subsystems":
-      - "Drivetrains": "./subsystems/drivetrains.md"
-      - "Lifts": "./subsystems/lifts.md"
-      - "Intakes": "./subsystems/intakes.md"
-      - "Shooting": "./subsystems/shooting.md"
-  - "Building Techniques":
-      - "Introduction": "./building-techniques/introduction.md"
-      - "Stationary": "./building-techniques/stationary.md"
-      - "Moving": "./building-techniques/moving.md"
-      - "Drivetrain": "./building-techniques/drivetrain.md"
-  - "Coding Techniques":
-      - "Introduction": "./coding-techniques/introduction.md"
-      - "Basics": "./coding-techniques/basics.md"
-  - "Driving Techniques": "./driving-techniques.md"
-  - "Notebooking Techniques": "./notebooking-techniques.md"
-  - "Leading Techniques": "./leading-techniques.md"
-  - "The Season": "./the-season.md"
-  - "The Tournament": "./the-tournament.md"
-  - "Theory": "./theory.md"
-  - "Resources": "./resources.md"
+    - Home: 'index.md'
+    - 'Recommended Reading Order': './recommended-reading-order.md'
+    - 'Introduction': './introduction.md'
+    - 'The Basics':
+          - 'Tools': './the-basics/tools.md'
+          - 'Parts': './the-basics/parts.md'
+    - 'Subsystems':
+          - 'Drivetrains': './subsystems/drivetrains.md'
+          - 'Lifts': './subsystems/lifts.md'
+          - 'Intakes': './subsystems/intakes.md'
+          - 'Shooting': './subsystems/shooting.md'
+    - 'Building Techniques':
+          - 'Introduction': './building-techniques/introduction.md'
+          - 'Stationary': './building-techniques/stationary.md'
+          - 'Moving': './building-techniques/moving.md'
+          - 'Drivetrain': './building-techniques/drivetrain.md'
+    - 'Coding Techniques':
+          - 'Introduction': './coding-techniques/introduction.md'
+          - 'Basics':
+                - 'Variables': './coding-techniques/basics/variables.md'
+                - 'Operators': './coding-techniques/basics/operators.md'
+                - 'Control Flow': './coding-techniques/basics/control-flow.md'
+                - 'Functions': './coding-techniques/basics/functions.md'
+                - 'Scope': './coding-techniques/basics/scope.md'
+                - 'Namespaces': './coding-techniques/basics/namespaces.md'
+                - 'Headers': './coding-techniques/basics/headers.md'
+          - 'Git':
+                - 'Introduction': './coding-techniques/git/introduction.md'
+                - 'Getting Started': './coding-techniques/git/getting-started.md'
+                - 'Commits and Staging': './coding-techniques/git/commits-and-staging.md'
+                - 'Pushing and Pulling': './coding-techniques/git/pushing-and-pulling.md'
+                - 'Remote Branches': './coding-techniques/git/remote-branches.md'
+    - 'Driving Techniques': './driving-techniques.md'
+    - 'Notebooking Techniques': './notebooking-techniques.md'
+    - 'Leading Techniques': './leading-techniques.md'
+    - 'The Season': './the-season.md'
+    - 'The Tournament': './the-tournament.md'
+    - 'Theory': './theory.md'
+    - 'Resources': './resources.md'
