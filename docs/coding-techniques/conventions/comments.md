@@ -27,7 +27,7 @@ i    // name for declaration
 
 ## Comments do not Excuse Unclear Code
 
-The most common culprit of unclear code are [bad variable names](descriptive_variables.md)
+The most common culprit of unclear code are [bad variable names](./descriptive-variables.md)
 
 ```java
 private static Node getBestChildNode(Node node) {

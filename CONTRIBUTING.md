@@ -40,6 +40,9 @@ This runs the website locally, at [127.0.0.1:8000]().
 
 ```sh
 git pull
-git commit -aM "Message describing your changes"
+git add .
+git commit -m "Message describing your changes"
 git push
 ```
+
+This can also be done with VSCode's GUI.

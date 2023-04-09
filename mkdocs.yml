@@ -53,8 +53,9 @@ nav:
                 - 'Object Oriented Programming': './coding-techniques/basics/oop.md'
           - 'Conventions':
                 - 'Introduction': './coding-techniques/conventions/introduction.md'
-                - 'Descriptive Variables': './coding-techniques/conventions/descriptive-names.md'
+                - 'Descriptive Variables': './coding-techniques/conventions/descriptive-variables.md'
                 - 'Naming Conventions': './coding-techniques/conventions/naming-conventions.md'
+                - 'Program Organization': './coding-techniques/conventions/program-organization.md'
                 - 'Comments': './coding-techniques/conventions/comments.md'
           - 'Programming the Robot':
                 - 'Introduction': './coding-techniques/programming-the-bot/introduction.md'
@@ -68,6 +69,10 @@ nav:
                 - 'Branches': './coding-techniques/git/branches.md'
                 - 'Pushing and Pulling': './coding-techniques/git/pushing-and-pulling.md'
                 - 'Remote Branches': './coding-techniques/git/remote-branches.md'
+          - 'Control Theory':
+                - 'Introduction': './coding-techniques/control-theory/introduction.md'
+                - 'Bang Bang Controller': './coding-techniques/control-theory/bang-bang.md'
+                - 'PID Controller': './coding-techniques/control-theory/pid.md'
     - 'Driving Techniques': './driving-techniques.md'
     - 'Notebooking Techniques': './notebooking-techniques.md'
     - 'Leading Techniques': './leading-techniques.md'

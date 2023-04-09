@@ -26,8 +26,8 @@ Felix Hass - 53E's lead and coder.
 
 ## 2025 Graduates
 
-Veena
+Veena - 53A
 
 ## 2026 Graduates
 
-Isaiah
+Isaiah - 53C
