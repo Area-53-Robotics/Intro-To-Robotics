@@ -4,12 +4,12 @@ The capitalization of names communicates information as well. Whether something 
 
 ## Variable Names
 
-Variables use lower case snake_case.
+Variables use lower case camelCase. Many people use camelCase and snake_case interchangeably here. We recommend camelCase, but if you choose one, stick with it.
 
 ```cpp
-int MotorPower // Incorrect
-int motorPower // Incorrect
-int motor_power // Correct
+int MotorPower  // Incorrect
+int motorPower  // Correct
+int motor_power // Incorrect
 ```
 
 ### Constants
@@ -45,11 +45,11 @@ enum Colors {
 
 ### Struct and Class Members
 
-These use snake_case.
+These use camelCase.
 
 ```cpp
 class MotorEncoder {
     public:
-    float current_position;
+    float camelCase;
 };
 ```
