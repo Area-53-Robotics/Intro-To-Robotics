@@ -93,7 +93,9 @@ Example of creating a double variable:
 double number = 5.0;
 ```
 
-> Editor’s note: If you are curious, though, double variables are more precise than float variables; able to store 64 bits of data instead of 32. We usually don’t need the extra precision in robotics, so we tend to use float more than double.
+<!-- prettier-ignore -->
+!!! note
+    If you are curious, though, double variables are more precise than float variables; able to store 64 bits of data instead of 32. We usually don’t need the extra precision in robotics, so we tend to use float more than double.
 
 ### Boolean (bool)
 

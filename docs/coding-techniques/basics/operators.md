@@ -64,7 +64,9 @@ int a = 2;
 (a > 1)  //evaluates to true
 ```
 
-> Note: There is a HUGE difference between the = and == operators. The first one is used for assigning values to variables while the latter is used for comparing two operands with each other. Remember: One equal sign assigns, while two compare.
+<!--prettier-ignore-->
+!!! note
+    There is a HUGE difference between the = and == operators. The first one is used for assigning values to variables while the latter is used for comparing two operands with each other. Remember: One equal sign assigns, while two compare.
 
 ## Logical Operators
 
@@ -133,4 +135,6 @@ Compound operators combine the functions of the assignment operator and arithmet
 
 These are incremental and decremental operators. They’re shortcuts similar to compound operators, but change a variable’s value by increments of one. They’re most commonly used in for loops, which we’re going to cover soon!
 
-> NOTE: You must have a value assigned to a variable before you can use a compound, incremental, or decrement operator on it. This makes sense if you think about it; you can’t perform arithmetic on undefined values
+<!--prettier-ignore-->
+!!! note
+    You must have a value assigned to a variable before you can use a compound, incremental, or decrement operator on it. This makes sense if you think about it; you can’t perform arithmetic on undefined values

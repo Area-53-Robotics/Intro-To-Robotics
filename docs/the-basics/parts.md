@@ -6,7 +6,9 @@ There are a lot of parts. Some are obscure, some are necessary. Everyone should 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9wj5aibcKAE" title="Robotics Introduction - Basics - Structure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-> Note: I forgot about a “rail”, it’s basically a worse C-Channel. I would only use them for bracing
+<!-- prettier-ignore -->
+!!! note
+    I forgot about a “rail”, it’s basically a worse C-Channel. I would only use them for bracing
 
 ## Motion
 

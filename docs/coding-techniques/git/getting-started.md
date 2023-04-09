@@ -1,6 +1,6 @@
 # Getting Started
 
-There are many ways to use git. There are may ways to use git, including:
+There are may ways to use git, including:
 
 -   cli (command line interface)
 -   Integrated VSCode support

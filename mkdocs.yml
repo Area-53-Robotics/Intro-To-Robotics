@@ -14,6 +14,9 @@ theme:
         scheme: slate
 
 markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
     - def_list
     - tables
     - pymdownx.superfences
@@ -47,10 +50,17 @@ nav:
                 - 'Scope': './coding-techniques/basics/scope.md'
                 - 'Namespaces': './coding-techniques/basics/namespaces.md'
                 - 'Headers': './coding-techniques/basics/headers.md'
+                - 'Object Oriented Programming': './coding-techniques/basics/oop.md'
+          - 'Programming the Robot':
+                - 'Introduction': './coding-techniques/programming-the-bot/introduction.md'
+                - 'Tank Drive': './coding-techniques/programming-the-bot/tank-drive.md'
+                - 'Arcade Drive': './coding-techniques/programming-the-bot/arcade-drive.md'
+                - 'Toggling Subsystems': './coding-techniques/programming-the-bot/subsystem-toggling.md'
           - 'Git':
                 - 'Introduction': './coding-techniques/git/introduction.md'
                 - 'Getting Started': './coding-techniques/git/getting-started.md'
                 - 'Commits and Staging': './coding-techniques/git/commits-and-staging.md'
+                - 'Branches': './coding-techniques/git/branches.md'
                 - 'Pushing and Pulling': './coding-techniques/git/pushing-and-pulling.md'
                 - 'Remote Branches': './coding-techniques/git/remote-branches.md'
     - 'Driving Techniques': './driving-techniques.md'

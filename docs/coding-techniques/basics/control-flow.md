@@ -94,7 +94,9 @@ The code under the else statement will run automatically if the if statement abo
 
 Note that else statements can follow a chain of if and else if statements as a final condition.
 
-> Note: you don’t have to be concerned with what this code means, this is just an example used to show a use of the else statement.
+<!--prettier-ignore-->
+!!! note
+    you don’t have to be concerned with what this code means, this is just an example used to show a use of the else statement.
 
 ```cpp
 if (L1) {

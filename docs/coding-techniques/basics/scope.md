@@ -18,7 +18,9 @@ int main() {
 }
 ```
 
-> Note: You can still get values out of a function by returning.
+<!-- prettier-ignore -->
+!!! note
+     You can still get values out of a function by returning.
 
 ## Shadowing
 
