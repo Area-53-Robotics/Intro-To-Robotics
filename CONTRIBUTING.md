@@ -34,7 +34,7 @@ The documentation itself is in the docs folder, and settings for MkDocs are in t
 mkdocs serve
 ```
 
-This runs the website locally, at [http://127.0.0.1:8000/]().
+This runs the website locally, at [127.0.0.1:8000]().
 
 6. Once you're happy with the changes you've made, commit and push.
 

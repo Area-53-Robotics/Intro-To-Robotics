@@ -51,7 +51,6 @@ nav:
                 - 'Namespaces': './coding-techniques/basics/namespaces.md'
                 - 'Headers': './coding-techniques/basics/headers.md'
                 - 'Object Oriented Programming': './coding-techniques/basics/oop.md'
-
           - 'Conventions':
                 - 'Introduction': './coding-techniques/conventions/introduction.md'
                 - 'Descriptive Variables': './coding-techniques/conventions/descriptive-names.md'
@@ -76,3 +75,4 @@ nav:
     - 'The Tournament': './the-tournament.md'
     - 'Theory': './theory.md'
     - 'Resources': './resources.md'
+    - 'About the Authors': './about-the-authors.md'
