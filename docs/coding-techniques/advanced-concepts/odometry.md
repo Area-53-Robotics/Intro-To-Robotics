@@ -3,7 +3,6 @@
 Prerequisite Mathematical Knowledge:
 
 -   trigonometry
--   matrices
 
 Odometry lets you track the position of the robot in 2D space, using Cartesian coordinates. This method of tracking was popularised by team 5225, the Pilons. If you want to read more about how to derive the math behind odometry, you should read their [guide](http://thepilons.ca/wp-content/uploads/2018/10/Tracking.pdf).
 

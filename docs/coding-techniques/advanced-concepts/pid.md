@@ -38,7 +38,9 @@ while (true) {
 
 As the system (in the case the chassis) move close to the target, power decreases. Notice that if the system passes the target, power will be negative, meaning it will move backwards. If this system overshoots, it will self correct.
 
-Note that this code snippet won't work, there is no exit condition, and the raw output of error doesn't really match what the chassis expects as input.
+<!--prettier-ignore-->
+!!! note
+    This code snippet won't work, there is no exit condition, and the raw output of error doesn't really match what the chassis expects as input.
 
 ### Integral
 
@@ -72,7 +74,7 @@ while (true) {
 
 ### Derivative
 
-Derivative serves to dampen the output of the loop. It represents the rate of change of the system. It's calculated like this:
+Derivative serves to dampen the output of the loop. It gets larger the faster the robot is moving. It represents the rate of change of the system. It's calculated like this:
 
 ```cpp
 derivative = error - prevError;
@@ -139,6 +141,11 @@ while (true) {
 Keep in mind that the constants will change depending on what the units are of the motor's move method.
 
 ### Tuning
+
+<figure markdown>
+  ![Image title](https://upload.wikimedia.org/wikipedia/commons/3/33/PID_Compensation_Animated.gif){ width="300" }
+  <figcaption>Credit to Wikipedia</figcaption>
+</figure>
 
 Tuning is often the hardest part of PID. Follow these steps, and you'll be able to get something reasonably precise.
 
