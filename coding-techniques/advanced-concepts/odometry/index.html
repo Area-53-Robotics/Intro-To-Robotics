@@ -1295,6 +1295,7 @@
 <h1 id="odometry">Odometry</h1>
 <p>Prerequisite Mathematical Knowledge:</p>
 <ul>
+<li>algebra</li>
 <li>trigonometry</li>
 </ul>
 <p>Odometry lets you track the position of the robot in 2D space, using Cartesian coordinates. This method of tracking was popularised by team 5225, the Pilons. If you want to read more about how to derive the math behind odometry, you should read their <a href="http://thepilons.ca/wp-content/uploads/2018/10/Tracking.pdf">guide</a>.</p>
@@ -1375,7 +1376,7 @@ If deltaTheta is any other value, we calculate local coordinates like this:
 <span class="n">deltaYGlobal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">deltaYLocal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">avgTheta</span><span class="p">))</span><span class="w"> </span><span class="o">-</span>
 <span class="w">               </span><span class="p">(</span><span class="n">deltaXLocal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">avgTheta</span><span class="p">));</span>
 </code></pre></div></li>
-<li>Update the global coordinates. The global coordinates are the actual Cartesian coordinates of your your robot.
+<li>Update the global coordinates. The global coordinates are the actual Cartesian coordinates of your robot.
 <div class="highlight"><pre><span></span><code><span class="n">currentXPosition</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">delta_x_global</span><span class="p">;</span>
 <span class="n">currentYPosition</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">delta_y_global</span><span class="p">;</span>
 <span class="n">currentTheta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_absolute_orientation</span><span class="p">;</span>

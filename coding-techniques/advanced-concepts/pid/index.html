@@ -1484,11 +1484,11 @@
 <span class="w">  </span><span class="p">}</span>
 </code></pre></div>
 <h3 id="derivative">Derivative</h3>
-<p>Derivative serves to dampen the output of the loop. It gets larger the faster the robot is moving. It represents the rate of change of the system. It's calculated like this:</p>
+<p>Derivative serves to reduce the output of the loop. It increases the faster the system is moving. It doesn't limit the maximum speed of the loop, but it does slow down how fast the loop can accelerate. Derivative is calculated like so:</p>
 <div class="highlight"><pre><span></span><code><span class="n">derivative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevError</span><span class="p">;</span>
 <span class="n">prevError</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
 </code></pre></div>
-<p>Note that the derivative will always be negative if the system is traveling toward the target. The size of derivative will be larger the faster the system is traveling. We can integrate this into our code like so:</p>
+<p>Note that the derivative will always be negative if the system is traveling toward the target. We can integrate this into our code like so:</p>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span><span class="w"> </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"> </span><span class="c1">// We want to move 12 inches forward</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">;</span>
