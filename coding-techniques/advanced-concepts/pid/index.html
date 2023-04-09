@@ -1456,7 +1456,11 @@
 <span class="w">  </span><span class="p">}</span>
 </code></pre></div>
 <p>As the system (in the case the chassis) move close to the target, power decreases. Notice that if the system passes the target, power will be negative, meaning it will move backwards. If this system overshoots, it will self correct.</p>
-<p>Note that this code snippet won't work, there is no exit condition, and the raw output of error doesn't really match what the chassis expects as input.</p>
+<!--prettier-ignore-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This code snippet won't work, there is no exit condition, and the raw output of error doesn't really match what the chassis expects as input.</p>
+</div>
 <h3 id="integral">Integral</h3>
 <p>The integral term serves to control the system while it's close to the error. The proportional term is usually really small near the target, so the system doesn't have a lot of power to correct itself while it's near the target.</p>
 <p>Integral is usually represented as the total error of the loop. Every PID loop needs a P term, but the I and D terms are optional.</p>
@@ -1480,7 +1484,7 @@
 <span class="w">  </span><span class="p">}</span>
 </code></pre></div>
 <h3 id="derivative">Derivative</h3>
-<p>Derivative serves to dampen the output of the loop. It represents the rate of change of the system. It's calculated like this:</p>
+<p>Derivative serves to dampen the output of the loop. It gets larger the faster the robot is moving. It represents the rate of change of the system. It's calculated like this:</p>
 <div class="highlight"><pre><span></span><code><span class="n">derivative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevError</span><span class="p">;</span>
 <span class="n">prevError</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
 </code></pre></div>
@@ -1535,6 +1539,11 @@
 </code></pre></div>
 <p>Keep in mind that the constants will change depending on what the units are of the motor's move method.</p>
 <h3 id="tuning">Tuning</h3>
+<figure>
+<p><img alt="Image title" src="https://upload.wikimedia.org/wikipedia/commons/3/33/PID_Compensation_Animated.gif" width="300" />
+  </p>
+<figcaption>Credit to Wikipedia</figcaption>
+</figure>
 <p>Tuning is often the hardest part of PID. Follow these steps, and you'll be able to get something reasonably precise.</p>
 <ol>
 <li>Set all of your constants to zero. This will effectively disable the loop.</li>
