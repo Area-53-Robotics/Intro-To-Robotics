@@ -12,7 +12,7 @@
         <link rel="prev" href="../pid/">
       
       
-        <link rel="next" href="../../../driving-techniques/">
+        <link rel="next" href="../move-to-point/">
       
       <link rel="icon" href="../../../assets/area_53.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
@@ -1082,6 +1082,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#theory" class="md-nav__link">
+    Theory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hardware-prerequisites" class="md-nav__link">
     Hardware Prerequisites
   </a>
@@ -1099,6 +1106,34 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../move-to-point/" class="md-nav__link">
+        Moving to 2D Points
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boomerang/" class="md-nav__link">
+        Boomerang Controller
+      </a>
     </li>
   
 
@@ -1264,6 +1299,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#theory" class="md-nav__link">
+    Theory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#hardware-prerequisites" class="md-nav__link">
     Hardware Prerequisites
   </a>
@@ -1300,7 +1342,12 @@
 </ul>
 <p>Odometry lets you track the position of the robot in 2D space, using Cartesian coordinates. This method of tracking was popularised by team 5225, the Pilons. If you want to read more about how to derive the math behind odometry, you should read their <a href="http://thepilons.ca/wp-content/uploads/2018/10/Tracking.pdf">guide</a>.</p>
 <p>This section will focus mostly on the steps required to implement odometry, and the equations used to get there. If you want full implementation examples, look at the <a href="../../../resources/">resources</a> page, under the High Quality Code Section. Most programs there should implement it.</p>
-<p>Odometry is a very useful tool. It provides the absolute position of your robot's tracking center, the location of which is dictated by the placement of your tracking wheels (see below). This means that you can account for error that is created during movement. If one of the movements of your bot is off, the next movement will correct for that, as long as you tell your bot to move to absolute positions on the field.</p>
+<p>You can also look at one of our teams who've implemented it:</p>
+<ul>
+<li><a href="https://github.com/Area-53-Robotics/53D-Spin-Up-2022-2023/blob/main/src/utilFiles/odometry.cpp">53D-Spin-Up-2022-2023</a></li>
+</ul>
+<h2 id="theory">Theory</h2>
+<p>Odometry is a very useful tool. It provides the absolute position of your robot's tracking center in 2D space. The location of the tracking center is dictated by the placement of your tracking wheels (see below). This means that you can account for error that is created during movement. If one of the movements of your bot is off, the next movement will correct for that, as long as you tell your bot to move to absolute positions on the field.</p>
 <p>That being said there are some limitations. Odometry can often drift, which can lead to small error that builds up over time. Teams often solve this problem by aligning their robot against a wall, and then resetting the robot's position in the odometry.</p>
 <h2 id="hardware-prerequisites">Hardware Prerequisites</h2>
 <p>Your robot needs some way to track its position. This can be achieved in multiple ways. The main things you need are:</p>
@@ -1317,6 +1364,12 @@
 </figure>
 <p>Usually you need three of them, two parallel to each other, and one perpendicular. The two parallel provide forwards and backwards tracking, as well as rotation, while the perpendicular one provides side to side movement. You can also use an IMU Sensor in the place of one of the parallel tracking wheels.</p>
 <p>While you could just use the integrated motor encoders, it is usually not advised, because of wheels slipping, and gear slop. Sensors get less accurate the farther away they are from what they're tracking, that's just a fact of life.</p>
+<p>The position of your tracking wheels dictates your tracking center.</p>
+<figure>
+<p><img alt="Image title" src="https://lemlib.github.io/LemLib/assets/2_setting_up_the_chassis/tracking_wheel_distance.png" width="300" />
+  </p>
+<figcaption>Credit to LemLib for this image</figcaption>
+</figure>
 <h2 id="implementation">Implementation</h2>
 <p>Odometry usually runs in an infinite loop, for the duration of the program. Usually you would put it in its own task, so that it can run concurrently to the main program.</p>
 <p>Every time this loop runs, you need to do these things:</p>
@@ -1328,7 +1381,7 @@
 <span class="n">perpendicularPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getPerpendicularEncoderValue</span><span class="p">();</span>
 </code></pre></div></li>
 <li>Calculate the change in encoder values since the last loop, and then convert that value into distance traveled. The units of this variable will be whatever the units of WHEEL_RADIUS are, usually inches.
-<div class="highlight"><pre><span></span><code><span class="n">deltaLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">leftPosition</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevLeftPosition</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">180</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="n">deltaLeft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">leftPosition</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevLeftPosition</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">180</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="p">;</span><span class="w"> </span><span class="c1">// Convert degrees to radians</span>
 <span class="n">deltaRight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">rightPosition</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevRightPosition</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">180</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="p">;</span><span class="w"> </span><span class="c1">// You can omit this if you have an IMU</span>
 <span class="n">deltaPerpendicular</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">perpendicularPosition</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevPerpendicularPosition</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">180</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="p">;</span>
 </code></pre></div></li>
@@ -1348,7 +1401,7 @@ If you're using parallel tracking wheels:
 <span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">totalDeltaLeft</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">totalDeltaRight</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">TRACKING_WIDTH</span><span class="p">);</span>
 </code></pre></div>
 If you have an IMU:
-<div class="highlight"><pre><span></span><code><span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getImuHeading</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">180</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getImuHeading</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">180</span><span class="p">;</span><span class="w"> </span><span class="c1">// Convert degrees to radians</span>
 </code></pre></div></li>
 <li>Calculate deltaTheta (change in rotation).
 <div class="highlight"><pre><span></span><code><span class="n">deltaTheta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prevTheta</span><span class="p">;</span>
@@ -1376,12 +1429,25 @@ If deltaTheta is any other value, we calculate local coordinates like this:
 <span class="n">deltaYGlobal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">deltaYLocal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">avgTheta</span><span class="p">))</span><span class="w"> </span><span class="o">-</span>
 <span class="w">               </span><span class="p">(</span><span class="n">deltaXLocal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">avgTheta</span><span class="p">));</span>
 </code></pre></div></li>
+<li>Check to see if your angles are under zero, or over 2<span class="arithmatex">\(\pi\)</span> (360 degrees), and wrap them if they are.
+<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">currentAbsoluteOrientation</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></li>
 <li>Update the global coordinates. The global coordinates are the actual Cartesian coordinates of your robot.
 <div class="highlight"><pre><span></span><code><span class="n">currentXPosition</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">delta_x_global</span><span class="p">;</span>
 <span class="n">currentYPosition</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">delta_y_global</span><span class="p">;</span>
 <span class="n">currentTheta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_absolute_orientation</span><span class="p">;</span>
 </code></pre></div></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This implementation assumes that the starting point of the robot is <span class="arithmatex">\((0,0)\)</span>. It is recommended that to offset the starting position of the robot in the code so that the coordinates for items of interest the same. For example, if there  is a game piece at <span class="arithmatex">\((10,10)\)</span>, you wouldn't want the starting position of your robot to affect the position in the code of the game piece. Choose a point on the field, and make that your origin. Usually, people use either the bottom left corner, or the direct center of the field.</p>
+</div>
 <!-- prettier-ignore-end -->
 
 
@@ -1420,13 +1486,13 @@ If deltaTheta is any other value, we calculate local coordinates like this:
         
         
           
-          <a href="../../../driving-techniques/" class="md-footer__link md-footer__link--next" aria-label="Next: Driving Techniques" rel="next">
+          <a href="../move-to-point/" class="md-footer__link md-footer__link--next" aria-label="Next: Moving to 2D Points" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Driving Techniques
+                Moving to 2D Points
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1462,6 +1528,12 @@ If deltaTheta is any other value, we calculate local coordinates like this:
     
     
       <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

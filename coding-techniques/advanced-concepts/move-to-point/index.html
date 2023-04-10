@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../headers/">
+        <link rel="prev" href="../odometry/">
       
       
-        <link rel="next" href="../../conventions/introduction/">
+        <link rel="next" href="../boomerang/">
       
       <link rel="icon" href="../../../assets/area_53.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Object Oriented Programming - Introduction to Robotics</title>
+        <title>Moving to 2D Points - Introduction to Robotics</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#object-oriented-programming" class="md-skip">
+        <a href="#moving-to-2d-points" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Object Oriented Programming
+              Moving to 2D Points
             
           </span>
         </div>
@@ -517,16 +517,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
       
       
       
@@ -535,7 +533,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7_2">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -548,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../basics/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -562,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operators/" class="md-nav__link">
+      <a href="../../basics/operators/" class="md-nav__link">
         Operators
       </a>
     </li>
@@ -576,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../control-flow/" class="md-nav__link">
+      <a href="../../basics/control-flow/" class="md-nav__link">
         Control Flow
       </a>
     </li>
@@ -590,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../basics/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -604,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scope/" class="md-nav__link">
+      <a href="../../basics/scope/" class="md-nav__link">
         Scope
       </a>
     </li>
@@ -618,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../namespaces/" class="md-nav__link">
+      <a href="../../basics/namespaces/" class="md-nav__link">
         Namespaces
       </a>
     </li>
@@ -632,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../headers/" class="md-nav__link">
+      <a href="../../basics/headers/" class="md-nav__link">
         Headers
       </a>
     </li>
@@ -644,92 +642,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Object Oriented Programming
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../basics/oop/" class="md-nav__link">
         Object Oriented Programming
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
-    Classes
-  </a>
-  
-    <nav class="md-nav" aria-label="Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#class-members" class="md-nav__link">
-    Class Members
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#public-vs-private" class="md-nav__link">
-    Public vs Private
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constructors" class="md-nav__link">
-    Constructors
-  </a>
-  
-    <nav class="md-nav" aria-label="Constructors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#initializer-lists" class="md-nav__link">
-    Initializer Lists
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1058,14 +975,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" checked>
       
       
       
@@ -1074,7 +993,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_7_6">
           <span class="md-nav__icon md-icon"></span>
           Advanced Concepts
@@ -1087,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-concepts/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -1101,7 +1020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-concepts/bang-bang/" class="md-nav__link">
+      <a href="../bang-bang/" class="md-nav__link">
         Bang Bang Controller
       </a>
     </li>
@@ -1115,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-concepts/pid/" class="md-nav__link">
+      <a href="../pid/" class="md-nav__link">
         PID Controller
       </a>
     </li>
@@ -1129,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-concepts/odometry/" class="md-nav__link">
+      <a href="../odometry/" class="md-nav__link">
         Odometry
       </a>
     </li>
@@ -1141,11 +1060,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../advanced-concepts/move-to-point/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Moving to 2D Points
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Moving to 2D Points
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#theory" class="md-nav__link">
+    Theory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+    <nav class="md-nav" aria-label="Math">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rotational-error" class="md-nav__link">
+    Rotational Error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-error" class="md-nav__link">
+    Linear Error
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1157,7 +1151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../advanced-concepts/boomerang/" class="md-nav__link">
+      <a href="../boomerang/" class="md-nav__link">
         Boomerang Controller
       </a>
     </li>
@@ -1325,23 +1319,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
-    Classes
+  <a href="#theory" class="md-nav__link">
+    Theory
   </a>
   
-    <nav class="md-nav" aria-label="Classes">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+    <nav class="md-nav" aria-label="Math">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#class-members" class="md-nav__link">
-    Class Members
+  <a href="#rotational-error" class="md-nav__link">
+    Rotational Error
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#public-vs-private" class="md-nav__link">
-    Public vs Private
+  <a href="#linear-error" class="md-nav__link">
+    Linear Error
   </a>
   
 </li>
@@ -1352,22 +1353,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#constructors" class="md-nav__link">
-    Constructors
+  <a href="#implementation" class="md-nav__link">
+    Implementation
   </a>
-  
-    <nav class="md-nav" aria-label="Constructors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#initializer-lists" class="md-nav__link">
-    Initializer Lists
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1386,76 +1374,83 @@
                   
 
 
-<h1 id="object-oriented-programming">Object Oriented Programming</h1>
-<p>Simply put, object oriented programming is a way of organizing your code. It allows you to associate functions and variables with groups called objects.</p>
-<p>Objects are defined from classes. A class is like a blueprint. Imagine we have a class called Car. Car has properties, which are: color, speed, wheel_size. It might also have methods, like drive() and brake(). If we define a new car based on the Car class, it will have those properties and methods.</p>
+<h1 id="moving-to-2d-points">Moving to 2D Points</h1>
+<h2 id="theory">Theory</h2>
+<p>Odometry lets you visualize the robot in 2D space, however this isn't very useful without a way to traverse that 2D Space. There are many ways to solve this problem, but the simplest way is to use PID. We can use two PID controllers to move the robot. One controller will move the bot towards the point, and the other one will rotate the bot to face the point.</p>
+<h2 id="math">Math</h2>
+<p>In order to use PID, we first need error. We have two PID loops, so we'll need to different error values, one for the linear error, and one for the rotational error.</p>
+<h3 id="rotational-error">Rotational Error</h3>
+<p>This is the amount of degrees between the facing of the robot, and the target point.</p>
+<p><img alt="Image" src="../../../assets/rotational-error.png" /></p>
+<p>Assuming these variables:</p>
+<ul>
+<li><span class="arithmatex">\(\Delta x\)</span> is the change in x coordinate from the current point to target point.</li>
+<li><span class="arithmatex">\(\Delta y\)</span> is the change in y coordinate from the current point to the target point.</li>
+<li><span class="arithmatex">\(e_{rotational}\)</span> is the rotational error, in radians.</li>
+<li><span class="arithmatex">\(\theta_{current}\)</span> is the current rotation of the robot relative to the field, in radians.</li>
+</ul>
+<div class="arithmatex">\[
+e_{rotational}=\theta_{current}-atan2(\Delta y,\Delta x)
+\]</div>
+<h3 id="linear-error">Linear Error</h3>
+<p>While this seems like it should just be as simple as using the distance formula, it isn't. PID loops are only concerned with the error they can correct for. We want to find the distance that the robot has to travel in order to get us as close as possible to the target point without turning. If we get the actual distance, the error might actually increase as the robot moves, causing a negative feedback loop.</p>
+<p><img alt="Image" src="../../../assets/linear-error.png" /></p>
+<p>Assuming these variables:</p>
+<ul>
+<li><span class="arithmatex">\(\Delta x\)</span> is the change in x coordinate from the current point to target point.</li>
+<li><span class="arithmatex">\(\Delta y\)</span> is the change in y coordinate from the current point to the target point.</li>
+<li><span class="arithmatex">\(e_{linear}\)</span> is the linear error.</li>
+<li><span class="arithmatex">\(e_{rotational}\)</span> is the rotational error, in radians.</li>
+</ul>
+<div class="arithmatex">\[
+e_{linear}=\sin(e_{rotational})*\sqrt{\Delta x + \Delta y}
+\]</div>
+<h2 id="implementation">Implementation</h2>
+<p>This will only cover calculating error, since PID was already covered <a href="../pid/">here</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Point</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">theta</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">Point</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">theta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">    </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="n">theta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">theta</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="n">Point</span><span class="w"> </span><span class="nf">targetPoint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Point</span><span class="w"> </span><span class="n">currentPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentPosition</span><span class="p">();</span><span class="w"> </span><span class="c1">// Get position from odometry</span>
+
+<span class="w">  </span><span class="c1">// update error</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">deltaX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">targetPoint</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">currentPosition</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">deltaY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">targetPoint</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">currentPosition</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">targetTheta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fmod</span><span class="p">(</span><span class="n">radToDeg</span><span class="p">(</span><span class="n">M_PI_2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">atan2</span><span class="p">(</span><span class="n">deltaY</span><span class="p">,</span><span class="w"> </span><span class="n">deltaX</span><span class="p">)),</span><span class="w"> </span><span class="mi">360</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">hypot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="n">deltaX</span><span class="p">,</span><span class="w"> </span><span class="n">deltaY</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">diffTheta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angleError</span><span class="p">(</span><span class="n">currentPosition</span><span class="p">.</span><span class="n">theta</span><span class="p">,</span><span class="w"> </span><span class="n">targetTheta</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">diffTheta2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angleError</span><span class="p">(</span><span class="n">currentPosition</span><span class="p">.</span><span class="n">theta</span><span class="p">,</span><span class="w"> </span><span class="n">targetTheta</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">180</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">angularError</span><span class="w"> </span><span class="o">=</span>
+<span class="w">      </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">fabs</span><span class="p">(</span><span class="n">diffTheta1</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">fabs</span><span class="p">(</span><span class="n">diffTheta2</span><span class="p">))</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">diffTheta1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">diffTheta2</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">lateralError</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hypot</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">degToRad</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">fabs</span><span class="p">(</span><span class="n">diffTheta1</span><span class="p">)));</span>
+
+<span class="w">  </span><span class="c1">// Do PID computations ...</span>
+
+<span class="w">  </span><span class="c1">// Move the motors</span>
+<span class="w">  </span><span class="n">leftPower</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">linearPidOutput</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">rotationalPidOutput</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rightPower</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">linearPidOutput</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">rotationalPidOutput</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">leftMotors</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">leftPower</span><span class="p">);</span>
+<span class="w">  </span><span class="n">rightMotors</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">rightPower</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 <!--prettier-ignore-->
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Astute readers will notice that the capitalizations in the paragraph above are weird. This is because we always capitalize class names, but we never capitalize objects.</p>
+<p>Rotational error can very quickly change if the robot is near the target point if it crosses the point. This can cause the robot to spin in circles. You will need to implement something to handle what happens when you are near your target.</p>
 </div>
-<h2 id="classes">Classes</h2>
-<p>You can define a class as follows:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Car</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">speed</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Color</span><span class="w"> </span><span class="n">color</span><span class="p">;</span><span class="w"> </span><span class="c1">// enum</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">wheel_size</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">drive</span><span class="p">();</span><span class="w"> </span><span class="c1">// you can define functions as a part of classes</span>
-<span class="p">};</span>
-
-<span class="c1">// You can define a new object like this</span>
-<span class="n">Car</span><span class="w"> </span><span class="n">volvo</span><span class="p">;</span>
-<span class="c1">// Member variables are uninitialized by default</span>
-<span class="n">volvo</span><span class="p">.</span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
-<span class="n">volvo</span><span class="p">.</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Red</span><span class="p">;</span>
-<span class="n">volvo</span><span class="p">.</span><span class="n">wheel_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
-<span class="n">volvo</span><span class="p">.</span><span class="n">drive</span><span class="p">();</span>
-</code></pre></div>
-<h3 id="class-members">Class Members</h3>
-<p>Almost anything can be part of a class. Enums, functions, objects, and of course variables, can all be a part of a class.</p>
-<h3 id="public-vs-private">Public vs Private</h3>
-<p>In our class definition, all of our members are public. This means that they can be accessed outside of the class. This is why we can assign values to the variables after the object is defined. Good practice is to only give public access to things that really need it. A good rule to follow is to make everything private by default, and then make things public as needed.</p>
-<p>There are other member categories, like protected and friend, but those will not be covered here.</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Car</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">private</span><span class="o">:</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">speed</span><span class="p">,</span>
-<span class="p">};</span>
-
-<span class="n">Car</span><span class="w"> </span><span class="n">volvo</span><span class="p">;</span>
-<span class="n">volvo</span><span class="p">.</span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// This will not work</span>
-</code></pre></div>
-<h2 id="constructors">Constructors</h2>
-<p>The way we had to assign values to members in the last chapter was pretty clunky. It required multiple lines, and all of the variables had to be public. However, there is a solution to this problem called constructors. Constructors are a special type of functions that return an instance of a class. They must have the same name as class.</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Car</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span>
-<span class="w">    </span><span class="n">Car</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">input</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">input</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">private</span><span class="o">:</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">speed</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="c1">// Now we can use our constructor like this:</span>
-<span class="n">Car</span><span class="w"> </span><span class="nf">volvo</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
-</code></pre></div>
-<h3 id="initializer-lists">Initializer Lists</h3>
-<p>C++ provides even more shorthand for initializing variables. Initializer lists are a quick way to assign values to members of a class.</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Car</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="o">:</span>
-<span class="w">    </span><span class="n">Car</span><span class="p">();</span>
-<span class="w">    </span><span class="k">private</span><span class="o">:</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">speed</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">wheel_size</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="n">Car</span><span class="o">::</span><span class="n">Car</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">speed</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">wheel_size</span><span class="p">)</span><span class="o">:</span>
-<span class="w">    </span><span class="n">speed</span><span class="p">(</span><span class="n">speed</span><span class="p">),</span>
-<span class="w">    </span><span class="n">wheel_size</span><span class="p">(</span><span class="n">wheel_size</span><span class="p">),</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="c1">// More complicated stuff should go here</span>
-<span class="p">}</span>
-</code></pre></div>
 
 
 
@@ -1477,7 +1472,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../headers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Headers" rel="prev">
+          <a href="../odometry/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Odometry" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1486,20 +1481,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Headers
+                Odometry
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../conventions/introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+          <a href="../boomerang/" class="md-footer__link md-footer__link--next" aria-label="Next: Boomerang Controller" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Boomerang Controller
               </div>
             </div>
             <div class="md-footer__button md-icon">
