@@ -45,14 +45,17 @@ Before installing the new version of SOLIDWORKS, please uninstall all previous S
 
 Please follow the instructions below to download the product:
 
-1. Got to: [www.solidworks.com/SEK]() and complete the form (first name, last name email address, select “student team” on dropdown)
+1. Go to: [www.solidworks.com/SEK]() and complete the form (first name, last name email address, select “student team” on dropdown)
 
 2. Under product information:
 
--   Ask someone in the club for a serial number
--   Select Yes ( I already have a serial number)
--   Choose 2022-2023 version
--   Input your serial number
+--   Ask someone in the club for a serial number
+
+--   Select Yes ( I already have a serial number)
+
+--   Choose 2022-2023 version
+
+--   Input your serial number
 
 If you do not activate the license after installing, you will only receive a 30-day license. Please give this serial number out to team members only. This serial number will expire July 31, 2024.
 
@@ -66,6 +69,26 @@ To learn the latest about SOLIDWORKS Education and all of our products, please v
 Solidworks Course: [https://www.edx.org/course/solidworks-cad-fundamentals]()
 
 Solidworks Part Library: [https://www.vexforum.com/t/vex-solidworks-library-release-log/112187]()
+
+### Onshape
+
+Use the following instructions to set up an Onshape account, and use the VEX Parts Library. 
+
+1. Go to [https://www.onshape.com/en/education/sign-up]() and select "Create an Account" on the website. 
+
+2. Enter School information and other details, confirm your email, and create the account.
+
+3. Once your account is created and you are in the Onshape home page, click "Public" in the left menu.
+
+4. Click the search bar at the top, and in the "Description" box, type "Official VEX V5 Library," and search. 
+
+5. A variety of different sub-part libraries should appear. Select all of them, and right click. A small menu should appear. 
+
+6. Select "Labels" and then click "Create new label." Name it whatever you would like and create it. You should now have access to these libraries in any document. To use them, when in an assembly select "insert" from the top bar and then select "Other documents." You should see your tag in the menu, which you can then click on to view all the vex parts, and insert them in your project. 
+
+Here is a useful video to guide you through the process: 
+[https://www.youtube.com/watch?v=pgTIe8Irk-4]()
+
 
 ## Links and Videos
 
