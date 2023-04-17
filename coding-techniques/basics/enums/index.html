@@ -1366,10 +1366,10 @@
 </code></pre></div></p>
 <p>This has a couple advantages over using strings. The function no longer needs to handle edge cases, because the input cannot be anything except members of the enum. In addition, this check is now performed at compile time, which means that you will discover incorrect code faster.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Using the enum definition</span>
-<span class="n">rockPaperScissors</span><span class="p">(</span><span class="n">Meteor</span><span class="p">,</span><span class="w"> </span><span class="n">Paper</span><span class="p">);</span><span class="w"> </span><span class="c1">//This will not compile</span>
+<span class="n">rockPaperScissors</span><span class="p">(</span><span class="n">Meteor</span><span class="p">,</span><span class="w"> </span><span class="n">Paper</span><span class="p">);</span><span class="w"> </span><span class="c1">// This will not compile</span>
 
 <span class="c1">// Using the string definition</span>
-<span class="n">rockPaperScissors</span><span class="p">(</span><span class="s">&quot;Meteor&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Paper&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">//This will compile</span>
+<span class="n">rockPaperScissors</span><span class="p">(</span><span class="s">&quot;Meteor&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Paper&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// This will compile</span>
 </code></pre></div>
 <p>Even if the string version checks for edge cases, the check can only happen at runtime. Remember, its best to always get potential errors during compile time, not at runtime.</p>
 <h2 id="scoped-enums">Scoped Enums</h2>
