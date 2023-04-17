@@ -11,8 +11,8 @@ Boolean names should give a hint as to what their state means.
 ```cpp
 // Is true reversed, or is false reversed?
 bool reversed;
-bool is_reversed; // Its clear that when this variable is true, something is reversed. But what?
-bool is_not_reversed; // Never ever do this
+bool isReversed; // Its clear that when this variable is true, something is reversed. But what?
+bool isNotReversed; // Never ever do this
 ```
 
 ### Magic Numbers
@@ -21,21 +21,21 @@ Never leave unlabeled numbers in your program.
 
 ```cpp
 // What is 2.75?
-double dist_traveled = encoder.get_value() * (2 * M_PI * 2.75) / 360;
+double distTraveled = encoder.get_value() * (2 * M_PI * 2.75) / 360;
 
 // Better
 const float WHEEL_RADIUS = 2.75;
-double dist_traveled = encoder.get_value() * (2 * M_PI * WHEEL_RADIUS) / 360;
+double distTraveled = encoder.get_value() * (2 * M_PI * WHEEL_RADIUS) / 360;
 
 // Even better
 const float WHEEL_RADIUS = 2.75;
 const float CIRCUMFERENCE =  2 * M_PI * WHEEL_RADIUS
-double dist_traveled = encoder.get_value() * CIRCUMFERENCE / 360
+double distTraveled = encoder.get_value() * CIRCUMFERENCE / 360
 
 // Best
 const float WHEEL_RADIUS = 2.75;
 const float CIRCUMFERENCE =  2 * M_PI * WHEEL_RADIUS;
 const float DIST_TRAVELED_PER_DEGREE =  CIRCUMFERENCE / 360;
-double dist_traveled = encoder.get_value() * DIST_TRAVELED_PER_DEGREE;
+double distTraveled = encoder.get_value() * DIST_TRAVELED_PER_DEGREE;
 // This is maybe a little too explicit, but at least its very clear what's happening
 ```

@@ -32,3 +32,7 @@ You'll want to keep all three of these steps in mind when you're programming. Ma
     -   Furthermore, try to make their life as easy as possible during matches to give them an edge over other teams. Are there any difficult tasks that you can automate for them for more reliable scoring?
 -   **Communicate with your builders and team leader:** Work with your team to ensure that your bot has all the sensors you need for your program, and if you need sensors organized in a specific manner, let them know ahead of time so they can account for that in their design.
     -   Don't be afraid to do some mechanical work, either! If you're asked to help with building the robot, lend an extra pair of hands. This can not only speed up the build process, but also give you a better feel for the robot you are programming for and its potential capabilities and limitations included.
+    
+## Further Reading
+
+This is the baseline that you will need to program for robotics, but we highly recommend that you read through some other tutorials. We recommend [this](https://www.learncpp.com/) one.

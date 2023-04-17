@@ -7,13 +7,13 @@ Variables are only valid if they are in scope. Often, scope is denoted by curly 
 The most common example of scope is functions. Variables defined inside functions are not accessible by the outside scope.
 
 ```cpp
-void black_box() {
+void blackBox() {
     int x = 1;
 };
 
 int main() {
     int x = 42;
-    black_box();
+    blackBox();
     printf("%i\n",x); // This will output 42, not 1
 }
 ```
@@ -45,7 +45,7 @@ Global scope is very commonly abused. Just because functions can access variable
 
 ```cpp
 int x = 4;
-void black_box() {
+void blackBox() {
     x = 2; // This is possible, but never do it
 }
 ```
@@ -54,7 +54,7 @@ The reason for this is this: as your programs grow, it'll become harder and hard
 
 ```cpp
 const float PI = 3.14; // Consts should be spelled with all caps
-float calculate_wheel_circumference(float radius) {
+float calculateWheelCircumference(float radius) {
     return 2 * radius * PI;
 }
 ```

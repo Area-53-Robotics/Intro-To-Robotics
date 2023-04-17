@@ -109,6 +109,3 @@ Example of creating a boolean variable:
 bool atRest = false;
 ```
 
-## Further Reading
-
-This is the baseline that you will need to program for robotics, but we highly recommend that you read through some other tutorials. We recommend [this](https://www.learncpp.com/) one.

@@ -14,9 +14,7 @@ We’ll go over operators in this section. I highly recommend checking out this 
 
 The addition, subtraction, multiplication, and division operators all do (for the most part) what you’d think they’d do. The modulo operator is a bit different though. It’s also known as a remainder operator. It returns the remainder of division between two operands.
 
-```
-Operand: An expression that an operator performs an action on.
-```
+> Operand: An expression that an operator performs an action on.
 
 For example:
 

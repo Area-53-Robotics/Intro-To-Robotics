@@ -2,13 +2,13 @@
 
 There are may ways to use git, including:
 
--   cli (command line interface)
+-   CLI (command line interface)
 -   Integrated VSCode support
 -   Integrated CLion support
 -   Github desktop
 -   Lazygit
 
-This guide will only cover the cli, because the other tools are based on it. If you know how to use the cli, you will know how to use the others.
+This guide will only cover the CLI, because the other tools are based on it. If you know how to use the CLI, you will know how to use the others.
 
 ## Installation
 

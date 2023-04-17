@@ -1,6 +1,6 @@
 # Comments
 
-This section is based off of [this](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/)stackoverflow blog post.
+This section is based off of [this](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/) stackoverflow blog post.
 
 Comments are a very useful and overused tool. Remember that no comment is better than a bad comment. You are garaunteed that the computer is doing exactly what you are telling it to, but there is no such garauntee for the comments. The comments can lie, but your code cannot.
 
@@ -8,11 +8,13 @@ Comments are a very useful and overused tool. Remember that no comment is better
 
 If what your code does is obvious, it doesn't need a comment.
 
+It is really easy to understand what this does, so it doesn't need a comment.
+
 ```cpp
 i = i + x; // Adds i to x
 ```
 
-or even better
+This is even worse:
 
 ```cpp
 // create a for loop // <-- comment

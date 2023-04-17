@@ -89,4 +89,4 @@ while (true) {
 
 <!--prettier-ignore-->
 !!! note
-    Rotational error can very quickly change if the robot is near the target point if it crosses the point. This can cause the robot to spin in circles. You will need to implement something to handle what happens when you are near your target.
+    Rotational error can very quickly change if the robot crosses the target point. This can cause the robot to spin in circles. You will need to implement something to handle what happens when the robot is near the target.

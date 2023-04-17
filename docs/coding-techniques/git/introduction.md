@@ -2,13 +2,14 @@
 
 ## What is Git?
 
-Git is a VCS or a version control system. It is used to save points in time on your code called commits. Together they make up the history of your project.
+Git is a VCS or a version control system. It is used to save points in time on your code called commits. Together they make up the history of your project. The club uses git to manage our projects. We host our git projects on Github. You can find our Github organization, with code from past and current seasons [here](https://github.com/Area-53-Robotics).
 
 ## Why use Git?
 
 Git is a very powerful piece of software, with a lot of options. It is very manual, and doesn't do anything without the user specifying it. This makes it very difficult and unintuitive to use.
 
-Despite this, we recommend you use git for multiple reasons.
+Despite this, git is an extremly powerful tool. We use git for the following reasons:
+
 
 ### Collaboration
 
@@ -21,6 +22,7 @@ Git allows you make changes without worrying about breaking your code. If you ma
 ### Industry Standard
 
 Git is used by everywhere where code is involved. This very guide is managed by git. You might as well learn it now.
+
 
 ## Official Documentation
 

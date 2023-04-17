@@ -2,9 +2,8 @@
 
 Normally our code runs from top to bottom. However, sometimes we don't want it to. This is where control flow comes into play. These are pieces of code that let us control the flow of the program, hence their name.
 
-There are certain cases where we may want a piece of code to run and certain cases where we won’t want it to run. We can accommodate for this through the use of control flow, which allows us to define what a program should do under certain circumstances.
 
-I’d recommend checking out [this](http://www.cplusplus.com/doc/oldtutorial/control/) link if you want to look at more information about control structures.
+I’d recommend checking out [this](http://www.cplusplus.com/doc/oldtutorial/control/) link if you want to look at more information about control flow.
 
 ## If, Else if, Else
 

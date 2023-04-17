@@ -14,11 +14,11 @@ The primary purpose of a header file is to forward declare things. One of the mo
 int add(int x, inty);
 ```
 
-Not that this function has no body. This is just a declaration, it doesn't do anything by itself. Definitions occur in body files.
+Not that this function has no body. This is just a declaration, it doesn't do anything by itself. Definitions occur in body files (files with the .cpp extension).
 
 ## Including
 
-To get access to this forward declaration you need to use a preprocessor directive (also called macros).
+To get access to this forward declaration you need to use a preprocessor directive (also called a macro).
 
 If we named our header add.hpp, we can include it like this:
 
