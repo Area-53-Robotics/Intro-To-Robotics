@@ -9,8 +9,10 @@ This is a common pattern that you might want to use on subsystems. Often, subsys
     
     pros::Motor motor(1);
     pros::Controller master();
+    pros::AdiDigitalOut piston();
     
     bool move = false; // by default, this will not move
+    bool isPistonOn = false; // Piston starts retracted
     
     void opcontrol() {
         while(true) {
@@ -28,6 +30,14 @@ This is a common pattern that you might want to use on subsystems. Often, subsys
             else {
                 motor.move(0);
             }
+
+            
+            if(master.get_digital_new_press(pros::Digital_A)) {
+                isPistonOn = !isPistonOn; 
+            } 
+
+            piston.set_value(isPistonOn);
+            
             pros::delay(20);
         }
     }

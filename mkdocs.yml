@@ -56,6 +56,7 @@ nav:
                 - 'Control Flow': './coding-techniques/basics/control-flow.md'
                 - 'Functions': './coding-techniques/basics/functions.md'
                 - 'Scope': './coding-techniques/basics/scope.md'
+                - 'Enumerations': './coding-techniques/basics/enums.md'
                 - 'Namespaces': './coding-techniques/basics/namespaces.md'
                 - 'Headers': './coding-techniques/basics/headers.md'
                 - 'Object Oriented Programming': './coding-techniques/basics/oop.md'
