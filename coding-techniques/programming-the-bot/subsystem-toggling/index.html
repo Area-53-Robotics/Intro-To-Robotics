@@ -616,6 +616,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../basics/enums/" class="md-nav__link">
+        Enumerations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../basics/namespaces/" class="md-nav__link">
         Namespaces
       </a>
@@ -1270,8 +1284,10 @@
 
 <span class="n">pros</span><span class="o">::</span><span class="n">Motor</span><span class="w"> </span><span class="nf">motor</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 <span class="n">pros</span><span class="o">::</span><span class="n">Controller</span><span class="w"> </span><span class="nf">master</span><span class="p">();</span>
+<span class="n">pros</span><span class="o">::</span><span class="n">AdiDigitalOut</span><span class="w"> </span><span class="nf">piston</span><span class="p">();</span>
 
 <span class="kt">bool</span><span class="w"> </span><span class="n">move</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// by default, this will not move</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">isPistonOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// Piston starts retracted</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">opcontrol</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1289,6 +1305,14 @@
 <span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="n">motor</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
+
+
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">master</span><span class="p">.</span><span class="n">get_digital_new_press</span><span class="p">(</span><span class="n">pros</span><span class="o">::</span><span class="n">Digital_A</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">isPistonOn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">isPistonOn</span><span class="p">;</span><span class="w"> </span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">        </span><span class="n">piston</span><span class="p">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">isPistonOn</span><span class="p">);</span>
+
 <span class="w">        </span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
