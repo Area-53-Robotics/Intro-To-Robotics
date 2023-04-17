@@ -46,10 +46,10 @@ This has a couple advantages over using strings. The function no longer needs to
 
 ```cpp
 // Using the enum definition
-rockPaperScissors(Meteor, Paper); //This will not compile
+rockPaperScissors(Meteor, Paper); // This will not compile
 
 // Using the string definition
-rockPaperScissors("Meteor", "Paper"); //This will compile
+rockPaperScissors("Meteor", "Paper"); // This will compile
 ```
 
 Even if the string version checks for edge cases, the check can only happen at runtime. Remember, its best to always get potential errors during compile time, not at runtime.
