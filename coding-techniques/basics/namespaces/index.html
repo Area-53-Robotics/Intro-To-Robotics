@@ -1270,7 +1270,7 @@
 
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">math</span><span class="o">::</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
 </code></pre></div>
-<p>This can prevent naming collisions. We can define an add function in the math name space, and in the normal namespace, and they will both be valid. Most libraries use at least one base namespace for this reason.</p>
+<p>This can prevent naming collisions, where two functions or variables have the same name. We can define an add function in the math name space, and in the normal namespace, and they will both be valid. Most libraries use at least one base namespace for this reason.</p>
 <p>Namespaces can be nested as much as you want. You have likely already seen the namespace for the standard library, std.</p>
 <div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello world&quot;</span><span class="p">;</span>
 </code></pre></div>
@@ -1278,6 +1278,7 @@
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 <span class="n">string</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello world&quot;</span><span class="p">;</span>
 </code></pre></div>
+<p>This brings everything from the std namespace into current scope, meaning we don't have to type out the namespace every time we want to use a function or variable from it. Note that this can now cause naming collisions because it includes everything from the entire namespace, meaning that if you have functions with the same name as things in the namespace you are including, your program will not compile.</p>
 <p>You can only include one namespace at a time.</p>
 
 

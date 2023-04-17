@@ -1384,9 +1384,9 @@
 <p>The primary purpose of a header file is to forward declare things. One of the more common examples is a function:</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">inty</span><span class="p">);</span>
 </code></pre></div>
-<p>Not that this function has no body. This is just a declaration, it doesn't do anything by itself. Definitions occur in body files.</p>
+<p>Not that this function has no body. This is just a declaration, it doesn't do anything by itself. Definitions occur in body files (files with the .cpp extension).</p>
 <h2 id="including">Including</h2>
-<p>To get access to this forward declaration you need to use a preprocessor directive (also called macros).</p>
+<p>To get access to this forward declaration you need to use a preprocessor directive (also called a macro).</p>
 <p>If we named our header add.hpp, we can include it like this:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;add.hpp&quot;</span><span class="c1"> //No semicolon</span>
 </code></pre></div>

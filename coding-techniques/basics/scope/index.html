@@ -1338,13 +1338,13 @@
 <p>Variables are only valid if they are in scope. Often, scope is denoted by curly brackets. You can think of scope as layered. Things lower scope have access to things higher in scope than them, but the higher scope cannot access the lower scope.</p>
 <h2 id="functions">Functions</h2>
 <p>The most common example of scope is functions. Variables defined inside functions are not accessible by the outside scope.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">black_box</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">blackBox</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span>
-<span class="w">    </span><span class="n">black_box</span><span class="p">();</span>
+<span class="w">    </span><span class="n">blackBox</span><span class="p">();</span>
 <span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%i</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// This will output 42, not 1</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1369,13 +1369,13 @@
 <h2 id="abuse-of-global-scope">Abuse of Global Scope</h2>
 <p>Global scope is very commonly abused. Just because functions can access variables in a higher scope then them, doesn't mean they should.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">black_box</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">blackBox</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// This is possible, but never do it</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>The reason for this is this: as your programs grow, it'll become harder and harder to keep track of what modifies what. Functions should only modify things in their scope. The only acceptable use of reading values outside of scope are constants. Constants are guaranteed to never change, so there's nothing to keep track of.</p>
 <div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="p">;</span><span class="w"> </span><span class="c1">// Consts should be spelled with all caps</span>
-<span class="kt">float</span><span class="w"> </span><span class="nf">calculate_wheel_circumference</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="kt">float</span><span class="w"> </span><span class="nf">calculateWheelCircumference</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">PI</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
