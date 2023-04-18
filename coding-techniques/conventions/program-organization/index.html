@@ -66,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#program-structure" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -751,10 +756,63 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Program Organization
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Program Organization
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#src-folder" class="md-nav__link">
+    Src Folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#include-folder" class="md-nav__link">
+    Include Folder
+  </a>
+  
+    <nav class="md-nav" aria-label="Include Folder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header-file-structure" class="md-nav__link">
+    Header File Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1251,6 +1309,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#src-folder" class="md-nav__link">
+    Src Folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#include-folder" class="md-nav__link">
+    Include Folder
+  </a>
+  
+    <nav class="md-nav" aria-label="Include Folder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header-file-structure" class="md-nav__link">
+    Header File Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1265,9 +1360,14 @@
                   
 
 
-  <h1>Program Organization</h1>
-
-
+<h1 id="program-structure">Program Structure</h1>
+<p>Program organization is a critical part of programming, that is very subjective. This of course means that no one can agree on how it should be done. However, there are a few general guidelines that you should follow.</p>
+<h2 id="src-folder">Src Folder</h2>
+<p>The src folder typically stores all of the body file in your project. It contains the entry point of your program, the main file.</p>
+<h2 id="include-folder">Include Folder</h2>
+<p>The include folder stores all of the header files in your project. </p>
+<h3 id="header-file-structure">Header File Structure</h3>
+<p>The organization of your header files typically mirrors that of the body files. There is typically one header file for each body file that you define. You only need to create headers for files that contain things that you want to access in other parts of your program. For example if I have a body file called utils.cpp, I would also create a file called utils.hpp. The folder structure of your headers should mirror the structure of your body files. For example if I have a folder called helpers, and in that folder I have auton.cpp, opcontrol.cpp, and misc.cpp, I would also create a folder for my headers called helpers, and in that folder I would create auton.hpp, opcontrol.hpp, and misc.hpp.</p>
 
 
 
