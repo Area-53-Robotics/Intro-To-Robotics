@@ -45,6 +45,82 @@ The position of your tracking wheels dictates your tracking center.
   <figcaption>Credit to LemLib for this image</figcaption>
 </figure>
 
+## Math
+
+First we need to define some variables:
+
+-   $s_L$ is the distance from the left tracking wheel to the tracking center.
+-   $s_R$ is the distance from the right tracking wheel to the tracking center.
+-   $s_S$ is the distance from the center tracking wheel to the tracking center.
+    <!---   $r_A$-->
+    <!---   $r_L$-->
+    <!---   $r_R$-->
+
+Odometry is the compound change in position of the robot over time. Essentially, the final position can be calculated as the sum of all of the movements up to that point. The move often the change in position is calculated, the more accurate the position is.
+
+<figure markdown>
+  ![Image title](../../assets/odomrefreshrate.png){ width="800" }
+</figure>
+
+
+The first thing that needs to be calculated is the rotation of the robot. This can be calculated like this:
+
+$$
+\Delta\theta=\frac{\Delta L-\Delta R}{s_L+s_R}
+$$
+
+The function is only concerned with the difference between $\Delta R$ and $\Delta L$, so we can use the total distance the wheels have traveled to find the current absolute orientation.
+
+Now we need a way to calculate the distance the robot has actually traveled. The first thing we need is a local coordinate system. This is a temporary coordinate plane that assumes that we use as an in between step every time we need to calculate the distance the robot has moved. This local coordinate system assumes that the robot's starting position is $(0,0)$.
+
+The local y coordinate is the distance tracked by the left or right tracking wheel.
+
+<figure markdown>
+  ![Image title](../../assets/odomlocalycoord.png){ width="800" }
+</figure>
+
+The local x coordinate is the distance tracked by the center tracking wheel
+
+<figure markdown>
+  ![Image title](../../assets/odomlocalxcoord.png){ width="800" }
+</figure>
+
+If the change in rotation is zero, the distance traveled is simply equal to the distance the tracking wheels have traveled.
+
+$$
+\Delta Y_{local}=\Delta L
+$$
+
+$$
+\Delta X_{local}=\Delta S
+$$
+
+However, if the robot turned while making it's movement, the calculation becomes more complicated.
+
+<figure markdown>
+  ![Image title](../../assets/odomchordlength.png){ width="800" }
+</figure>
+
+As you can see in the image above, the actual distance traveled by the robot is not equal to the arc length that the wheels create. We can calculate the actual distance by using this formula:
+
+$$
+\Delta X_{local}=2\sin{\frac{\theta}{2}}*\left(\frac{\Delta S}{\Delta \theta}+s_S\right)
+$$
+
+$$
+\Delta Y_{local}=2\sin{\frac{\theta}{2}}*\left(\frac{\Delta L}{\Delta \theta}+s_L\right)
+$$
+
+Now we need to convert these local coordinates to the change in global coordinates (the actual position of the robot).
+
+$$
+\Delta X_{global}=\Delta X_{local}*sin(\theta)-\Delta Y_{local}*cos(\theta)
+$$
+
+$$
+\Delta Y_{global}=\Delta X_{local}*cos(\theta)-\Delta Y_{local}*sin(\theta)
+$$
+
 ## Implementation
 
 Odometry usually runs in an infinite loop, for the duration of the program. Usually you would put it in its own task, so that it can run concurrently to the main program.

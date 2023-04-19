@@ -196,6 +196,8 @@ while (true) {
 
 ```
 
+If you want to look at a complete implementation of PID you can find it [here](https://github.com/Area-53-Robotics/53E-Spin-Up-2022-2023/blob/fde7fb97e97290bace7ffd344065c57662698295/src/subsystems/chassis/chassis.cpp#L59).
+
 ## Further Reading
 
 [George Gillard - Intro to PID](https://georgegillard.com/resources/documents)
