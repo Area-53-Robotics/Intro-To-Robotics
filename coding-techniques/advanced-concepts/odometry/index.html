@@ -1110,6 +1110,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     Implementation
   </a>
@@ -1327,6 +1334,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#math" class="md-nav__link">
+    Math
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     Implementation
   </a>
@@ -1384,6 +1398,59 @@
   </p>
 <figcaption>Credit to LemLib for this image</figcaption>
 </figure>
+<h2 id="math">Math</h2>
+<p>First we need to define some variables:</p>
+<ul>
+<li><span class="arithmatex">\(s_L\)</span> is the distance from the left tracking wheel to the tracking center.</li>
+<li><span class="arithmatex">\(s_R\)</span> is the distance from the right tracking wheel to the tracking center.</li>
+<li><span class="arithmatex">\(s_S\)</span> is the distance from the center tracking wheel to the tracking center.
+    <!---   <span class="arithmatex">\(r_A\)</span>-->
+    <!---   <span class="arithmatex">\(r_L\)</span>-->
+    <!---   <span class="arithmatex">\(r_R\)</span>--></li>
+</ul>
+<p>Odometry is the compound change in position of the robot over time. Essentially, the final position can be calculated as the sum of all of the movements up to that point. The move often the change in position is calculated, the more accurate the position is.</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/odomrefreshrate.png" width="800" /></p>
+</figure>
+<p>The first thing that needs to be calculated is the rotation of the robot. This can be calculated like this:</p>
+<div class="arithmatex">\[
+\Delta\theta=\frac{\Delta L-\Delta R}{s_L+s_R}
+\]</div>
+<p>The function is only concerned with the difference between <span class="arithmatex">\(\Delta R\)</span> and <span class="arithmatex">\(\Delta L\)</span>, so we can use the total distance the wheels have traveled to find the current absolute orientation.</p>
+<p>Now we need a way to calculate the distance the robot has actually traveled. The first thing we need is a local coordinate system. This is a temporary coordinate plane that assumes that we use as an in between step every time we need to calculate the distance the robot has moved. This local coordinate system assumes that the robot's starting position is <span class="arithmatex">\((0,0)\)</span>.</p>
+<p>The local y coordinate is the distance tracked by the left or right tracking wheel.</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/odomlocalycoord.png" width="800" /></p>
+</figure>
+<p>The local x coordinate is the distance tracked by the center tracking wheel</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/odomlocalxcoord.png" width="800" /></p>
+</figure>
+<p>If the change in rotation is zero, the distance traveled is simply equal to the distance the tracking wheels have traveled.</p>
+<div class="arithmatex">\[
+\Delta Y_{local}=\Delta L
+\]</div>
+<div class="arithmatex">\[
+\Delta X_{local}=\Delta S
+\]</div>
+<p>However, if the robot turned while making it's movement, the calculation becomes more complicated.</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/odomchordlength.png" width="800" /></p>
+</figure>
+<p>As you can see in the image above, the actual distance traveled by the robot is not equal to the arc length that the wheels create. We can calculate the actual distance by using this formula:</p>
+<div class="arithmatex">\[
+\Delta X_{local}=2\sin{\frac{\theta}{2}}*\left(\frac{\Delta S}{\Delta \theta}+s_S\right)
+\]</div>
+<div class="arithmatex">\[
+\Delta Y_{local}=2\sin{\frac{\theta}{2}}*\left(\frac{\Delta L}{\Delta \theta}+s_L\right)
+\]</div>
+<p>Now we need to convert these local coordinates to the change in global coordinates (the actual position of the robot).</p>
+<div class="arithmatex">\[
+\Delta X_{global}=\Delta X_{local}*sin(\theta)-\Delta Y_{local}*cos(\theta)
+\]</div>
+<div class="arithmatex">\[
+\Delta Y_{global}=\Delta X_{local}*cos(\theta)-\Delta Y_{local}*sin(\theta)
+\]</div>
 <h2 id="implementation">Implementation</h2>
 <p>Odometry usually runs in an infinite loop, for the duration of the program. Usually you would put it in its own task, so that it can run concurrently to the main program.</p>
 <p>Every time this loop runs, you need to do these things:</p>
