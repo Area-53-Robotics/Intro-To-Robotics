@@ -89,7 +89,7 @@ float lead = 0.5;
 
 while (!atTarget) {
   Point target(10, 10, 90);
-  Point currentPosition = getCurrentPosition(); // Return position from odometry
+  Point currentPosition = getCurrentPosition(); // Get current position from odometry
 
   Point carrotPoint = Point(
       (target.x - distance * sin(target.theta) * lead),

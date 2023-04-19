@@ -15,7 +15,7 @@ This function takes two strings, and compares them using the rules for rock pape
 
 ## Unscoped Enums
 
-This is how you define an unscope enum:
+This is how you define an unscoped enum:
 ```cpp
 enum RpsInput {
   Rock,
