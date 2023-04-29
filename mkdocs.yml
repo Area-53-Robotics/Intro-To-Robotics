@@ -80,6 +80,7 @@ nav:
                 - 'Remote Branches': './coding-techniques/git/remote-branches.md'
           - 'Advanced Concepts':
                 - 'Introduction': './coding-techniques/advanced-concepts/introduction.md'
+                - 'Control Loops': './coding-techniques/advanced-concepts/control-loops.md'
                 - 'Bang Bang Controller': './coding-techniques/advanced-concepts/bang-bang.md'
                 - 'PID Controller': './coding-techniques/advanced-concepts/pid.md'
                 - 'Odometry': './coding-techniques/advanced-concepts/odometry.md'
