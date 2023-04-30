@@ -1300,8 +1300,8 @@
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;main.h&quot;</span>
 
 <span class="c1">// Motor Group Declarations for Left and Right</span>
-<span class="n">pros</span><span class="o">::</span><span class="n">Motor_Group</span><span class="w"> </span><span class="nf">motors_left</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="n">pros</span><span class="o">::</span><span class="n">Motor_Group</span><span class="w"> </span><span class="nf">motors_right</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="c1">// Be sure to reverse this!</span>
+<span class="n">pros</span><span class="o">::</span><span class="n">Motor_Group</span><span class="w"> </span><span class="nf">motors_left</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">});</span>
+<span class="n">pros</span><span class="o">::</span><span class="n">Motor_Group</span><span class="w"> </span><span class="nf">motors_right</span><span class="p">({</span><span class="mi">-4</span><span class="p">,</span><span class="mi">-5</span><span class="p">,</span><span class="mi">-6</span><span class="p">});</span><span class="w"> </span><span class="c1">// Negative ports indicate reversed motors</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">opcontrol</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>

@@ -1627,6 +1627,11 @@ d=p-p_{prev}
 <span class="w">  </span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"> </span><span class="c1">// Delay for 10 ms</span>
 <span class="p">}</span>
 </code></pre></div>
+<p>We also need to prevent integral windup. Integral is only relevant if the error is close to zero. If error is large, integral can grow very quickly and become unusable. We can add an if statement to solve this problem.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">error</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">hugeError</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">integral</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
 <!--prettier-ignore-->
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1675,7 +1680,7 @@ d=p-p_{prev}
 <span class="n">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentTime</span><span class="p">();</span>
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
-<span class="w">  </span><span class="c1">// compute the loop</span>
+<span class="w">  </span><span class="c1">// ...</span>
 
 <span class="w">  </span><span class="c1">// Max time is nice to have if your system gets stuck</span>
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">getCurrentTime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">startTime</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">timeout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
