@@ -1105,18 +1105,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#application" class="md-nav__link">
-    Application
+  <a href="#theory" class="md-nav__link">
+    Theory
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
+  <a href="#math" class="md-nav__link">
+    Math
   </a>
   
-    <nav class="md-nav" aria-label="Components">
+    <nav class="md-nav" aria-label="Math">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1146,6 +1146,21 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#gains" class="md-nav__link">
     Gains
   </a>
@@ -1164,11 +1179,16 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#exit-conditions" class="md-nav__link">
     Exit Conditions
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1397,18 +1417,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#application" class="md-nav__link">
-    Application
+  <a href="#theory" class="md-nav__link">
+    Theory
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
+  <a href="#math" class="md-nav__link">
+    Math
   </a>
   
-    <nav class="md-nav" aria-label="Components">
+    <nav class="md-nav" aria-label="Math">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1438,6 +1458,21 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#gains" class="md-nav__link">
     Gains
   </a>
@@ -1456,11 +1491,16 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#exit-conditions" class="md-nav__link">
     Exit Conditions
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1493,60 +1533,77 @@
 <p>It was not until 1922, however, that a formal control law for what we now call PID or three-term control was first developed using theoretical analysis, by Russian American engineer Nicolas Minorsky. Minorsky was researching and designing automatic ship steering for the US Navy and based his analysis on observations of a helmsman. He noted the helmsman steered the ship based not only on the current course error but also on past error, as well as the current rate of change; this was then given a mathematical treatment by Minorsky. His goal was stability, not general control, which simplified the problem significantly. While proportional control provided stability against small disturbances, it was insufficient for dealing with a steady disturbance, notably a stiff gale (due to steady-state error), which required adding the integral term. Finally, the derivative term was added to improve stability and control.</p>
 <p>Trials were carried out on the USS New Mexico, with the controllers controlling the angular velocity (not the angle) of the rudder. PI control yielded sustained yaw (angular error) of ±2°. Adding the D element yielded a yaw error of ±1/6°, better than most helmsmen could achieve.</p>
 </blockquote>
-<h2 id="application">Application</h2>
-<p>PID controller can be used anywhere a bang bang controller could be used. They are very precise, and are the bread and butter of autonomous movement. The fundamental difference between a bang bang controller and a PID controller is that the output varies based on the proximity to the target. The PID controller has a lower output as the system moves close to the target. This makes it much better than the bang bang controller, which assumes that the system can go from maximum speed to halted instantly.</p>
-<h2 id="components">Components</h2>
-<p>The PID controller has three components, all of which get added together to produce the output.</p>
+<h2 id="theory">Theory</h2>
+<p>PID controller can be used anywhere a bang bang controller could be used. Similar to the bang bang controller, it uses closed loop control to adapt to interference. They are very precise, and are the bread and butter of autonomous movement. The fundamental difference between a bang bang controller and a PID controller is that the output varies based on the proximity to the target. The PID controller has a lower output as the system moves close to the target. This makes it much better than the bang bang controller, which assumes that the system can go from maximum speed to halted instantly.</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/pidvsbangbang.png" width="800" /></p>
+</figure>
+<p>PID stands for proportional, integral, derivative. These are the three components of the loop. These not all required. As long as your loop has the proportional term, it will function.You can make a loop with:</p>
+<ul>
+<li>P</li>
+<li>PI</li>
+<li>PD</li>
+<li>PID</li>
+</ul>
+<h2 id="math">Math</h2>
+<p>Assuming these variables:</p>
+<ul>
+<li><span class="arithmatex">\(p\)</span> is the proportional term</li>
+<li><span class="arithmatex">\(i\)</span> is the integral term</li>
+<li><span class="arithmatex">\(d\)</span> is the derivative term</li>
+<li><span class="arithmatex">\(k_p\)</span> is the proportional gain</li>
+<li><span class="arithmatex">\(k_i\)</span> is the integral gain</li>
+<li><span class="arithmatex">\(k_d\)</span> is the derivative gain</li>
+<li><span class="arithmatex">\(o\)</span> is the output of the loop</li>
+<li><span class="arithmatex">\(s_{target}\)</span> is the target state</li>
+<li><span class="arithmatex">\(s_{current}\)</span> is the current state</li>
+</ul>
+<p>The output of the controller is equal to all of the terms multiplied by their respective constants, added together.</p>
+<div class="arithmatex">\[
+o=p*k_p+i*k_i+d*k_d
+\]</div>
 <h3 id="proportional">Proportional</h3>
-<p>The proportional term is the simplest term. It is equal to error.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">float</span><span class="w"> </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"> </span><span class="c1">// We want to move 12 inches forward</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">output</span><span class="p">;</span>
-
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getDistanceTraveled</span><span class="p">();</span><span class="w"> </span><span class="c1">// Returns the distance traveled in inches</span>
-<span class="w">  </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">distTraveled</span><span class="p">;</span>
-
-<span class="w">  </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
-<span class="w">  </span><span class="n">chassis</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">output</span><span class="p">);</span>
-<span class="w">  </span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"> </span><span class="c1">// Delay for 10 ms</span>
-<span class="w">  </span><span class="p">}</span>
-</code></pre></div>
-<p>As the system (in the case the chassis) move close to the target, power decreases. Notice that if the system passes the target, power will be negative, meaning it will move backwards. If this system overshoots, it will self correct.</p>
+<p>The proportional is the core of the PID loop. It is simply equal to error (the distance from the target). As the system gets close to the target, error decreases. If the system passes the target, error is negative, meaning the system will travel back to the target.</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/proportional.png" width="300" /></p>
+</figure>
+<p>We can calculate proportional as the target state subtracted by the current state:</p>
+<div class="arithmatex">\[
+p=s_{target}-s_{current}
+\]</div>
+<h3 id="integral">Integral</h3>
+<p>If we imagine the error over time on a graph, the integral is the area under the line of error. We can think of integral as the total compound error over time.</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/integral.png" width="300" /></p>
+</figure>
+<p>We can calculate integral like this:</p>
+<div class="arithmatex">\[
+i=i+p
+\]</div>
+<p>By adding the current error to the current value of integral each time the loop runs, we can get the total compounded error.</p>
 <!--prettier-ignore-->
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This code snippet won't work, there is no exit condition, and the raw output of error doesn't really match what the chassis expects as input.</p>
+<p>This is not exactly equal to the area under the graph, but this is as close of an approximation as we can achieve.</p>
 </div>
-<h3 id="integral">Integral</h3>
-<p>The integral term serves to control the system while it's close to the error. The proportional term is usually really small near the target, so the system doesn't have a lot of power to correct itself while it's near the target.</p>
-<p>Integral is usually represented as the total error of the loop. Every PID loop needs a P term, but the I and D terms are optional.</p>
-<div class="highlight"><pre><span></span><code><span class="n">integral</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">error</span>
-</code></pre></div>
-<p>Adding integral to our loop will look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">float</span><span class="w"> </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"> </span><span class="c1">// We want to move 12 inches forward</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">output</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">integral</span><span class="p">;</span>
-
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getDistanceTraveled</span><span class="p">();</span><span class="w"> </span><span class="c1">// Returns the distance traveled in inches</span>
-<span class="w">  </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">distTraveled</span><span class="p">;</span>
-<span class="w">  </span><span class="n">integral</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
-
-<span class="w">  </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">integral</span><span class="p">;</span>
-<span class="w">  </span><span class="n">chassis</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">output</span><span class="p">);</span>
-<span class="w">  </span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"> </span><span class="c1">// Delay for 10 ms</span>
-<span class="w">  </span><span class="p">}</span>
-</code></pre></div>
+<p>The integral serves to correct for larger interferences that the proportional term cannot. If the system gets stuck, integral will build up, and gradually increase the output.</p>
 <h3 id="derivative">Derivative</h3>
-<p>Derivative serves to reduce the output of the loop. It increases the faster the system is moving. It doesn't limit the maximum speed of the loop, but it does slow down how fast the loop can accelerate. Derivative is calculated like so:</p>
-<div class="highlight"><pre><span></span><code><span class="n">derivative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevError</span><span class="p">;</span>
-<span class="n">prevError</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
-</code></pre></div>
-<p>Note that the derivative will always be negative if the system is traveling toward the target. We can integrate this into our code like so:</p>
+<p>The derivative is the rate of change at the current point in the graph. To get the derivative we need two points on the graph.</p>
+<figure>
+<p><img alt="Image title" src="../../../assets/derivative.png" width="300" /></p>
+</figure>
+<p>We can calculate the derivative by getting the two closest points on the graph possible, the current error, and the error during the previous iteration of the loop:</p>
+<div class="arithmatex">\[
+d=p-p_{prev}
+\]</div>
+<!--prettier-ignore-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is not how a derivative is normally calculated, but this is as close of an approximation as we can achieve.</p>
+</div>
+<p>The derivative term predicts what the output needs to be based on the current state of the system. If the system is accelerating really quickly, the absolute value of derivative will become larger. The sign of the derivative term is always inverse to the direction that the system is moving to the target. This means that if the system is moving towards the target, derivative will be negative, and if the system is moving back to the target, derivative will be positive. This means that derivative serves to dampen the output of the controller. If the system is accelerating too quickly, derivative will compensate by getting larger. If the system is moving too slowly, derivative will compensate by getting smaller.</p>
+<h2 id="implementation">Implementation</h2>
+<h3 id="terms">Terms</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">float</span><span class="w"> </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"> </span><span class="c1">// We want to move 12 inches forward</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">;</span>
@@ -1557,7 +1614,9 @@
 
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getDistanceTraveled</span><span class="p">();</span><span class="w"> </span><span class="c1">// Returns the distance traveled in inches</span>
-<span class="w">  </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">distTraveled</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">distTraveled</span><span class="p">;</span><span class="w"> </span><span class="c1">// Proportional term</span>
+
 <span class="w">  </span><span class="n">integral</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
 
 <span class="w">  </span><span class="n">derivative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevError</span><span class="p">;</span>
@@ -1568,35 +1627,26 @@
 <span class="w">  </span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"> </span><span class="c1">// Delay for 10 ms</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="gains">Gains</h2>
+<!--prettier-ignore-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>getDistanceTraveled() is not a real function. Replace it with your own code that calculates the distance the robot has traveled.</p>
+</div>
+<h3 id="gains">Gains</h3>
 <p>However, there is still one major problem: The output of this loop does not match what the methods of the motor expect as input. We can solve this problem with gains. These are constants that are multiplied with each term. Each term has it's own constant. These are set by you, and need to be tuned manually.</p>
-<div class="highlight"><pre><span></span><code><span class="kt">float</span><span class="w"> </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"> </span><span class="c1">// We want to move 12 inches forward</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">output</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">totalError</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">derivative</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">prevError</span><span class="p">;</span>
-
-<span class="kt">float</span><span class="w"> </span><span class="n">kP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="kt">float</span><span class="w"> </span><span class="n">kP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">kI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// This would disable the integral</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">kD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
 
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getDistanceTraveled</span><span class="p">();</span><span class="w"> </span><span class="c1">// Returns the distance traveled in inches</span>
-<span class="w">  </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">distTraveled</span><span class="p">;</span>
-<span class="w">  </span><span class="n">integral</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">){</span>
 
-<span class="w">  </span><span class="n">derivative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prevError</span><span class="p">;</span>
-<span class="w">  </span><span class="n">prevError</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// ...</span>
 
 <span class="w">  </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">kP</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">integral</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">kI</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">derivative</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">kD</span><span class="p">;</span>
-<span class="w">  </span><span class="n">chassis</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="n">output</span><span class="p">);</span>
-<span class="w">  </span><span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"> </span><span class="c1">// Delay for 10 ms</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Keep in mind that the constants will change depending on what the units are of the motor's move method.</p>
-<h3 id="tuning">Tuning</h3>
+<p>Keep in mind that these constants depend on the units of your input and ouput.</p>
+<h4 id="tuning">Tuning</h4>
 <figure>
 <p><img alt="Image title" src="https://upload.wikimedia.org/wikipedia/commons/3/33/PID_Compensation_Animated.gif" width="300" />
   </p>
@@ -1612,7 +1662,7 @@
 <ol>
 <li>Adjust kI until your system gets as close to the target as possible.</li>
 </ol>
-<h2 id="exit-conditions">Exit Conditions</h2>
+<h3 id="exit-conditions">Exit Conditions</h3>
 <p>If your system is something like a drivetrain, you probably want to exit the loop once you hit the target. However, this may be trickier than you would think. We could just do this:</p>
 <div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">error</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="c1">// compute the loop</span>
@@ -1622,8 +1672,7 @@
 <div class="highlight"><pre><span></span><code><span class="c1">// Variable definitions</span>
 
 <span class="c1">// Time elapsed since the start of the program in milliseconds</span>
-<span class="n">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentTime</span><span class="p">();</span><span class="w"> </span><span class="c1">// This function doesn&#39;t exist</span>
-
+<span class="n">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentTime</span><span class="p">();</span>
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
 <span class="w">  </span><span class="c1">// compute the loop</span>
@@ -1641,6 +1690,11 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+<!--prettier-ignore-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>getCurrentTime() is not a real function. Replace it with the equivalent function call for the API you are using.</p>
+</div>
 <p>If you want to look at a complete implementation of PID you can find it <a href="https://github.com/Area-53-Robotics/53E-Spin-Up-2022-2023/blob/fde7fb97e97290bace7ffd344065c57662698295/src/subsystems/chassis/chassis.cpp#L59">here</a>.</p>
 <h2 id="further-reading">Further Reading</h2>
 <p><a href="https://georgegillard.com/resources/documents">George Gillard - Intro to PID</a></p>
