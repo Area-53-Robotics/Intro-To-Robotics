@@ -126,7 +126,14 @@ while (true) {
   chassis.move(output);
   pros::delay(10); // Delay for 10 ms
 }
+```
 
+We also need to prevent integral windup. Integral is only relevant if the error is close to zero. If error is large, integral can grow very quickly and become unusable. We can add an if statement to solve this problem.
+
+```cpp
+if (error > hugeError) {
+    integral = 0;
+  }
 ```
 
 <!--prettier-ignore-->
@@ -190,7 +197,7 @@ While this seems like it should work, it has some problems. This would exit inst
 startTime = getCurrentTime();
 while (true) {
 
-  // compute the loop
+  // ...
 
   // Max time is nice to have if your system gets stuck
   if (getCurrentTime() - startTime > timeout) {

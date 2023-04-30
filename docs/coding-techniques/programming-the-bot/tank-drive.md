@@ -11,8 +11,8 @@ This control scheme is very easy to code, but can be unintuitive for an inexperi
     #include "main.h"
 
     // Motor Group Declarations for Left and Right
-    pros::Motor_Group motors_left(1);
-    pros::Motor_Group motors_right(2, true); // Be sure to reverse this!
+    pros::Motor_Group motors_left({1,2,3});
+    pros::Motor_Group motors_right({-4,-5,-6}); // Negative ports indicate reversed motors
 
     void opcontrol() {
       while(1) {

@@ -10,8 +10,8 @@ This control scheme may be more intuitive for beginner drivers, but is harder to
     #include "main.h"
 
     // Motor definitions
-    pros::Motor_Group motors_left(1);
-    pros::Motor_Group motors_right(2);
+    pros::Motor_Group motors_left({1, 2, 3});
+    pros::Motor_Group motors_right({-4, -5, -6});
 
     void opcontrol() {
       while(1) {
