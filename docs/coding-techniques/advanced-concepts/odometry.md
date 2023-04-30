@@ -7,12 +7,6 @@ Prerequisite Mathematical Knowledge:
 
 Odometry lets you track the position of the robot in 2D space, using Cartesian coordinates. This method of tracking was popularised by team 5225, the Pilons. If you want to read more about how to derive the math behind odometry, you should read their [guide](http://thepilons.ca/wp-content/uploads/2018/10/Tracking.pdf).
 
-This section will focus mostly on the steps required to implement odometry, and the equations used to get there. If you want full implementation examples, look at the [resources](../../resources.md) page, under the High Quality Code Section. Most programs there should implement it.
-
-You can also look at one of our teams who've implemented it:
-
--   [53D-Spin-Up-2022-2023](https://github.com/Area-53-Robotics/53D-Spin-Up-2022-2023/blob/main/src/utilFiles/odometry.cpp)
-
 ## Theory
 
 Odometry is a very useful tool. It provides the absolute position of your robot's tracking center in 2D space. The location of the tracking center is dictated by the placement of your tracking wheels (see below). This means that you can account for error that is created during movement. If one of the movements of your bot is off, the next movement will correct for that, as long as you tell your bot to move to absolute positions on the field.
@@ -52,16 +46,12 @@ First we need to define some variables:
 -   $s_L$ is the distance from the left tracking wheel to the tracking center.
 -   $s_R$ is the distance from the right tracking wheel to the tracking center.
 -   $s_S$ is the distance from the center tracking wheel to the tracking center.
-    <!---   $r_A$-->
-    <!---   $r_L$-->
-    <!---   $r_R$-->
 
 Odometry is the compound change in position of the robot over time. Essentially, the final position can be calculated as the sum of all of the movements up to that point. The move often the change in position is calculated, the more accurate the position is.
 
 <figure markdown>
   ![Image title](../../assets/odomrefreshrate.png){ width="800" }
 </figure>
-
 
 The first thing that needs to be calculated is the rotation of the robot. This can be calculated like this:
 
@@ -111,14 +101,20 @@ $$
 \Delta Y_{local}=2\sin{\frac{\theta}{2}}*\left(\frac{\Delta L}{\Delta \theta}+s_L\right)
 $$
 
-Now we need to convert these local coordinates to the change in global coordinates (the actual position of the robot).
+We then need to calculate the average rotation of the robot.
 
 $$
-\Delta X_{global}=\Delta X_{local}*sin(\theta)-\Delta Y_{local}*cos(\theta)
+\theta_m=\theta_0\frac{\Delta\theta}{2}
+$$
+
+Now we need to convert these local coordinates to the change in global coordinates (the actual position of the robot). We can use the average rotation to get the x and y components of the local x coordinate and the local y coordinate.
+
+$$
+\Delta X_{global}=\Delta X_{local}*sin(\theta_m)-\Delta Y_{local}*cos(\theta_m)
 $$
 
 $$
-\Delta Y_{global}=\Delta X_{local}*cos(\theta)-\Delta Y_{local}*sin(\theta)
+\Delta Y_{global}=\Delta X_{local}*cos(\theta_m)-\Delta Y_{local}*sin(\theta_m)
 $$
 
 ## Implementation
@@ -212,3 +208,5 @@ currentTheta = current_absolute_orientation;
 !!! note
     This implementation assumes that the starting point of the robot is $(0,0)$. It is recommended that to offset the starting position of the robot in the code so that the coordinates for items of interest the same. For example, if there  is a game piece at $(10,10)$, you wouldn't want the starting position of your robot to affect the position in the code of the game piece. Choose a point on the field, and make that your origin. Usually, people use either the bottom left corner, or the direct center of the field.
 <!-- prettier-ignore-end -->
+
+If you want to look at a full implementation you can fine one [here](https://github.com/Area-53-Robotics/53D-Spin-Up-2022-2023/blob/main/src/utilFiles/odometry.cpp).
