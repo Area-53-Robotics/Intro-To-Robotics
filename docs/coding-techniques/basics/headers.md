@@ -1,6 +1,6 @@
 # Header Files
 
-Header files are C++ of program organization. These let you access functions, variables, classes, and objects across multiple files. A header file is any file with the .h or .hpp extension.
+Header files are the C++ method of program organization. These let you access functions, variables, classes, and objects across multiple files. A header file is any file with the .h or .hpp extension.
 
 ## Variables in Headers
 
