@@ -11,7 +11,7 @@ As a general rule, the only variables that should be defined in headers are cons
 The primary purpose of a header file is to forward declare things. One of the more common examples is a function:
 
 ```cpp
-int add(int x, inty);
+int add(int x, int y);
 ```
 
 Not that this function has no body. This is just a declaration, it doesn't do anything by itself. Definitions occur in body files (files with the .cpp extension).
