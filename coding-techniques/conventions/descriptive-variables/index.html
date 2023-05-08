@@ -1352,7 +1352,7 @@
 
 <h1 id="descriptive-variables">Descriptive Variables</h1>
 <p>Names communicate information. The more information you can communicate with your program, the better. This makes it clearer what the program is doing, not just to other people, but to you as well. Even if you think you will remember what a name means, you usually will not.</p>
-<p>In general, strive for descriptive variable and function names. Imagine that someone else is trying to read your code. Would they be more likely to understand a variable named <code>p</code>, or one named <code>motor_power</code>?</p>
+<p>In general, strive for descriptive variable and function names. Imagine that someone else is trying to read your code. Would they be more likely to understand a variable named <code>p</code>, or one named <code>motorPower</code>?</p>
 <h3 id="booleans">Booleans</h3>
 <p>Boolean names should give a hint as to what their state means.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// Is true reversed, or is false reversed?</span>
@@ -1371,8 +1371,8 @@
 
 <span class="c1">// Even better</span>
 <span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.75</span><span class="p">;</span>
-<span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">CIRCUMFERENCE</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span>
-<span class="kt">double</span><span class="w"> </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encoder</span><span class="p">.</span><span class="n">get_value</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">CIRCUMFERENCE</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">360</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">CIRCUMFERENCE</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">distTraveled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encoder</span><span class="p">.</span><span class="n">get_value</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">CIRCUMFERENCE</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">360</span><span class="p">;</span>
 
 <span class="c1">// Best</span>
 <span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">WHEEL_RADIUS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.75</span><span class="p">;</span>

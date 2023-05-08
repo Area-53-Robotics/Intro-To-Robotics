@@ -1407,11 +1407,11 @@
 
 
 <h1 id="comments">Comments</h1>
-<p>This section is based off of <a href="https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/">this</a> stackoverflow blog post.</p>
-<p>Comments are a very useful and overused tool. Remember that no comment is better than a bad comment. You are garaunteed that the computer is doing exactly what you are telling it to, but there is no such garauntee for the comments. The comments can lie, but your code cannot.</p>
+<p>This section is based off of <a href="https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/">this</a> stack overflow blog post.</p>
+<p>Comments are a very useful and overused tool. Remember that no comment is better than a bad comment. You are guaranteed that the computer is doing exactly what you are telling it to, but there is no such guarantee for the comments. The comments can lie, but your code cannot.</p>
 <h2 id="dont-write-redundant-comments">Don't Write Redundant Comments</h2>
 <p>If what your code does is obvious, it doesn't need a comment.</p>
-<p>It is really easy to understand what this does, so it doesn't need a comment.</p>
+<p>It is really easy to understand what this does, so it doesn't need a comment:</p>
 <div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// Adds i to x</span>
 </code></pre></div>
 <p>This is even worse:</p>
@@ -1476,8 +1476,8 @@ Debugging is twice as hard as writing the code in the first place. Therefore, if
 <span class="w">                 </span><span class="p">(</span><span class="n">delta_x_local</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">avg_theta_for_arc</span><span class="p">));</span>
 </code></pre></div>
 <h2 id="notes-to-self">Notes to Self</h2>
-<p>If something is unimplemented, or not working, mark that with a comment. Anotations like FIXME and TODO are the standard way to do this. Most syntax highlighters will highlight these to make them pop out to people reading.</p>
-<div class="highlight"><pre><span></span><code><span class="n">Coordinates</span><span class="w"> </span><span class="nf">get_position</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<p>If something is unimplemented, or not working, mark that with a comment. Annotations like FIXME and TODO are the standard way to do this. Most syntax highlighters will highlight these to make them pop out to people reading.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Coordinates</span><span class="w"> </span><span class="nf">getPosition</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// TODO: return the position of the robot in cartesian coordinates</span>
 <span class="p">}</span>
 </code></pre></div>
