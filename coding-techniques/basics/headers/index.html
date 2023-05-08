@@ -682,22 +682,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#variables-in-headers" class="md-nav__link">
-    Variables in Headers
+  <a href="#declarations-and-definitions" class="md-nav__link">
+    Declarations and Definitions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#forward-declarations" class="md-nav__link">
-    Forward Declarations
+  <a href="#compilation-phases" class="md-nav__link">
+    Compilation Phases
   </a>
+  
+    <nav class="md-nav" aria-label="Compilation Phases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preprocessor-phase" class="md-nav__link">
+    Preprocessor Phase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilation-phase" class="md-nav__link">
+    Compilation Phase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-phase" class="md-nav__link">
+    Linking Phase
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#including" class="md-nav__link">
-    Including
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
@@ -710,15 +737,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pragma-once" class="md-nav__link">
-    Pragma Once
+  <a href="#best-practice" class="md-nav__link">
+    Best Practice
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#more-info" class="md-nav__link">
-    More Info
+  <a href="#further-reading" class="md-nav__link">
+    Further Reading
   </a>
   
 </li>
@@ -1350,22 +1377,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#variables-in-headers" class="md-nav__link">
-    Variables in Headers
+  <a href="#declarations-and-definitions" class="md-nav__link">
+    Declarations and Definitions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#forward-declarations" class="md-nav__link">
-    Forward Declarations
+  <a href="#compilation-phases" class="md-nav__link">
+    Compilation Phases
   </a>
+  
+    <nav class="md-nav" aria-label="Compilation Phases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preprocessor-phase" class="md-nav__link">
+    Preprocessor Phase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilation-phase" class="md-nav__link">
+    Compilation Phase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-phase" class="md-nav__link">
+    Linking Phase
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#including" class="md-nav__link">
-    Including
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
@@ -1378,15 +1432,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pragma-once" class="md-nav__link">
-    Pragma Once
+  <a href="#best-practice" class="md-nav__link">
+    Best Practice
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#more-info" class="md-nav__link">
-    More Info
+  <a href="#further-reading" class="md-nav__link">
+    Further Reading
   </a>
   
 </li>
@@ -1407,43 +1461,103 @@
 
 
 <h1 id="header-files">Header Files</h1>
-<p>Header files are the C++ method of program organization. These let you access functions, variables, classes, and objects across multiple files. A header file is any file with the .h or .hpp extension.</p>
-<h2 id="variables-in-headers">Variables in Headers</h2>
-<p>As a general rule, the only variables that should be defined in headers are consts. This is because variables defined in headers are globally acessible, and therefore should not change.</p>
-<h2 id="forward-declarations">Forward Declarations</h2>
-<p>The primary purpose of a header file is to forward declare things. One of the more common examples is a function:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+<p>Header files are a key part of C++ program organization. Any file with a .h or .hpp file extension is a header file. You can think of them like a menu for what exists in your program. It tells you what's in the dish, but doesn't actually contain the dish itself. In order to understand header files fully, we'll need to cover some other C++ concepts.</p>
+<h2 id="declarations-and-definitions">Declarations and Definitions</h2>
+<p>C++ differentiates between declarations and definitions. Declarations simply contain the signature of a function or variable, and not the functionality or value, while definitions do.</p>
+<p>Here are some examples of declarations:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="p">;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
 </code></pre></div>
-<p>Not that this function has no body. This is just a declaration, it doesn't do anything by itself. Definitions occur in body files (files with the .cpp extension).</p>
-<h2 id="including">Including</h2>
-<p>To get access to this forward declaration you need to use a preprocessor directive (also called a macro).</p>
-<p>If we named our header add.hpp, we can include it like this:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;add.hpp&quot;</span><span class="c1"> //No semicolon</span>
-</code></pre></div>
-<p>This tells the compiler to copy and paste the contents of add.hpp into the current file at compile time. You can then define the function like this:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;add.hpp&quot;</span>
+<p>Here are some examples of definitions:</p>
+<div class="highlight"><pre><span></span><code><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">42</span><span class="p">;</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="p">};</span>
 </code></pre></div>
-<p>You can only define a function that has been forward declared once. It must match the name, return type, and inputs as the declaration, otherwise the compiler with think that it's a different function. You can then access this definition anywhere in the program by doing the same include.</p>
-<h2 id="header-guards">Header Guards</h2>
-<p>The include macro copies and pastes the contents of the header into body files at compile time which means that if we're not careful, we can end up with multiple declarations of the same function, which will cause a compiler error. To solve this problem we have header guards.</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#ifndef ADD_HPP </span><span class="c1">// This name  must be unique, otherwise you will cause other headers to be ignored</span>
-<span class="cp">#define ADD_HPP</span>
+<h2 id="compilation-phases">Compilation Phases</h2>
+<p>The C++ compilation process is split up into multiple phases:</p>
+<h3 id="preprocessor-phase">Preprocessor Phase</h3>
+<p>During this phase, preprocessor directives (also called macros) are evaluated. This is any keyword that starts with a #. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#define MACRO_CONSTANT 1</span>
+</code></pre></div>
+<p>Macros are not valid C++, but they get replaced with C++ during this phase. The compiler will never see them. In this example, the first line will be replaced with the contents of the iostream header, while the second line will replace all instances of MACRO_CONSTANT with 1.</p>
+<!--if I catch any of you using define macros for anything other than header guards there will be bloodshed-->
+
+<h3 id="compilation-phase">Compilation Phase</h3>
+<p>During this phase, body files (files with a .cpp file extension) get turned into object files by the compiler. This converts them from code that the programmer can read into code that a CPU can read. The compiler is completely fine with references definitions that don't exist, so long as there is a valid definition. The compiler will also check for valid C++ grammar.</p>
+<h3 id="linking-phase">Linking Phase</h3>
+<p>During this phase, all of the object files (files ending in .o) are combined into a single binary. Any blank references to declarations are now filled in. The linker also checks for violations of ODR (the One Definition Rule). There can only be one definition for each variable and function.</p>
+<h2 id="usage">Usage</h2>
+<p>Header files contain declarations (not definitions) and can be used to easily import those declarations to any body file that needs them. Here is an example:</p>
+<p>Imagine there is a file called math.hpp</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// math.hpp</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">doMath</span><span class="p">();</span>
+</code></pre></div>
+<p>There are also two body files, math.cpp and main.cpp.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// math.cpp</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;math.hpp&quot;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">doMath</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span>
+<span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">// main.cpp</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;math.hpp&quot;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">doMath</span><span class="p">();</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>In this example, math.hpp provided the declarations, while math.cpp provided the definitions. Note that math.cpp needed to include the math.hpp header to gain access to the declarations. Then, main.cpp can easily get access to doMath() by including the math.hpp header as well.</p>
+<!--prettier-ignore-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The include for the iostream header and the math.hpp header look very different. This is because iostream is part of the standard library. Headers that are part of the standard library do not have a .h or .hpp extension, and are included using <header-name> instead of "header-name".</p>
+</div>
+<h2 id="header-guards">Header Guards</h2>
+<p>However, there is a problem. If a header is included more than once, this can result with multiple copies of the same header. During the linking phase this can cause and ODR violation. The solution is header guards.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// math.hpp</span>
+<span class="cp">#ifndef MATH_HPP </span><span class="c1">// This name  must be unique, otherwise you will cause other headers to be ignored</span>
+<span class="cp">#define MATH_HPP</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">doMath</span><span class="p">();</span>
 
 <span class="cp">#endif</span>
 </code></pre></div>
-<h2 id="pragma-once">Pragma Once</h2>
-<p>Alternatively pragma once will do the same thing:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#pragma once</span>
+<p>#ifndef and #endif allow for conditional inclusion. If MATH_HPP is already defined because the header has already been included once the preprocessor will behave as if this file is empty.</p>
+<p>Alternatively you can use #pragma once, which will have the same effect.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// math.hpp</span>
+<span class="cp">#pragma once</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">doMath</span><span class="p">();</span>
 </code></pre></div>
-<p>This ensures that add will only be copied once, even if it is included multiple times.</p>
-<h2 id="more-info">More Info</h2>
-<p><a href="https://www.learncpp.com/cpp-tutorial/header-files/">This</a> tutorial provides much more in depth information on header files.</p>
+<h2 id="best-practice">Best Practice</h2>
+<p>There are some DOs and DON'Ts when it comes to header files:</p>
+<ul>
+<li>always use header guards</li>
+<li>never put definitions in headers (with the exception of constants)</li>
+<li>use one body file per header file (i.e. math.hpp and math.cpp)</li>
+<li>never #include .cpp files</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<p>If you want more information <a href="https://www.learncpp.com/cpp-tutorial/header-files/">this</a> tutorial provides much more in depth information on header files.</p>
 
 
 
