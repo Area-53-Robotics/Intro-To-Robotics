@@ -10,7 +10,7 @@ theme:
 
     palette:
         primary: green
-        accent: lime
+        accent: green
         scheme: slate
 
 markdown_extensions:
