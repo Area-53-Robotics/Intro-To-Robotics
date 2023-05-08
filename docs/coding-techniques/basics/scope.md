@@ -30,7 +30,6 @@ You can create your own lower scope just by inserting curly braces into your cod
 int main() {
     int x = 1;
     {
-
         printf("%i\n",x); // Will output 1.
         int x = 42;
         printf("%i\n",x); // Will output 42.

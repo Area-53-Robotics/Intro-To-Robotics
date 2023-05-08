@@ -1,14 +1,14 @@
 # Comments
 
-This section is based off of [this](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/) stackoverflow blog post.
+This section is based off of [this](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/) stack overflow blog post.
 
-Comments are a very useful and overused tool. Remember that no comment is better than a bad comment. You are garaunteed that the computer is doing exactly what you are telling it to, but there is no such garauntee for the comments. The comments can lie, but your code cannot.
+Comments are a very useful and overused tool. Remember that no comment is better than a bad comment. You are guaranteed that the computer is doing exactly what you are telling it to, but there is no such guarantee for the comments. The comments can lie, but your code cannot.
 
 ## Don't Write Redundant Comments
 
 If what your code does is obvious, it doesn't need a comment.
 
-It is really easy to understand what this does, so it doesn't need a comment.
+It is really easy to understand what this does, so it doesn't need a comment:
 
 ```cpp
 i = i + x; // Adds i to x
@@ -95,10 +95,10 @@ delta_y_global = (delta_y_local * sin(avg_theta_for_arc)) -
 
 ## Notes to Self
 
-If something is unimplemented, or not working, mark that with a comment. Anotations like FIXME and TODO are the standard way to do this. Most syntax highlighters will highlight these to make them pop out to people reading.
+If something is unimplemented, or not working, mark that with a comment. Annotations like FIXME and TODO are the standard way to do this. Most syntax highlighters will highlight these to make them pop out to people reading.
 
 ```cpp
-Coordinates get_position() {
+Coordinates getPosition() {
     // TODO: return the position of the robot in cartesian coordinates
 }
 

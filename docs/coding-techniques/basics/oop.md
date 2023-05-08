@@ -17,7 +17,7 @@ class Car {
     public:
     int speed;
     Color color; // enum
-    int wheel_size;
+    int wheelSize;
     void drive(); // you can define functions as a part of classes
 };
 
@@ -26,7 +26,7 @@ Car volvo;
 // Member variables are uninitialized by default
 volvo.speed = 3;
 volvo.color = Red;
-volvo.wheel_size = 2
+volvo.wheelSize = 2
 volvo.drive();
 ```
 
@@ -78,12 +78,12 @@ class Car {
     Car();
     private:
     int speed;
-    int wheel_size;
+    int wheelSize;
 };
 
-Car::Car(int speed, int wheel_size):
+Car::Car(int speed, int wheelSize):
     speed(speed),
-    wheel_size(wheel_size),
+    wheelSize(wheelSize),
 {
     // More complicated stuff should go here
 }
