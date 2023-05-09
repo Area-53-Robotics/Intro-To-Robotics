@@ -15,7 +15,7 @@
         <link rel="next" href="../oop/">
       
       <link rel="icon" href="../../../assets/area_53.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
     
     
       
@@ -1530,7 +1530,7 @@
 <p>The include for the iostream header and the math.hpp header look very different. This is because iostream is part of the standard library. Headers that are part of the standard library do not have a .h or .hpp extension, and are included using <header-name> instead of "header-name".</p>
 </div>
 <h2 id="header-guards">Header Guards</h2>
-<p>However, there is a problem. If a header is included more than once, this can result with multiple copies of the same header. During the linking phase this can cause and ODR violation. The solution is header guards.</p>
+<p>However, there is a problem. If a header is included more than once, this can result with multiple copies of the same header. During the linking phase this can cause an ODR violation. The solution is header guards.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// math.hpp</span>
 <span class="cp">#ifndef MATH_HPP </span><span class="c1">// This name  must be unique, otherwise you will cause other headers to be ignored</span>
 <span class="cp">#define MATH_HPP</span>
