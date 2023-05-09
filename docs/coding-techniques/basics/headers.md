@@ -100,7 +100,7 @@ In this example, math.hpp provided the declarations, while math.cpp provided the
 
 ## Header Guards
 
-However, there is a problem. If a header is included more than once, this can result with multiple copies of the same header. During the linking phase this can cause and ODR violation. The solution is header guards.
+However, there is a problem. If a header is included more than once, this can result with multiple copies of the same header. During the linking phase this can cause an ODR violation. The solution is header guards.
 
 ```cpp
 // math.hpp
