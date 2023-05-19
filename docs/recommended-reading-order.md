@@ -4,17 +4,14 @@ Different people need to read different parts of this manual at different times.
 
 ## Freshman Year
 
-<!--TODO: fix this-->
-
 -   [Introduction](./introduction.md)
--   [The Basics](./the-basics/tools.md)
--   [Subsystems](./subsystems/drivetrains.md)
--   Builders: [Building Techniques](./building-techniques/stationary.md)
--   Coders: [Coding Techniques]()
--   Drivers: [Driving Techniques]()
--   Notebookers: [Notebooking Techniques]()
--   [The Season]()
--   [The Tournament]()
+-   [The Basics](./hardware/basics/tools.md)
+-   Builders: [Hardware](./hardware/stationary.md)
+-   Coders: [Software](./software/introduction.md)
+-   Drivers: [Driving Techniques](./driving.md)
+-   Notebookers: [Notebooking Techniques](./notebooking.md)
+-   [The Season](./the-season.md)
+-   [The Tournament](./the-tournament.md)
 
 In your freshman year, you aren’t expected to be the lead builder, lead coder, lead driver, or lead notebooker, but if you’re looking into it, you should start learning. Your freshman year is also about making mistakes in order to improve. You aren’t expected to lead your team through a season or a tournament, but you are expected to learn, so that you will have the experience and confidence to lead when you are older. Don’t be afraid to make mistakes and ask questions, it’s more important that you build your knowledge through practice.
 

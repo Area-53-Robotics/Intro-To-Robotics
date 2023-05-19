@@ -2,7 +2,9 @@
 
 Gear ratios are a key part of being able to influence speed an torque. A gear ratio consists of at least two gears or sprockets of different sizes. Every system has a driven and driving gear. The ratio is only determined by these two gears, all of the other gears can be ignored.
 
-<!--TODO: image here-->
+<figure markdown>
+  ![Image title](../../assets/gear-ratio.png){ width="800" }
+</figure>
 
 Here is the formula for a gear ratio:
 

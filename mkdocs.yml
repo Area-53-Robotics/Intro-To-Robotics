@@ -37,9 +37,9 @@ nav:
     - 'Introduction': './introduction.md'
     - 'Hardware':
           - 'Introduction': './hardware/introduction.md'
-          - 'The Basics':
-                - 'Tools': './the-basics/tools.md'
-                - 'Parts': './the-basics/parts.md'
+          - 'Basics':
+                - 'Tools': './hardware/basics/tools.md'
+                - 'Parts': './hardware/basics/parts.md'
           - 'Theory':
                 - 'Torque': './hardware/theory/torque-speed.md'
                 - 'Gear Ratios': './hardware/theory/gear-ratios.md'

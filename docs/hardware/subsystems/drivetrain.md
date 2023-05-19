@@ -125,21 +125,25 @@ A traction wheel in the center of your drivetrain is a very good way of preventi
 
 <!--TODO: crop this-->
 
-![Body frame](../../../assets/center-traction.png)
+<figure markdown>
+  ![Image title](../../assets/center-traction.png){ width="800" }
+</figure>
 
 #### Skirts
 
 Skirts are pieces of lexan mounted on the side of a drivetrain at an angle to prevent pushing. This works by creating a ramp for opposing robots to drive up if they try to push, thus reducing their pushing power in the horizontal direction. These are usually mounted on hinges and backed by a piece of c-channel for rigidity, although alternative methods can be used if hinges stick out past the c-channel too much. Below is a CAD screenshot of 53E’s early season Tipping Point design, with a low profile custom hinge mechanism using standoffs and collars.connected to an 1-by angle.
 
-![Body frame](../../../assets/skirts.png)
+<figure markdown>
+  ![Image title](../../assets/skirts.png){ width="800" }
+</figure>
 
 #### Wedges
 
 Wedges are similar to skirts in that they are a slanted piece designed to cause other robots to ride up them, but wedges are mounted on the back of the drivetrain and typically used in a defensive manner to disrupt opposing robots. Below is a picture of 1721G’s Change Up robot, which was a defense bot that utilized aggressive driving and wedges very well.
 
-![Body frame](../../../assets/wedges.png)
-
-This is the second time we’ve talked about the drivetrain, but it’s a very important part of your robot. This is going to teach you the forbidden knowledge of good drivetrains and how you should use them. For this section, there’s only going to be one video but it’ll cover everything.
+<figure markdown>
+  ![Image title](../../assets/wedges.png){ width="800" }
+</figure>
 
 ## Further Reading
 
