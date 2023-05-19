@@ -56,7 +56,7 @@ By placing gears on the same axle to transfer power, we multiply each ending gea
 ## Custom Parts
 
 Here we’re talking about slip gears and ratchets.
-Slip gears allow for punchers and catapults to work, they don’t have too many other uses. If your mechanism can translate into a puncher or a catapult then use a slip gear. If it doesn’t, then see if you can use something else.
+Slip gears allow for punchers and catapults to work, they don’t have too many other uses. If your mechanism can translate into a puncher or a catapult then use a slip gear. If it doesn't, then see if you can use something else.
 Ratchets allow you to move a mechanism one way and one way only. If your mechanism needs to move one way, consider using these.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GQ1Rsz-0t64" title="Robotics Introduction - Building Techniques - Motion Pt.2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

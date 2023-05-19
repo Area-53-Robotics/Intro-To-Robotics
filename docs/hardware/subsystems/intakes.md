@@ -4,21 +4,19 @@
 
 Intakes are very efficient mechanisms that are widely used. There are many takes on them, but the most basic should work just as fine. Building intakes are very easy, although knowing which type to build can be difficult.
 
-<!--TODO: add the images-->
-
 Use flat intakes when:
 
 -   The object you need to pick up is flat
 -   You need 1 orientation for your object
 
-![Body frame](../assets/flat-intake.png)
+![Body frame](../../assets/flat-intake.png)
 
 Use single-sprocket intakes when:
 
 -   You need to get around a post and have intakes in front and behind the post
 -   You need to conform to a lot of different shapes
 
-![Body frame](../assets/sing-sprocket-intake.png)
+![Body frame](../../assets/sing-sprocket-intake.png)
 
 Use only tread when:
 

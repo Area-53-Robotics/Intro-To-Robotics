@@ -1,4 +1,4 @@
-# Building Techniques
+# Hardware
 
 Building might be one of the hardest techniques because there’s always something new. When your robot breaks, it’s because of the building. Your coder’s limit, it’s defined by the building. Your driver’s capabilities, it’s defined by the building. Your little sibling breaks your robot, you should’ve built it better.
 This section is going to be broken down into 3 subsections each with their own topics. These topics may be new, they may have been repeated a thousand times (they should probably be repeated again). Either way, these topics should help you improve your robot. But implementing them is not enough. A good builder needs to know how to build well and take into account their coder’s and driver’s needs. I can’t discuss that, but when you can take your coder’s or your driver’s idea and implement it semi-perfectly, you’ve made it.

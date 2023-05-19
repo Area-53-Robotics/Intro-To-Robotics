@@ -1,4 +1,4 @@
-# Notebooking Techniques
+# Notebooking
 
 I can’t notebook. I can barely read my own handwriting. I’ll turn it over to our best notebookers: Terry from 53A and Chad from 53E. Terry’s notebooks have won numerous awards, he’s the real deal.
 What is notebooking and documentation? Quoted from Wikipedia (it's a good source despite what school tells you, trust me), documentation is “communicable material that is used to describe, explain or instruct regarding some attributes of an object, system or procedure, such as its parts, assembly, installation, maintenance, and use.” Simply put, you are showing the process taken to reach your final product, simple as that. It’s hard at first, it’s time-consuming, however as we shall explain later, it is very important and applicable not only to VEX, but also in your future careers.

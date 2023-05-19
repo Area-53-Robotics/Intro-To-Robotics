@@ -1,4 +1,4 @@
-# Leading Techniques
+# Leading
 
 The leader of a team isn’t just the leader. They’re a builder, coder, or driver, and they don’t even have to be the best. The leader’s job has nothing to do with the robot, rather, it has everything to do with your teammates. I do want to say that all leaders are different, so there will be some practices that I implement that you don’t agree with. The differences arise in how your team functions and each person’s personality.
 
@@ -82,7 +82,7 @@ Most importantly, you will have to make decisions on everything in the tournamen
 You’ll have to pick partners. Use your scout’s information and talk with your teammates. Ultimately it’s your driver’s decision. If they don’t know, it’s your’s and your scout’s. Get your team and your partner’s to matches on time. Offer to help with anything they need. They are an extension of your team.
 You should know of and use a timeout. Each pair only gets 1 timeout in all of the finals matches. But, if you need to get that last auton made, it might be worth it. Each timeout is 3 minutes. Eventually, you’ll get to your match and you want to support your team. Do whatever is best for your driver. This is when it matters.
 
-### Conclusion of Leading Techniques
+### Conclusion
 
 Your job is to get your team through the season. Whether it’s a meeting or a tournament, your job is to advance your team. Listen to your teammates for information and make judgments. Sometimes you’ll be right, sometimes you’ll be wrong. A good leader will know how to correct the wrongs (listen to the leads).
 What is your short-term end goal? Build a drivetrain? Finish the code? Do driving practice? Get through the tournament? Make sure your team knows, and make sure you follow steps to accomplish the goal.

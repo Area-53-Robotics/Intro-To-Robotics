@@ -1,94 +1,10 @@
 # Resources
 
-## CAD
+<!--TODO: Update this to match the new videos-->
 
 ### General Tips
 
 We typically use the parts libraries created by the [VEX CAD Discord server](https://discord.gg/BKV3DJm). This server is also a great resource to meet competitors from different regions and get help and advice on your CADs.
-
-### Fusion 360
-
-A little guide to help you work with Fusion 360.
-
-1. Download Fusion 360 from Autodesk.
-
--   [https://www.autodesk.com/campaigns/education/fusion-360]()
--   Press “Get Fusion 360 For Free”
--   Press “Get Started”
--   Fill out the form
--   Sign up with a personal email.
--   You might need to give them proof of a school ID.
--   If you don’t have a school ID to take a photo of, take a screenshot of SchoolMax. Make sure the name of the school, your name, and the school year are visible in the image.
-
-2.  Ask someone to add you to the Fusion team.
-3.  Once you’re in the team, you’ll see in the upper-left hand corner the Area 53 team.
-
--   Click on this to enter the team.
-
-4. You’ll see some number of folders, this’ll probably increase.
-
--   Any folder of a team name is off limits, you can open the documents but you can’t edit them.
--   The VRC parts folder is for everyone’s use and for everyone’s builds. DO NOT edit these parts in the VRC parts folder. If you edit these parts, they will change in every build. If you need to edit them, make a copy of it first then edit it.
--   There might be a new members folder. Please create a new folder under this to store your builds.
-
-5.  Look at your toolbar on the top of your screen. If you see something called “VEX CAD LIBRARY” you’re fine, if not download the add-in from below. You don’t have to download anything else.
-
--   [https://www.vexforum.com/t/vex-cad-fusion-360-parts-library-release-log/83263]()
-
-6. Here’s a tutorial we learned from: [https://www.youtube.com/watch?v=q4t7PlxN7GU]()
-
--   Disregard the split body tool for cutting parts, there is a better method (step 5).
-
-### Solidworks
-
-Before installing the new version of SOLIDWORKS, please uninstall all previous SOLIDWORKS versions and review the System Requirements.
-
-Please follow the instructions below to download the product:
-
-1. Go to: [www.solidworks.com/SEK]() and complete the form (first name, last name email address, select “student team” on dropdown)
-
-2. Under product information:
-
---   Ask someone in the club for a serial number
-
---   Select Yes ( I already have a serial number)
-
---   Choose 2022-2023 version
-
---   Input your serial number
-
-If you do not activate the license after installing, you will only receive a 30-day license. Please give this serial number out to team members only. This serial number will expire July 31, 2024.
-
-Installation and activation instructions are here: [www.solidworks.com/installation_instructions]()
-
-If for any reason you have a problem with the software installation, please go here [www.solidworks.com/studentsupport]()
-
-To learn the latest about SOLIDWORKS Education and all of our products, please visit:
-[WWW.SOLIDWORKS.COM/EDULAUNCH]()
-
-Solidworks Course: [https://www.edx.org/course/solidworks-cad-fundamentals]()
-
-Solidworks Part Library: [https://www.vexforum.com/t/vex-solidworks-library-release-log/112187]()
-
-### Onshape
-
-Use the following instructions to set up an Onshape account, and use the VEX Parts Library. 
-
-1. Go to [https://www.onshape.com/en/education/sign-up]() and select "Create an Account" on the website. 
-
-2. Enter School information and other details, confirm your email, and create the account.
-
-3. Once your account is created and you are in the Onshape home page, click "Public" in the left menu.
-
-4. Click the search bar at the top, and in the "Description" box, type "Official VEX V5 Library," and search. 
-
-5. A variety of different sub-part libraries should appear. Select all of them, and right click. A small menu should appear. 
-
-6. Select "Labels" and then click "Create new label." Name it whatever you would like and create it. You should now have access to these libraries in any document. To use them, when in an assembly select "insert" from the top bar and then select "Other documents." You should see your tag in the menu, which you can then click on to view all the vex parts, and insert them in your project. 
-
-Here is a useful video to guide you through the process: 
-[https://www.youtube.com/watch?v=pgTIe8Irk-4]()
-
 
 ## Links and Videos
 
@@ -120,7 +36,7 @@ Here is a useful video to guide you through the process:
 
 [Shooting Video](https://www.youtube.com/watch?v=mp8h-1DBMEo)
 
-### Building Techniques
+### Hardware
 
 [Stationary Video](https://www.youtube.com/watch?v=BSeIZ1zZGXk)
 
@@ -132,7 +48,7 @@ Here is a useful video to guide you through the process:
 
 [AURA - X-Drive Explanation](https://aura.org.nz/why-is-x-drive-faster/)
 
-### Coding Techniques
+### Software
 
 [Lesson 1](https://youtu.be/YPC-O3wBU9U)
 

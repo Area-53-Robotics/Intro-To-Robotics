@@ -14,30 +14,6 @@ Use Nylocks when:
 -   You’re in a rush
 -   You need to hold spacers in a certain point on a screw (use them like collars)
 
-## Jointing
-
-To clarify, because I haven’t been super clear about this: “joint” has 2 meanings.
-
--   A connection between a screw and a nut that allows no moving parts
--   A connection between a screw and a nut that allows moving parts
-    The first are standard joints that you will always create. The second is always referred to as a “screw joint.” This may not be the correct terminology, but that’s what I’m calling it.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BSeIZ1zZGXk" title="Robotics Introduction - Building Techniques - Stationary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Jointing Video (Stop at 9:22, that’s when Bracing starts)
-
-## Canteleveration
-
-Canteleveration is a big word so let’s break it down. Cante: Spanish word for sing in first person singular. Lever: lots of force on one side. Basically, it’s a structure that’s only supported on 1 side. This can range anywhere from axles to C-Channel. Axles are obvious because you need to support each side with metal and bearings. There is one exception here: You can have one side of the axle exposed if there are 2 pieces of metal supporting the other end. C-Channel is a bit more obscure because if you joint it properly, it might not need the extra support. But, if it’s able to be supported, it’s probably worth doing.
-
-I accidentally canteleverated a bearing block. I was only able to screw in 1 side of the bearing because of lack of spacing for the other screw head. The axle was in the middle. There was so much weight on the axle that it pushed the bearing down. Canteleveration extends to jointing small things too.
-
-## Bracing
-
-There are 2 main shapes that you want to create to support your robot: Triangles and Rectangles. You should use bracing to support posts (vertical metal) or any horizontal metal. This will help keep your robot sturdy, and stop parts from moving that shouldn’t be moving. Bracing your robot will keep parts where you want them.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BSeIZ1zZGXk" title="Robotics Introduction - Building Techniques - Stationary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ### Parts:
 
 -   Standoffs - Use them with collars to hold up structures.
