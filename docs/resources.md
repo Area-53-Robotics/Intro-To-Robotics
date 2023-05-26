@@ -1,135 +1,91 @@
 # Resources
 
-<!--TODO: Update this to match the new videos-->
-
-### General Tips
-
-We typically use the parts libraries created by the [VEX CAD Discord server](https://discord.gg/BKV3DJm). This server is also a great resource to meet competitors from different regions and get help and advice on your CADs.
+<!--TODO: Update this to match the new structure-->
 
 ## Links and Videos
 
+-   [Vex CAD Discord](https://discord.com/invite/BKV3DJm)
+
 ### Parts
 
-[Structure Video](https://youtu.be/9wj5aibcKAE)
-
-[Motion Video](https://youtu.be/opz3PNI6mY0)
-
-[Hardware Video](https://youtu.be/DAcHH1pAQ_c)
-
-[Electronics Video](https://youtu.be/OqzroBgR2dk)
-
-[VEX Sensors](https://wiki.purduesigbots.com/electronics/vex/vex-sensors)
-
-[Building Ratchets](https://www.youtube.com/watch?v=Yqm_LLXDCHA&)
-
-[Ratchet Examples](https://www.youtube.com/watch?v=5oYMlgNAVO4&t=136s)
+-   [Structure Video](https://youtu.be/9wj5aibcKAE)
+-   [Motion Video](https://youtu.be/opz3PNI6mY0)
+-   [Hardware Video](https://youtu.be/DAcHH1pAQ_c)
+-   [Electronics Video](https://youtu.be/OqzroBgR2dk)
+-   [VEX Sensors](https://wiki.purduesigbots.com/electronics/vex/vex-sensors)
+-   [Building Ratchets](https://www.youtube.com/watch?v=Yqm_LLXDCHA&)
+-   [Ratchet Examples](https://www.youtube.com/watch?v=5oYMlgNAVO4&t=136s)
 
 ### Subsystems
 
-[Drivetrain Video](https://www.youtube.com/watch?v=Hu4FqAARGGw)
-
-[Lift Video](https://www.youtube.com/watch?v=hYC-bCeYGm0)
-
-[Cascade Video](https://youtu.be/diXEm9aw1Dc)
-
-[Intake Video](https://www.youtube.com/watch?v=lk-dUcIApZg)
-
-[Shooting Video](https://www.youtube.com/watch?v=mp8h-1DBMEo)
+-   [Drivetrain Video](https://www.youtube.com/watch?v=Hu4FqAARGGw)
+-   [Lift Video](https://www.youtube.com/watch?v=hYC-bCeYGm0)
+-   [Cascade Video](https://youtu.be/diXEm9aw1Dc)
+-   [Intake Video](https://www.youtube.com/watch?v=lk-dUcIApZg)
+-   [Shooting Video](https://www.youtube.com/watch?v=mp8h-1DBMEo)
 
 ### Hardware
 
-[Stationary Video](https://www.youtube.com/watch?v=BSeIZ1zZGXk)
-
-[Moving Video 1](https://youtu.be/y8EGzFVsPJA)
-
-[Moving Video 2](https://www.youtube.com/watch?v=GQ1Rsz-0t64)
-
-[Drivetrain Video](https://www.youtube.com/watch?v=8jxQENu5O8E)
-
-[AURA - X-Drive Explanation](https://aura.org.nz/why-is-x-drive-faster/)
+-   [Stationary Video](https://www.youtube.com/watch?v=BSeIZ1zZGXk)
+-   [Moving Video 1](https://youtu.be/y8EGzFVsPJA)
+-   [Moving Video 2](https://www.youtube.com/watch?v=GQ1Rsz-0t64)
+-   [Drivetrain Video](https://www.youtube.com/watch?v=8jxQENu5O8E)
+-   [AURA - X-Drive Explanation](https://aura.org.nz/why-is-x-drive-faster/)
 
 ### Software
 
-[Lesson 1](https://youtu.be/YPC-O3wBU9U)
-
-[Lesson 1 Code File](https://drive.google.com/drive/folders/1PyiJFK_lINnRKxr7I7DLKjaedGlO3DMs?usp=sharing)
-
-[Lesson 2](https://youtu.be/055aXg_s0gs)
-
-[Lesson 2 Code File](https://drive.google.com/drive/folders/1-huqLtAJb9f3OECAcRmWYBYfNYo4_CAb?usp=sharing)
-
-[53A/C Code Explanations](https://youtu.be/v3UvxnhD518)
-
-[Operators - C++ Tutorials](http://www.cplusplus.com/doc/tutorial/operators/)
-
-[Simple control structures - C++ Tutorials](http://www.cplusplus.com/doc/oldtutorial/control/)
-
-[Functions - C++ Tutorials](https://www.cplusplus.com/doc/tutorial/functions/)
-
-[Pros Documentatin](https://pros.cs.purdue.edu/v5/index.html)
-
-[Git Documentation](https://git-scm.com/doc)
+-   [Lesson 1](https://youtu.be/YPC-O3wBU9U)
+-   [Lesson 1 Code File](https://drive.google.com/drive/folders/1PyiJFK_lINnRKxr7I7DLKjaedGlO3DMs?usp=sharing)
+-   [Lesson 2](https://youtu.be/055aXg_s0gs)
+-   [Lesson 2 Code File](https://drive.google.com/drive/folders/1-huqLtAJb9f3OECAcRmWYBYfNYo4_CAb?usp=sharing)
+-   [53A/C Code Explanations](https://youtu.be/v3UvxnhD518)
+-   [Operators - C++ Tutorials](http://www.cplusplus.com/doc/tutorial/operators/)
+-   [Simple control structures - C++ Tutorials](http://www.cplusplus.com/doc/oldtutorial/control/)
+-   [Functions - C++ Tutorials](https://www.cplusplus.com/doc/tutorial/functions/)
+-   [Pros Documentatin](https://pros.cs.purdue.edu/v5/index.html)
+-   [Git Documentation](https://git-scm.com/doc)
 
 #### Code Quality
 
-[Core C++ Naming Conventions](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-naming)
-
-[Google naming conventions](https://google.github.io/styleguide/cppguide.html#Variable_Names)
-
-[Commenting Guide](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/)
+-   [Core C++ Naming Conventions](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-naming)
+-   [Google naming conventions](https://google.github.io/styleguide/cppguide.html#Variable_Names)
+-   [Commenting Guide](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/)
 
 #### Libraries for PROS
 
-[Okapilib](https://okapilib.github.io/OkapiLib/index.html)
-
-[ARMS](https://github.com/purduesigbots/LEGS)
-
-[Lib4253](https://github.com/Ryan4253/lib4253)
-
-[Sylib](https://github.com/sy1vi3/sylib)
-
-[EZ Template](https://github.com/EZ-Robotics/EZ-Template)
-
-[LemLib](https://github.com/LemLib/LemLib)
+-   [Okapilib](https://okapilib.github.io/OkapiLib/index.html)
+-   [ARMS](https://github.com/purduesigbots/LEGS)
+-   [Lib4253](https://github.com/Ryan4253/lib4253)
+-   [Sylib](https://github.com/sy1vi3/sylib)
+-   [EZ Template](https://github.com/EZ-Robotics/EZ-Template)
+-   [LemLib](https://github.com/LemLib/LemLib)
 
 #### High Quality Robot Code
 
-[lib7842](https://github.com/theol0403/lib7842)
+-   [lib7842](https://github.com/theol0403/lib7842)
+-   [4253B-Tipping-Point-Worlds](https://github.com/Ryan4253/4253B-Tipping-Point-Worlds)
+-   [nickmertin/5225A-2017-2018](https://github.com/nickmertin/5225A-2017-2018)
+-   [Team_7K_robotics](https://github.com/vexcode-2019/Team_7K_robotics)
 
-[4253B-Tipping-Point-Worlds](https://github.com/Ryan4253/4253B-Tipping-Point-Worlds)
+### Notebooking
 
-[nickmertin/5225A-2017-2018](https://github.com/nickmertin/5225A-2017-2018)
-
-[Team_7K_robotics](https://github.com/vexcode-2019/Team_7K_robotics)
-
-### Driving Techniques
-
-### Notebooking Techniques
-
-[Teresa’s Notebook Guide](https://docs.google.com/presentation/d/1Uk4swRHdrwL2-z1mSL9msUDOOHVweSWmGtXWr6ovS38/edit?usp=sharing)
+-   [Teresa’s Notebook Guide](https://docs.google.com/presentation/d/1Uk4swRHdrwL2-z1mSL9msUDOOHVweSWmGtXWr6ovS38/edit?usp=sharing)
 
 ### The Tournament
 
-[VRC Hub](https://play.google.com/store/apps/details?id=com.dwabtech.vexhub.vrc&hl=en)
-
-[VEX Via](https://play.google.com/store/apps/details?id=com.dwabtech.vexvia&hl=en_US&gl=US)
-
-[Teresa’s Judging Guide](https://docs.google.com/presentation/d/1dznCO7GGM4A3EmXSbmme2xTFXda-_Qc7HOAgnhn4Itk/edit?usp=sharing)
-
-[Judge Guide](https://www.roboticseducation.org/documents/2019/08/judge-guide.pdf/)
-
-[Design Rubric](https://www.robotevents.com/season/130/document/71/download)
-
-[Interview Rubric](https://www.roboticseducation.org/documents/2020/06/engineering-notebook-and-team-interview-rubric.pdf/)
+-   [VRC Hub](https://play.google.com/store/apps/details?id=com.dwabtech.vexhub.vrc&hl=en)
+-   [VEX Via](https://play.google.com/store/apps/details?id=com.dwabtech.vexvia&hl=en_US&gl=US)
+-   [Teresa’s Judging Guide](https://docs.google.com/presentation/d/1dznCO7GGM4A3EmXSbmme2xTFXda-_Qc7HOAgnhn4Itk/edit?usp=sharing)
+-   [Judge Guide](https://www.roboticseducation.org/documents/2019/08/judge-guide.pdf/)
+-   [Design Rubric](https://www.robotevents.com/season/130/document/71/download)
+-   [Interview Rubric](https://www.roboticseducation.org/documents/2020/06/engineering-notebook-and-team-interview-rubric.pdf/)
 
 ### Theory
 
-[The Area 53 Team Division Manifesto](https://docs.google.com/document/d/1eU8lVrfeGPaf6A4_BxN5uHAW0tUgGNzL7UcSmdL5GTU/edit?usp=sharing)
+-   [The Area 53 Team Division Manifesto](https://docs.google.com/document/d/1eU8lVrfeGPaf6A4_BxN5uHAW0tUgGNzL7UcSmdL5GTU/edit?usp=sharing)
 
-### Various
+### Misc
 
-[Sigbots Wiki](https://wiki.purduesigbots.com/)
-
-[Fusion 360 Add-In](https://www.vexforum.com/t/vex-cad-fusion-360-parts-library-release-log/83263)
-
-[Team Standings](https://www.robotevents.com/teams/VRC/53A)
+-   [Sigbots Wiki](https://wiki.purduesigbots.com/)
+-   [Fusion 360 Add-In](https://www.vexforum.com/t/vex-cad-fusion-360-parts-library-release-log/83263)
+-   [Team Standings](https://www.robotevents.com/teams/VRC/53A)

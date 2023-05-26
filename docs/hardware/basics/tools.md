@@ -6,7 +6,7 @@ Here is a list of all the tools we have in robotics. They will be a picture, com
 
 ### Allen Wrench
 
-![Body frame](../assets/alan.png)
+![Image title](../../assets/alan.png){ width="200" }
 
 -   Also called an “L” or “L wrench”.
 -   Fits 8-32 hex screws, the common screw we use.
@@ -20,7 +20,7 @@ Same as the allen wrench, but fits 6-32 hex screws.
 
 ### T Hex Driver
 
-![Body frame](../assets/t-hex-driver.png)
+![Image title](../../assets/t-hex-driver.png){ width="200" }
 
 Also called a “T” or “T wrench”.
 
@@ -30,7 +30,7 @@ This is another hard hex driver to use because of the long length of the driver 
 
 ### German
 
-![Body frame](../assets/german.png)
+![Image title](../../assets/german.png){ width="200" }
 
 Fits 8-32 hex screws, the common screw we use.
 This is the best hex driver to use if you have it. It’s very strong and it’s amazing for anything in general.
@@ -53,7 +53,7 @@ Wear eye protection when using any type of saw, especially a fast moving saw. Al
 
 ### Dremel
 
-![Body frame](../assets/dremel.png)
+![Image title](../../assets/dremel.png){ width="400" }
 
 Used to cut metal and various plastic parts.
 
@@ -61,7 +61,7 @@ It’s better to use a dremel to cut through steel and a hacksaw to cut through 
 
 ### Hacksaw
 
-![Body frame](../assets/hacksaw.png)
+![Image title](../../assets/hacksaw.png){ width="400" }
 
 Used to cut metal and various plastic parts.
 
@@ -69,7 +69,7 @@ It’s better to use a hacksaw to cut through aluminum and a dremel to cut throu
 
 ### Snips
 
-![Body frame](../assets/snips.png)
+![Image title](../../assets/snips.png){ width="400" }
 
 Large scissors used to cut aluminum quickly.
 
@@ -77,7 +77,7 @@ Often leaves the surface with rough edges.
 
 ### File
 
-![Body frame](../assets/file.png)
+![Image title](../../assets/file.png){ width="400" }
 
 Used to remove sharp edges from metal.
 
@@ -85,7 +85,7 @@ You can also use files to strip teeth off of a gear, although I would not recomm
 
 ### Grinder
 
-![Body frame](../assets/grinder.png)
+![Image title](../../assets/grinder.png){ width="400" }
 
 Also called a “bench grinder”
 

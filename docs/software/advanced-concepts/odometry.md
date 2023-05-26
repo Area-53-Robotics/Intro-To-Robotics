@@ -65,15 +65,11 @@ Now we need a way to calculate the distance the robot has actually traveled. The
 
 The local y coordinate is the distance tracked by the left or right tracking wheel.
 
-<figure markdown>
-  ![Image title](../../assets/odomlocalycoord.png){ width="800" }
-</figure>
+![Image title](../../assets/odomlocalycoord.png){ width="800" }
 
 The local x coordinate is the distance tracked by the center tracking wheel
 
-<figure markdown>
-  ![Image title](../../assets/odomlocalxcoord.png){ width="800" }
-</figure>
+![Image title](../../assets/odomlocalxcoord.png){ width="800" }
 
 If the change in rotation is zero, the distance traveled is simply equal to the distance the tracking wheels have traveled.
 
@@ -87,9 +83,7 @@ $$
 
 However, if the robot turned while making it's movement, the calculation becomes more complicated.
 
-<figure markdown>
-  ![Image title](../../assets/odomchordlength.png){ width="800" }
-</figure>
+![Image title](../../assets/odomchordlength.png){ width="800" }
 
 As you can see in the image above, the actual distance traveled by the robot is not equal to the arc length that the wheels create. We can calculate the actual distance by using this formula:
 
