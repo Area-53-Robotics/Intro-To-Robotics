@@ -20,6 +20,7 @@
           buildInputs = with pkgs; [
             mkdocs
             python310Packages.mkdocs-material
+            python310Packages.mkdocs-minify
 
             nodePackages.markdownlint-cli
             nodePackages.prettier
