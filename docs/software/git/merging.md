@@ -6,6 +6,14 @@ Sometimes you want to get commits from one branch and bring them into another on
 
 Merging will create a new commit on the branch in which the merge is taking place. This commit is a combination of two commits, the latest ones from both branches.
 
+### Fast Forward
+
+If a branch has not diverged from the one that you are merging into, git will resolve the issue via fast forward rather than a traditional merge.
+
+![Image](../../assets/git/fast-forward.png){ width="800" }
+
+This will add commits to the branch that is behind so that the history of the branches is up to date.
+
 ## Rebasing
 
 Rebasing is another way to bring changes from one branch to another. This works a little differently from a merge. The result is the same, but they way they interact with history is different. A rebase will insert the commits of a branch backwards in time into the current one.

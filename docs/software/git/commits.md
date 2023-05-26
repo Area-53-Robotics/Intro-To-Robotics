@@ -4,7 +4,6 @@ When you commit you create a set point in the history of your local repository. 
 
 Here is an example of a history with three commits:
 
-
 ![Image](../../assets/git/commits.png){ width="800" }
 
 Every commit has a commit message associated with it. This should summarize the changes made in that commit. Commits also have a hash. This is a unique identifier that is automatically generated whenever a commit is made.
