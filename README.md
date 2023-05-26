@@ -1,8 +1,7 @@
 # Introduction to Robotics
 
 ![Docs](https://github.com/Area-53-Robotics/Intro-To-Robotics/actions/workflows/deploy.yml/badge.svg)
-
-Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 This is the combined knowledge of the Area 53 VRC Robotics Club.
 
