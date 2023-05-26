@@ -5,14 +5,34 @@ theme:
     logo: assets/area_53.png
     favicon: assets/area_53.png
     features:
+        #- navigation.tabs
         - navigation.footer
         - header.autohide
+        - content.code.copy
+        - content.tabs.link
 
     palette:
         primary: green
-        accent: green
+        accent: light green
         scheme: slate
 
+plugins:
+    - search:
+          lang: en
+          separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+    - minify:
+          minify_html: true
+
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/Area-53-Robotics
+        - icon: fontawesome/brands/youtube
+          link: https://www.youtube.com/@team53robotics
+        - icon: fontawesome/brands/instagram
+          link: https://www.instagram.com/area53robotics/
+
+copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 markdown_extensions:
     - attr_list
     - md_in_html
@@ -25,6 +45,14 @@ markdown_extensions:
           alternate_style: true
     - pymdownx.arithmatex:
           generic: true
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_javascript:
     - javascripts/mathjax.js
@@ -87,11 +115,12 @@ nav:
                 - 'Toggling Subsystems': './software/programming-the-bot/subsystem-toggling.md'
           - 'Git':
                 - 'Introduction': './software/git/introduction.md'
-                - 'Getting Started': './software/git/getting-started.md'
-                - 'Commits and Staging': './software/git/commits-and-staging.md'
+                - 'Local Repositories': './software/git/local-repo.md'
+                - 'Commits': './software/git/commits.md'
                 - 'Branches': './software/git/branches.md'
-                - 'Pushing and Pulling': './software/git/pushing-and-pulling.md'
-                - 'Remote Branches': './software/git/remote-branches.md'
+                - 'Merging': './software/git/merging.md'
+                - 'Remote Repositories': './software/git/remote-repo.md'
+                - 'Further Reading': './software/git/further-reading.md'
           - 'Advanced Concepts':
                 - 'Introduction': './software/advanced-concepts/introduction.md'
                 - 'Control Loops': './software/advanced-concepts/control-loops.md'
