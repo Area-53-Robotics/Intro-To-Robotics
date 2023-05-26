@@ -8,8 +8,7 @@ Git is a VCS or a version control system. It is used to save points in time on y
 
 Git is a very powerful piece of software, with a lot of options. It is very manual, and doesn't do anything without the user specifying it. This makes it very difficult and unintuitive to use.
 
-Despite this, git is an extremly powerful tool. We use git for the following reasons:
-
+Despite this, git is an extremely powerful tool. We use git for the following reasons:
 
 ### Collaboration
 
@@ -23,7 +22,16 @@ Git allows you make changes without worrying about breaking your code. If you ma
 
 Git is used by everywhere where code is involved. This very guide is managed by git. You might as well learn it now.
 
+## Goals of this Section
 
-## Official Documentation
+There are may ways to use git, including:
 
-If something isn't covered here, its likely in the [official documentation](https://git-scm.com/docs).
+-   CLI (command line interface)
+-   Integrated VSCode support
+-   Integrated CLion support
+-   Github desktop
+-   Lazygit
+
+There is no way we can teach all of them, so this guide aims to be more conceptual, rather than practical, giving you a baseline to build off of. We will provide additional resources [here](./further-reading.md).
+
+This section is inspired from [this](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html) website.
