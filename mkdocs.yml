@@ -5,7 +5,7 @@ theme:
     logo: assets/area_53.png
     favicon: assets/area_53.png
     features:
-        #- navigation.tabs
+        - navigation.tabs
         - navigation.footer
         - header.autohide
         - content.code.copy
@@ -61,8 +61,9 @@ extra_javascript:
 
 nav:
     - Home: 'index.md'
-    - 'Recommended Reading Order': './recommended-reading-order.md'
-    - 'Introduction': './introduction.md'
+    - 'Introduction':
+          - 'Foreword': './introduction/foreword.md'
+          - 'Recommended Reading Order': './introduction/recommended-reading-order.md'
     - 'Hardware':
           - 'Introduction': './hardware/introduction.md'
           - 'Basics':
@@ -78,7 +79,6 @@ nav:
                 - 'Boxing': './hardware/techniques/boxing.md'
                 - 'Canteleveration': './hardware/techniques/canteleveration.md'
           - 'Subsystems':
-                - 'Introduction': './hardware/subsystems/introduction.md'
                 - 'Drivetrains': './hardware/subsystems/drivetrain.md'
                 - 'Lifts': './hardware/subsystems/lifts.md'
                 - 'Intakes': './hardware/subsystems/intakes.md'
@@ -132,8 +132,10 @@ nav:
     - 'Driving': './driving.md'
     - 'Notebooking': './notebooking.md'
     - 'Leading': './leading.md'
-    - 'The Season': './the-season.md'
-    - 'The Tournament': './the-tournament.md'
+    - 'The Game':
+          - 'The Season': './the-season.md'
+          - 'The Tournament': './the-tournament.md'
     - 'Theory': './theory.md'
-    - 'Resources': './resources.md'
-    - 'About the Authors': './about-the-authors.md'
+    - 'Appendix':
+          - 'Resources': './appendix/resources.md'
+          - 'About the Authors': './appendix/about-the-authors.md'
