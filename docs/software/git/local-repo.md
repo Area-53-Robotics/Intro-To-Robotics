@@ -1,5 +1,7 @@
 # Local Repositories
 
+## Theory
+
 The local repository is stored on your computer. When you initialize a git project, a remote repository is created.
 
 Once a local repository is created, your development environment will look like this:

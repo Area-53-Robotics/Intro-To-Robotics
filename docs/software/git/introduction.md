@@ -32,6 +32,8 @@ There are may ways to use git, including:
 -   GitHub desktop
 -   Lazygit
 
-There is no way we can teach all of them, so this guide aims to be more conceptual, rather than practical, giving you a baseline to build off of. We will provide additional resources [here](./further-reading.md).
+This section does not attempt to teach all of them. Each subsection will teach you the concepts required to understand the basics of git. It will also provide you with a few examples of how to use these concepts with the CLI, and with VSCode.
+
+This section does by no means teach all of git. We highly recommend to look into the further reading wherever it is given, and to look at the additional resources [here](./further-reading.md).
 
 This section is inspired from [this](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html) website.
