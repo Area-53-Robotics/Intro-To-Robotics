@@ -1,6 +1,6 @@
 # Merging
 
-Sometimes you want to get commits from one branch and bring them into another one, whether it be to bring in new features, or just get the latest code from the remote repository (we'll cover this later). Git provides a tool for this, merging.
+Sometimes you want to get commits from one branch and bring them into another one, whether it be to bring in new features, or just get the latest code from the remote repository (we'll cover this later). Git provides a tool for this: merging.
 
 ![Image](../../assets/git/merge.png){ width="800" }
 
@@ -31,6 +31,7 @@ Sometimes merges cannot be resolved manually by git due to conflicting changes. 
 ## Further Reading
 
 -   [Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+-   [What is git fast forwarding?](https://stackoverflow.com/questions/29673869/what-is-git-fast-forwarding)
 -   [Advanced Merging](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
 -   [Rebasing](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
 -   [Git merge conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)

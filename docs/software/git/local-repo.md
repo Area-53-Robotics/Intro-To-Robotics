@@ -10,4 +10,9 @@ The working directory is simply the folder that your git project is created in. 
 
 Your staging area contains all of the changes you intend to commit.
 
-Your local repository contains your commits and branches.
+The local repository contains all of the git information for your development environment. Inside this are the refs. These hold information about commits and branches. The local repository also holds the objects. These include blobs, trees, and commits. We won't won't go into more detail here, but the objects are the actual data of git, containing things like contents of files from past commits.
+
+## Further Reading
+
+-   [Git Internals - Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
+-   [Git Internals - Git References](https://git-scm.com/book/en/v2/Git-Internals-Git-References)

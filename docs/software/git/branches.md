@@ -6,7 +6,9 @@ Branches allow you to create a fork in the timeline of your project.
 
 A common use of branches is to create new features. This allows work to be done on another branch without interfering with the main branch. This is useful if you have multiple developers working together, and you don't want to break each other's work. Branches are also a very common way to have different releases, each with their own version.
 
-## Git Checkout
+Each branch has a head, which can be thought of as the tip of that branch. This is always the latest commit on that branch.
+
+## Changing Branches
 
 Git allows you to move between branches at will with the checkout command. Note that while making commits does not change your working directory, this will. Your code will be changed to the code in that branch.
 

@@ -12,7 +12,7 @@ Despite this, git is an extremely powerful tool. We use git for the following re
 
 ### Collaboration
 
-Git makes it much easier to work together. You can combine it with Github in order to make code easily accessible. It's manual nature makes it so that changes don't get made to the code on your computer by other people without your consent. It also provides tools like branches and merging to make sure that your changes don't conflict.
+Git makes it much easier to work together. You can combine it with GitHub in order to make code easily accessible. Its manual nature makes it so that changes don't get made to the code on your computer by other people without your consent. It also provides tools like branches and merging to make sure that your changes don't conflict.
 
 ### Safety
 
@@ -29,7 +29,7 @@ There are may ways to use git, including:
 -   CLI (command line interface)
 -   Integrated VSCode support
 -   Integrated CLion support
--   Github desktop
+-   GitHub desktop
 -   Lazygit
 
 There is no way we can teach all of them, so this guide aims to be more conceptual, rather than practical, giving you a baseline to build off of. We will provide additional resources [here](./further-reading.md).
