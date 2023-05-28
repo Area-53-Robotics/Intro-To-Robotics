@@ -83,7 +83,7 @@ nav:
                 - 'Lifts': './hardware/subsystems/lifts.md'
                 - 'Intakes': './hardware/subsystems/intakes.md'
                 - 'Shooting': './hardware/subsystems/shooting.md'
-                - 'Climing': './hardware/subsystems/climbing.md'
+                - 'Climbing': './hardware/subsystems/climbing.md'
           - 'CAD':
                 - 'Introduction': './hardware/cad/introduction.md'
                 - 'Onshape': './hardware/cad/onshape.md'
