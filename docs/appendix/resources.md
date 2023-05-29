@@ -10,6 +10,7 @@
 
 -   [Fusion 360 Add-In](https://www.vexforum.com/t/vex-cad-fusion-360-parts-library-release-log/83263)
 -   [Vex CAD Discord](https://discord.com/invite/BKV3DJm)
+-   [why tinkercad is a bad cad software](https://youtu.be/NOORqwRaiXo)
 
 ### High Quality Robots
 

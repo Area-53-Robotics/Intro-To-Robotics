@@ -5,7 +5,7 @@ Different people need to read different parts of this manual at different times.
 ## Freshman Year
 
 -   [The Basics](../hardware/basics/tools.md)
--   Builders: [Hardware](../hardware/stationary.md)
+-   Builders: [Hardware](../hardware/introduction.md)
 -   Coders: [Software](../software/introduction.md)
 -   Drivers: [Driving Techniques](../driving.md)
 -   Notebookers: [Notebooking Techniques](../notebooking.md)
