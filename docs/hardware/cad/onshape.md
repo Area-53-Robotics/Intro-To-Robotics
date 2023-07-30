@@ -4,7 +4,7 @@
 
 Use the following instructions to set up an Onshape account, and use the VEX Parts Library.
 
-1. Go to [https://www.onshape.com/en/education/sign-up]() and select "Create an Account" on the website.
+1. Go to [https://www.onshape.com/en/education/sign-up](https://www.onshape.com/en/education/sign-up) and select "Create an Account" on the website.
 
 2. Enter School information and other details, confirm your email, and create the account.
 
