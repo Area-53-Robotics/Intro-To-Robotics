@@ -60,30 +60,18 @@ extra_javascript:
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-    - Home: 'index.md'
+    - 'Home': 'index.md'
     - 'Introduction':
           - 'Foreword': './introduction/foreword.md'
+          - 'Design Philosophy': './introduction/philosophy.md'
           - 'Recommended Reading Order': './introduction/recommended-reading-order.md'
     - 'Hardware':
           - 'Introduction': './hardware/introduction.md'
-          - 'Basics':
-                - 'Tools': './hardware/basics/tools.md'
-                - 'Parts': './hardware/basics/parts.md'
-          - 'Theory':
-                - 'Torque': './hardware/theory/torque-speed.md'
-                - 'Gear Ratios': './hardware/theory/gear-ratios.md'
-                - 'Stress': './hardware/theory/stress.md'
-          - 'Techniques':
-                - 'Joints': './hardware/techniques/joints.md'
-                - 'Bracing': './hardware/techniques/bracing.md'
-                - 'Boxing': './hardware/techniques/boxing.md'
-                - 'Canteleveration': './hardware/techniques/canteleveration.md'
-          - 'Subsystems':
-                - 'Drivetrains': './hardware/subsystems/drivetrain.md'
-                - 'Lifts': './hardware/subsystems/lifts.md'
-                - 'Intakes': './hardware/subsystems/intakes.md'
-                - 'Shooting': './hardware/subsystems/shooting.md'
-                - 'Climbing': './hardware/subsystems/climbing.md'
+          - 'Tools': './hardware/tools.md'
+          - 'Parts': './hardware/parts.md'
+          - 'Theory': './hardware/theory.md'
+          - 'Techniques': './hardware/techniques.md'
+          - 'Subsystems': './hardware/subsystems.md'
           - 'CAD':
                 - 'Introduction': './hardware/cad/introduction.md'
                 - 'Onshape': './hardware/cad/onshape.md'
@@ -92,35 +80,10 @@ nav:
                 - 'Solidworks': './hardware/cad/solidworks.md'
     - 'Software':
           - 'Introduction': './software/introduction.md'
-          - 'Basics':
-                - 'Variables': './software/basics/variables.md'
-                - 'Operators': './software/basics/operators.md'
-                - 'Control Flow': './software/basics/control-flow.md'
-                - 'Functions': './software/basics/functions.md'
-                - 'Scope': './software/basics/scope.md'
-                - 'Enumerations': './software/basics/enums.md'
-                - 'Namespaces': './software/basics/namespaces.md'
-                - 'Headers': './software/basics/headers.md'
-                - 'Object Oriented Programming': './software/basics/oop.md'
-          - 'Conventions':
-                - 'Introduction': './software/conventions/introduction.md'
-                - 'Descriptive Variables': './software/conventions/descriptive-variables.md'
-                - 'Naming Conventions': './software/conventions/naming-conventions.md'
-                - 'Program Organization': './software/conventions/program-organization.md'
-                - 'Comments': './software/conventions/comments.md'
-          - 'Programming the Robot':
-                - 'Introduction': './software/programming-the-bot/introduction.md'
-                - 'Tank Drive': './software/programming-the-bot/tank-drive.md'
-                - 'Arcade Drive': './software/programming-the-bot/arcade-drive.md'
-                - 'Toggling Subsystems': './software/programming-the-bot/subsystem-toggling.md'
-          - 'Git':
-                - 'Introduction': './software/git/introduction.md'
-                - 'Local Repositories': './software/git/local-repo.md'
-                - 'Commits': './software/git/commits.md'
-                - 'Branches': './software/git/branches.md'
-                - 'Merging': './software/git/merging.md'
-                - 'Remote Repositories': './software/git/remote-repo.md'
-                - 'Further Reading': './software/git/further-reading.md'
+          - 'Basics': './software/basics.md'
+          - 'Conventions': './software/conventions.md'
+          - 'Examples': './software/examples.md'
+          - 'Git': './software/git.md'
           - 'Advanced Concepts':
                 - 'Introduction': './software/advanced-concepts/introduction.md'
                 - 'Control Loops': './software/advanced-concepts/control-loops.md'
