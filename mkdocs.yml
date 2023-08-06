@@ -82,7 +82,11 @@ nav:
           - 'Introduction': './software/introduction.md'
           - 'Basics': './software/basics.md'
           - 'Conventions': './software/conventions.md'
-          - 'Examples': './software/examples.md'
+          - 'Examples':
+                - 'Tank Drive': './software/examples/tank-drive.md'
+                - 'Arcade Drive': './software/examples/arcade-drive.md'
+                - 'Toggling Subsystems': './software/examples/subsystem-toggling.md'
+                - 'Drive Curve': './software/examples/drive-curve.md'
           - 'Git': './software/git.md'
           - 'Advanced Concepts':
                 - 'Introduction': './software/advanced-concepts/introduction.md'
