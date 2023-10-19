@@ -33,19 +33,19 @@ The following variables are used:
 -   $d_{lead}$ is the gain that controls how far the carrot point is away from the end point. Can be a value between 0 and 1.
 
 $$
-h=\sqrt{x_{start}-x_{end}+y_{start}-y_{end}}
+h=\sqrt{(x_{start}-x_{end})^2+(y_{start}-y_{end})^2}
 $$
 
 Then we calculate x the coordinate of the carrot point by subtracting the y component of $h$ from $x_{end}$
 
 $$
-x_{carrot}=x_{end}-h\sin(\theta_{end})*d_{lead}
+x_{carrot}=x_{end}-h\cos(\theta_{end})*d_{lead}
 $$
 
 And we calculate y the coordinate of the carrot point by subtracting the x component of $h$ from $x_{end}$
 
 $$
-y_{carrot}=y_{end}-h\cos(\theta_{end})*d_{lead}
+y_{carrot}=y_{end}-h\sin(\theta_{end})*d_{lead}
 $$
 
 ## Implementation
@@ -92,8 +92,8 @@ while (!atTarget) {
   Point currentPosition = getCurrentPosition(); // Get current position from odometry
 
   Point carrotPoint = Point(
-      (target.x - distance * sin(target.theta) * lead),
-      (target.y - distance * cos(target.theta) * lead),
+      (target.x - distance * cos(target.theta) * lead),
+      (target.y - distance * sin(target.theta) * lead),
       0.0);
 
   // Movement code ...
